@@ -4,6 +4,15 @@ Version history
 
 2.9
 --------------------------------------------------
+* Add workflow actions to work with Document Sets (Copy / Move)
+* Add workflow action to remove document 
+* Rewrite workflow actions for work with copy / move files / folders
+* Add additional parameter "PaperSize" to Convert HTML to PDF workflow action 
+* Add workflow action Get Version 
+* Simplify Send an Email workflow action (reduce cound of requred parameters)
+* Add workflow action Create Folder by URL
+* Add workflow action Increment value
+* Add workflow action Build Dictionary from JSON
 
 
 2.8
