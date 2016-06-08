@@ -151,6 +151,54 @@ Example
 .. image:: /_static/img/MoveFile.png
    :alt: Move file to another document library SharePoint Online
 
+Remove Document by URL
+--------------------------------------------------
+Remove the document by a specific URL 
+
+Input Parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  SourceUrl
+       -  The URL of the document to be removed. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
+       -  ::
+
+            https://contoso/SiteUrl/LibraryName/FolderName/DocumentName.docx
+            /SiteUrl/LibraryName/FolderName/FileName.docx 
+            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocumentName.docx 
+            [%Workflow Context:Current Item URL%]
+
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/RemoveFile.png
+   :alt: Remove file by a URL
+
 Copy DocumentSet
 --------------------------------------------------
 It copies the document set from the document library to the specified URL. You can copy the document sets to another document library cross-site or to another folder.

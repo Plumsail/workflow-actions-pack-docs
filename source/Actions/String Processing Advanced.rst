@@ -86,6 +86,22 @@ Input parameters
     *  -  List
        -  Name, url or guid of list
        -  Invoices/Invoices
+    *  -  Paper Size
+       -  Size of the page, it supports the `following values <http://doc.qt.io/qt-4.8/qprinter.html#PaperSize-enum>`_::
+
+                  A0
+                  A1
+                  A2
+                  A3
+                  A4
+                  A5
+                  Folio
+                  Ledger
+                  Legal
+                  Letter
+                  ...
+            
+       -  A4
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin@contoso.com
