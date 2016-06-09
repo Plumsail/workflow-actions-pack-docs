@@ -210,7 +210,7 @@ Output parameters
        -  Example
     *  -  Result dictionary
        -  Output dictionary value. Please check out the following article to know more.
-          How to work with dictionaries in SharePoint 2013 and Office 365 workflow
+          `How to work with dictionaries in SharePoint 2013 and Office 365 workflow <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_
        -  ::
 
             {
@@ -256,3 +256,90 @@ Example
 .. image:: /_static/img/ParseXMLWorkflowAction.png
    :alt: Parse XML to Dictionary
 
+
+Build Dictionary from JSON string
+--------------------------------------------------
+The workflow action receives JSON string and convert it to a Dictionary. 
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Result dictionary
+       -  Output dictionary value. Please check out the following article to know more.
+          `How to work with dictionaries in SharePoint 2013 and Office 365 workflow <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_
+       -  ::
+
+            {
+               "recurrence":{
+                  "rule":{
+                     "firstDayOfWeek":"su",
+                     "repeat":{
+                        "daily":{
+                           "@dayFrequency":"1"
+                        }
+                     },
+                     "repeatInstances":"10"
+                  }
+               }
+            }
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Input string 
+       -  Input JSON string
+       -  ::
+
+            {
+               "recurrence":{
+                  "rule":{
+                     "firstDayOfWeek":"su",
+                     "repeat":{
+                        "daily":{
+                           "@dayFrequency":"1"
+                        }
+                     },
+                     "repeatInstances":"10"
+                  }
+               }
+            }
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/ParseJson.png
+   :alt: Build Dictionary from JSON string
+
+Increment
+--------------------------------------------------
+Increment an integer variable
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  IntValue
+       -  Name of an integer variable
+       -  [Variable:Iterator] 
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/IncrementValue.png
+   :alt: Increment a Variable
