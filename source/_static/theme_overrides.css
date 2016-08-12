@@ -20,6 +20,10 @@
 	background-color: #429e70;
 }
 
+.wy-side-nav-search input[type=text] {
+    border-color: #429e70;
+}
+
 /*
 .wy-nav-side {
 	top:200px;

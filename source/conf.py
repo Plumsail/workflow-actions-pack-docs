@@ -32,7 +32,7 @@ disqus_shortname = 'plumsail'  # Add this line to conf.py.
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.disqus'] #, 'rst2pdf.pdfbuilder']  # Add to this list.
+extensions = []  # 'sphinxcontrib.disqus', 'rst2pdf.pdfbuilder']  # Add to this list.
 
 #pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
 
@@ -111,22 +111,44 @@ todo_include_todos = False
 
 
 # -- Options for HTML output ----------------------------------------------
-import sphinx_rtd_theme
+#import sphinx_rtd_theme
 
-html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+#html_theme = "sphinx_rtd_theme"
+#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = { 
-	'display_version': False,
-	'sticky_navigation': True,
-	'analytics_id': 'UA-36215023-2',
-}
+#html_theme_options = { 
+#	'display_version': False,
+#    'sticky_navigation': True,
+#	'analytics_id': 'UA-36215023-2',
+#}
 
 #html_theme = "sphinx_rtd_theme"
 #html_theme_path = ["_themes\sphinx_librato_theme", ]
 
+#---Other theme
+import guzzle_sphinx_theme
+
+# Adds an HTML table visitor to apply Bootstrap table classes
+html_translator_class = 'guzzle_sphinx_theme.HTMLTranslator'
+html_theme_path = guzzle_sphinx_theme.html_theme_path()
+html_theme = 'guzzle_sphinx_theme'
+
+# Register the theme as an extension to generate a sitemap.xml
+extensions.append("guzzle_sphinx_theme")
+
+# Guzzle theme options (see theme.conf for more information)
+html_theme_options = {
+    # Set the name of the project to appear in the sidebar
+    "project_nav_name": "Workflow Actions Pack",
+     # Set your Disqus short name to enable comments
+    "disqus_comments_shortname": "plumsail",
+
+    # Set you GA account ID to enable tracking
+    "google_analytics_account": "UA-36215023-2",
+}
+#-----
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -159,7 +181,7 @@ html_static_path = ['_static']
 
 html_context = {
     'css_files': [
-        '_static/theme_overrides.css',  # overrides for wide tables in RTD theme
+        '_static/theme_overrides_guzzle.css',  # overrides for wide tables in RTD theme
         ],
     }
 
