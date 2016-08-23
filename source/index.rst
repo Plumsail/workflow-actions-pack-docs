@@ -51,17 +51,17 @@ Workflow Actions Pack documentation
 .. toctree:: 
 	:caption: How-to guides
 
-	How to work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/sharepoint-workflow-work-with-dictionaries/>
-	How to generate PDF file from template <https://plumsail.com/blog/2014/11/generate-pdf-document-using-workflow-sharepoint-2013-office-365/>
-	How to move documents and create document libraries by template <https://plumsail.com/blog/2014/06/how-to-move-documents-using-workflow-in/>
-	How to send bulk e-mail with attachments to external users <https://plumsail.com/blog/2014/04/how-to-send-bulk-e-mail-with-attachment/>
-	How to Create site by custom template and grant permissions <https://plumsail.com/blog/2014/07/create-site-by-custom-template-create-group/>
-	How to automate Office 365 user accounts creation <https://plumsail.com/blog/2014/06/how-to-automatically-create-office-365/>
-	How to create HelpDesk on SharePoint 2013\Online <https://plumsail.com/blog/2013/12/how-to-create-helpdesk-on-sharepoint/>
-	How to use free string processing workflow actions <https://plumsail.com/blog/2014/03/string-processing-workflow-actions-for/>
-	How to send periodic expiration email notifications in Office 365 and SharePoint 2013 Workflows <https://plumsail.com/blog/2015/02/send-periodic-expiration-email-notifications/>
-	How to Start SharePoint 2013 Workflows on Selected Items <https://plumsail.com/blog/2015/02/start-sharepoint-2013-workflows-selected-items/>
-	Deploy custom SharePoint 2013 workflows with site template <https://plumsail.com/blog/2015/01/deploy-site-template-configured-workflows/>
+	How to work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow>
+	How to generate PDF file from template <https://plumsail.com/blog/2014/11/generate-pdf-document-using-workflow-sharepoint-2013-office-365>
+	How to move documents and create document libraries by template <https://plumsail.com/blog/2014/06/how-to-move-documents-using-workflow-in-sharepoint-2013-and-office-365/>
+	How to send bulk e-mail with attachments to external users <https://plumsail.com/blog/2014/04/how-to-send-bulk-e-mail-with-attachment>
+	How to Create site by custom template and grant permissions <https://plumsail.com/blog/2014/07/create-site-by-custom-template-and-grant-permissions-using-sharepoint-2013-or-office-365-workflow>
+	How to automate Office 365 user accounts creation <https://plumsail.com/blog/2014/06/how-to-automatically-create-office-365>
+	How to create HelpDesk on SharePoint 2013\Online <https://plumsail.com/blog/2013/12/how-to-create-helpdesk-on-sharepoint-2013online>
+	How to use free string processing workflow actions <https://plumsail.com/blog/2014/03/string-processing-workflow-actions-for-sharepoint-2013-and-sharepoint-online>
+	How to send periodic expiration email notifications in Office 365 and SharePoint 2013 Workflows <https://plumsail.com/blog/2015/02/send-periodic-expiration-email-notifications>
+	How to Start SharePoint 2013 Workflows on Selected Items <https://plumsail.com/blog/2015/02/start-sharepoint-2013-workflows-selected-items>
+	Deploy custom SharePoint 2013 workflows with site template <https://plumsail.com/blog/2015/01/deploy-site-template-configured-workflows>
 
 .. toctree::
    :caption: General 
