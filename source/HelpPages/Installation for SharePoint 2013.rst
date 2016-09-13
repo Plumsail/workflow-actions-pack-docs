@@ -1,4 +1,4 @@
-Installation for SharePoint 2013
+Installation for SharePoint 2013 / 2016
 ==================================================
 
 Install
