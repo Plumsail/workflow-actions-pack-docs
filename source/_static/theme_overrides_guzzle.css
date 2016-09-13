@@ -1,4 +1,10 @@
-    .pl-left-column{
+.section > h1, #search-documentation{
+    background-color: #429e70;
+    color: white;
+    border: none;
+}
+
+.pl-left-column{
     display: inline-block;
     max-width: 390px;
     vertical-align: top;
@@ -48,12 +54,6 @@ a{
     color:#0070B3;    
 }
 
-.section > h1{
-    background-color: #429e70;
-    color: white;
-    border: none;
-}
-
 .sidebar-toc > .caption {
     padding-left: 10px;
 }
@@ -85,4 +85,18 @@ a{
 
 .sidebar-block > .sidebar-toc ul:first-child li a {
     padding-left: 10px;
+}
+
+.form-control, #main-search form .input-group input{
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.btn{
+    border-radius: 0px;
+}
+
+.btn-default {
+    background-image: none;
+    box-shadow: none;
 }
