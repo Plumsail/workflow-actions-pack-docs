@@ -147,6 +147,7 @@ html_theme_options = {
 
     # Set you GA account ID to enable tracking
     "google_analytics_account": "UA-36215023-2",
+    "base_url": "https://plumsail.com/docs/workflow-actions-pack/" #for sitemap
 }
 #-----
 
