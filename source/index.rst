@@ -14,6 +14,16 @@ All documentation articles
 .. container:: pl-left-column
 
    .. toctree::
+      :caption: General 
+      :name: generaltoc
+      :maxdepth: 1
+
+      Other/Version History
+      License agreement <https://plumsail.com/license-agreement/>
+      Support plans <https://plumsail.com/support-plans/>
+      Refund policy <https://plumsail.com/store/refund-policy/>
+
+   .. toctree::
       :caption: List of SharePoint workflow actions
       :name: mastertoc
       :maxdepth: 2
@@ -67,11 +77,8 @@ All documentation articles
       How to send list item attachments by e-mail <http://www.youtube.com/watch?v=QQN1ZldtW9c>
 
    .. toctree::
-      :caption: General 
-      :name: generaltoc
-      :maxdepth: 1
-
-      Other/Version History
+      :caption: Additional resources
+      
       Other/Recommended SharePoint Designer Updates
       Getting started with SharePoint Server 2013 workflow <http://technet.microsoft.com/en-Us/library/jj227177%28v=office.15%29.aspx>
-      Configure Workflow Manager for SharePoint 2013 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>
+      Configure Workflow Manager for SharePoint 2013 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>      
