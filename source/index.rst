@@ -19,6 +19,7 @@ All documentation articles
       :maxdepth: 1
 
       Other/Version History
+      Other/Licensing
       License agreement <https://plumsail.com/license-agreement/>
       Support plans <https://plumsail.com/support-plans/>
       Refund policy <https://plumsail.com/store/refund-policy/>
