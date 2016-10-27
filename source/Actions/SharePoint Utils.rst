@@ -175,6 +175,61 @@ Example
 .. image:: /_static/img/CallSharePointRestQuery.png
    :alt: Call SharePoint REST Query from workflow 
 
+Get User Properties
+--------------------------------------------------
+Get User Properties to a Dictionary
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  UserIdentity
+       -  User ID, Email or login name
+       -  roman@plumsail.onsharepoint.com
+                
+    *  -  Properties
+       -  Output dictionary value
+       -  [Variable:Properties]
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/GetUserProperties.png
+   :alt: Get user profile properties
+
+Get User Property by Name
+--------------------------------------------------
+Get specific user property as string value
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  UserIdentity
+       -  User ID, Email or login name
+       -  roman@plumsail.onsharepoint.com
+    *  -  Property Name
+       -  Name of the property
+       -  WorkEmail                
+    *  -  Property value
+       -  Output string value
+       -  [Variable:PropertyValue]
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/getuserpropertybyname.png
+   :alt: Get specific user profile property
 
 Get Site Option Value as String
 --------------------------------------------------
