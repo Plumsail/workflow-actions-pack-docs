@@ -1,8 +1,107 @@
 List items processing
 ==================================================
 
-
 Get Items by Query
+--------------------------------------------------
+Executes a query on the list or on the document library and returns the collection of elements as dictionary variable.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Items
+       -  The output variable where the results will be saved.
+       -  Variable:Items
+    *  -  Count Items
+       -  Contains count of items in result dictionary
+       -  Variable:CountItems
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Name
+       -  List or document library name for querying. 
+       -  ``Documents``
+    *  -  Select
+       -  A list of comma separated columns which will be selected
+       -  ``Title, FirstName, LastName, Email, Manager/Title``
+    *  -  Filter
+       -  The filter expression which will be applied to list items, we support the following operators:
+
+          .. list-table::
+            :header-rows: 1
+
+            * - Numeric
+              - String
+              - Date Time functions
+            * - Lt (less than)
+              - startsWith (if starts with some string value)
+              - day()
+            * - Le (less than or equal)
+              - substringof ( if contains any sub string)
+              - month()
+            * - Gt (greater than)
+              - 
+              - year()
+            * - Ge (greater than or equal)
+              - 
+              - hour()
+            * - Eq (equal to)
+              - Eq
+              - minute()
+            * - Ne (not equal to)
+              - Ne
+              - second()
+
+       -  ``Title eq 'Test and month(expirationDate) eq 6'``
+    *  -  OrderBy
+       -  The expression is used to sort items. Multiples fields are allowed separate by comma. Ascending or descending order can be specified just by appending the asc or desc keyword to query.
+       -  ``Title asc, expirationDate desc``
+    *  -  Top
+       -  Specify how many items should be selected
+       -  ``50``
+    *  -  Expand
+       -  The field helps to retrieve information from Lookup columns
+       -  ``Manager``
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+        
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/GetItemsByQueryRest.png
+   :alt: Run query and get items SharePoint Online
+
+
+Get Items by CAML Query
 --------------------------------------------------
 Executes the CAML query on the list or on the document library and returns the collection of elements as dictionary variable. Read `this article <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_ to learn how to query items using this workfow action. We would recommend to read whole article to understand how to work with dictionaries in general, but you can read only the part related to this workflow action.
 
@@ -82,7 +181,7 @@ Example
 .. image:: /_static/img/GetItemsByQuery.png
    :alt: Run CAML query and get items SharePoint Online
 
-Get Items by Query (Many Lists)
+Get Items by CAML Query (Many Lists)
 --------------------------------------------------
 Executes the CAML query on each list with specified type. It is analog of old function `SPSiteDataQuery <https://support.office.com/en-in/article/Display-data-from-multiple-lists-with-the-Content-Query-Web-Part-d560f477-8fc1-4258-aeb2-70aa932e07da>`_. The workflow action allows you to get data from multiple lists across sites. It returns the collection of elements as dictionary variable. 
 

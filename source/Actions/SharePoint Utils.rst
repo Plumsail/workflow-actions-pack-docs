@@ -89,11 +89,92 @@ Input parameters
        -  Run under user account who published workflow (for OnPremise only)
        -  Yes
 
-
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/StartSiteWorkflow.png
    :alt: Start a Site Workflow (2013)
+
+Call SharePoint REST Service
+--------------------------------------------------
+The action simplifies using of SharePoint REST API it automatically setup HTTP header and adds form digest. 
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Response Status Code
+       -  The status code of the executed query
+       -  Variable:StatusCode
+    *  -  Response Content
+       -  The result of the executed query
+       -  Variable:ResponseContent
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Address
+       -  Uri of the remote resource
+       -  ``https://plumsail.sharepoint.com/sites/dev/_api/web/lists/getbytitle('Users')/Fields``
+    *  -  RequestType
+       -  Type of the request. The action supports the following values: GET, POST, PUT, DELETE, MERGE
+       -  ``POST``
+    *  -  Request Content
+       -  Dictionary value that will be send as JSON to the resource
+       -  ::
+
+            {
+              "__metadata": {
+                "type": "SP.Field"
+              },
+              "Title": "My New Field",
+              "FieldTypeKind": 2,
+              "Required": "true",
+              "EnforceUniqueValues": "false",
+              "StaticName": "MyNewField"
+            }
+    *  -  RequestHeaders
+       -  Dictionary value that will be added to request headers. Basically the action fill-in the following headers: Authorization, X-RequestDigest, Content-Type, Content-Lenght
+       -  ::
+
+            {
+              "X-SomeCustomHeader": "CustomHeaderValue"
+            }
+
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl
+          [%Workflow Context:Current Site URL%]subSite
+                
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/CallSharePointRestQuery.png
+   :alt: Call SharePoint REST Query from workflow 
+
 
 Get Site Option Value as String
 --------------------------------------------------
@@ -343,3 +424,25 @@ Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/IncrementValue.png
    :alt: Increment a Variable
+
+Decrement
+--------------------------------------------------
+Decrement an integer variable
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  IntValue
+       -  Name of an integer variable
+       -  [Variable:Iterator] 
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/DecrementValue.png
+   :alt: Decrement a Variable
