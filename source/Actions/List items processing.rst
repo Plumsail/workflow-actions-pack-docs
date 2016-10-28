@@ -72,6 +72,9 @@ Input parameters
     *  -  Top
        -  Specify how many items should be selected
        -  ``50``
+    *  -  Skip
+       -  Specify how many items should be skiped
+       -  ``50``
     *  -  Expand
        -  The field helps to retrieve information from Lookup columns
        -  ``Manager``
