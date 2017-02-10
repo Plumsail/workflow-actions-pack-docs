@@ -1,4 +1,4 @@
-.. Workflow Actions Pack documentation master file, created by
+.. Workflow actions Pack documentation master file, created by
    sphinx-quickstart on Tue Apr 12 16:52:35 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -18,8 +18,8 @@ All documentation articles
       :name: generaltoc
       :maxdepth: 1
 
-      Other/Version History
-      Other/Licensing
+      other/Version History
+      other/Licensing
       License agreement <https://plumsail.com/license-agreement/>
       Support plans <https://plumsail.com/support-plans/>
       Refund policy <https://plumsail.com/store/refund-policy/>
@@ -29,16 +29,16 @@ All documentation articles
       :name: mastertoc
       :maxdepth: 2
       
-      Actions/E-mail processing
-      Actions/Files and Folders processing
-      Actions/List items processing
-      Actions/Permissions management
-      Actions/Azure AD Administration      
-      Actions/Administration
-      Actions/SharePoint Utils 
-      Actions/String Processing Advanced
-      Actions/String processing workflow actions
-      Actions/Social integration
+      actions/E-mail processing
+      actions/Files and Folders processing
+      actions/List items processing
+      actions/Permissions management
+      actions/Azure AD Administration      
+      actions/Administration
+      actions/SharePoint Utils 
+      actions/String Processing Advanced
+      actions/String processing workflow actions
+      actions/Social integration
 
 .. container:: pl-right-column
 
@@ -47,14 +47,21 @@ All documentation articles
       :name: helptoc
       :maxdepth: 2
 
-      HelpPages/Installation for SharePoint Online
-      HelpPages/Installation for SharePoint 2013
+      help-pages/Installation for SharePoint Online
+      help-pages/Installation for SharePoint 2013
+
+   .. toctree:: 
+      :caption: Troubleshooting
+      :maxdepth: 2
+      
+      troubleshooting/online 
+      troubleshooting/on-premises 
 
    .. toctree:: 
    	:caption: Community forums
 
-   	Workflow Actions Pack for Office 365 <https://plumsail.com/forum/viewforum.php?f=22>
-   	Workflow Actions Pack for SharePoint 2013 <https://plumsail.com/forum/viewforum.php?f=24>
+   	Workflow actions Pack for Office 365 <https://plumsail.com/forum/viewforum.php?f=22>
+   	Workflow actions Pack for SharePoint 2013 <https://plumsail.com/forum/viewforum.php?f=24>
 
    .. toctree:: 
    	:caption: How-to
@@ -80,6 +87,6 @@ All documentation articles
    .. toctree::
       :caption: Additional resources
       
-      Other/Recommended SharePoint Designer Updates
+      other/Recommended SharePoint Designer Updates
       Getting started with SharePoint Server 2013 workflow <http://technet.microsoft.com/en-Us/library/jj227177%28v=office.15%29.aspx>
       Configure Workflow Manager for SharePoint 2013 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>      

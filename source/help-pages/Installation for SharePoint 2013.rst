@@ -1,8 +1,8 @@
 Installation for SharePoint 2013 / 2016
-==================================================
+=======================================
 
 Install
---------------------------------------------------
+-------
 
 Before installing Workflow Actions Pack ensure that Workflow Manager is configured for your farm. Workflow Manager allows to create and execute SharePoint 2013 workflows. See `Workflow Manager configuration guide <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>`_.
 
@@ -31,7 +31,7 @@ Now, you can find the following actions in SharePoint Designer under Plumsail se
    :alt: SharePoint Designer new Actions
 
 Install license
---------------------------------------------------
+---------------
 
 * Buy **Workflow Action Pack for SharePoint 2013** license for each web front-end server.
 * Download Hardware ID Generator. You can find download link in the e-mail message with order number from our online store. Run it on all WFE-servers of your farm. Copy generated keys and send them to `sales@plumsail.com <sales@plumsail.com>`_ with your order number in the subject.
@@ -41,16 +41,23 @@ Install license
 
 
 Uninstall
---------------------------------------------------
+---------
 
 Run setup file and choose **Remove**, then finish the installation wizard.
 
 .. image:: /_static/img/RemoveWFActivityPack.png
    :alt: RemoveWFActivityPack
 
+\
+
+To properly remove the application, you need to deactivate **Plumsail Action Pack Auth Service** feature first on your web application. In the case, when you do not deactivated the feature, you may get the following error: **Server Error in ‘/’ Application.**. If you received this message on load your site, you may use one of two ways to solving this problem:
+
+1. Open web.config file (by default this file locate in **C:\inetpub\wwwroot\wss\VirtualDirectories\[Web_App]\web.config**) and remove all references to **Plumsail.WFServices**.
+2. Run setup file and install Workflow Action Pack again. Then, deactivate web application feature and try to remove the solution again.
+
 
 Upgrade
---------------------------------------------------
+-------
 
 Firstly, you have to deactivate **Plumsail Workflow Actions Pack** feature at the site level.
 `Download setup file </workflow-actions-pack/download/>`_ and run it on one of the servers in your Sharepoint 2013 farm as Farm Administrator. Choose **Upgrade** and follow the wizard steps.
@@ -66,7 +73,7 @@ Find the feature called **Plumsail Workflow Actions** Pack and click **Activate
 
 
 Upgrade workflows
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 Sometimes after upgrade WSP package, you also need to upgrade your workflows. 
 To upgrade workflows you need to navigate to Site Settings -> Plumsail Workflow Actions and click ‘Upgrade’ button for workflows where you see it. After upgrading of workflows you need to clear Sharepoint Designer cache and open it again. You may need to reopen SharePoint Designer second time, it is specific of SharePoint Designer.
@@ -76,10 +83,10 @@ To upgrade workflows you need to navigate to Site Settings -> Plumsail Workflow 
 
 
 Known Issues
---------------------------------------------------
+------------
 
 SharePoint Designer issues
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SharePoint Designer stores cached workflow actions, that is why after solution upgrade you may need to perform few actions.
 You need to clear SharePoint Designer 2013 cache, otherwise it can show you the error message because it uses old cached version of workflow actions. To clear cache you need to execute following command from the command line as administrator on your PC and reopen SharePoint Designer:
