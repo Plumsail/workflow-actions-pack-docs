@@ -42,11 +42,9 @@ Is SharePoint 2013 server connected?
 ------------------------------------
 In *Central Admin* -> *Service Applications* -> *Workflow Service Application Proxy* : check the status. Does it read *Workflow is Connected*  as in the below screenshot?
 
-.. image:: /_static/img/troubleshooting/Workflow-status.png
+.. image:: /_static/img/troubleshooting/Workflow-Status.png
    :alt: Workflow Status
    :align: center
-
-/
 
 Is the Worflow Manager farm running?
 --------------------------------------------------
