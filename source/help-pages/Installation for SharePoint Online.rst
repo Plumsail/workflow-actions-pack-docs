@@ -112,7 +112,7 @@ Issue with installation to public site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Installation of Workflow Actions Pack requires some additional steps. Please read this instruction:
-`How to install sandbox solution to an Office 365 public site </workflow-actions-pack/docs/deploy/install-sandbox-solution-public-site/>`_
+`How to install sandbox solution to an Office 365 public site <../other/deploy-solution-to-public-site.html>`_
 
 SharePoint Designer issues
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -132,5 +132,5 @@ We also recommend to install recent updates for SharePoint Designer 2013. This w
 
 If you use SharePoint Designer on the same server where has installed Workflow Manager and see the message *Server-side activities have been updated*, please check `the link <http://www.jrjlee.com/2014/10/server-side-activities-have-been-updated.html>`_.
 
-We also recommend to install `recent updates for SharePoint Designer 2013 </workflow-actions-pack/docs/recommended-sharepoint-designer-updates/>`_. This will help to avoid annoying error when configuring workflows.
+We also recommend to install `recent updates for SharePoint Designer 2013 <../other/recommended-sharepoint-designer-updates.html>`_. This will help to avoid annoying error when configuring workflows.
 

@@ -101,6 +101,7 @@ Or you can `download and execute the bat file </wp-content/uploads/Files/WFActio
 After clearing the cache and running SharePoint Designer you may need to close and open SharePoint Designer one more time, then the error should disappear.
 We also recommend to install recent updates for SharePoint Designer 2013. This will help to avoid annoying error when configuring workflows.
 
-If you use SharePoint Designer on the same server where has installed Workflow Manager and see the message **Server-side activities have been updated**, please check `the link <http://www.jrjlee.com/2014/10/server-side-activities-have-been-updated.html>`_.
+If you use SharePoint Designer on the same server where has installed Workflow Manager and see the message *Server-side activities have been updated*, please check `the link <http://www.jrjlee.com/2014/10/server-side-activities-have-been-updated.html>`_.
 
-We also recommend to install `recent updates for SharePoint Designer 2013 </workflow-actions-pack/docs/recommended-sharepoint-designer-updates/>`_. This will help to avoid annoying error when configuring workflows.
+We also recommend to install `recent updates for SharePoint Designer 2013 <../other/recommended-sharepoint-designer-updates.html>`_. This will help to avoid annoying error when configuring workflows.
+

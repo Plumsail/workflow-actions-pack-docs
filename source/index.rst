@@ -53,7 +53,7 @@ All documentation articles
    .. toctree:: 
       :caption: Troubleshooting
       :maxdepth: 2
-      
+
       troubleshooting/online 
       troubleshooting/on-premises 
 
@@ -87,6 +87,6 @@ All documentation articles
    .. toctree::
       :caption: Additional resources
       
-      other/Recommended SharePoint Designer Updates
+      other/recommended-sharepoint-designer-updates
       Getting started with SharePoint Server 2013 workflow <http://technet.microsoft.com/en-Us/library/jj227177%28v=office.15%29.aspx>
       Configure Workflow Manager for SharePoint 2013 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>      
