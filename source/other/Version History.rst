@@ -2,6 +2,24 @@ Version history
 ==================================================
 
 
+2.10
+--------------------------------------------------
+* New workflow action Add Content Typre to List
+* New workflow action Check In Document 
+* New workflow action Check Out Document
+* New workflow action Convert HTML to PDF and Save as Attachment 
+* New workflow action Convert HTML to PDF and Save as Attachment in Current Item 
+* New workflow action Copy List Item to List
+* New workflow action Move List Item to List
+* New workflow action Copy Current List Item to List
+* New workflow action Move Current List Item to List
+* New workflow action Get Items from View
+* New workflow action HTML Encode
+* New workflow action Invite External Users
+* Old workflow action Invite External Users renamed to Invite External Users to Group
+* New workflow action Share the Item
+
+
 2.9
 --------------------------------------------------
 * Add workflow actions to work with Document Sets (Copy / Move)
