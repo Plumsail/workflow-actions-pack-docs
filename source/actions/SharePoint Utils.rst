@@ -129,6 +129,14 @@ Input parameters
     *  -  RequestType
        -  Type of the request. The action supports the following values: GET, POST, PUT, DELETE, MERGE
        -  ``POST``
+    *  -  RequestHeaders
+       -  Dictionary value that will be added to request headers. Basically the action fill-in the following headers: Authorization, X-RequestDigest, Content-Type, Content-Lenght
+       -  ::
+
+            {
+              "X-SomeCustomHeader": "CustomHeaderValue"
+            }
+
     *  -  Request Content
        -  Dictionary value that will be send as JSON to the resource
        -  ::
@@ -143,14 +151,6 @@ Input parameters
               "EnforceUniqueValues": "false",
               "StaticName": "MyNewField"
             }
-    *  -  RequestHeaders
-       -  Dictionary value that will be added to request headers. Basically the action fill-in the following headers: Authorization, X-RequestDigest, Content-Type, Content-Lenght
-       -  ::
-
-            {
-              "X-SomeCustomHeader": "CustomHeaderValue"
-            }
-
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin@contoso.com
@@ -179,6 +179,19 @@ Get User Properties
 --------------------------------------------------
 Get User Properties to a Dictionary
 
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example         
+    *  -  Properties
+       -  Dictionary with found user properties and their values
+       -  [Variable:Properties]
+
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -191,10 +204,23 @@ Input parameters
     *  -  UserIdentity
        -  User ID, Email or login name
        -  roman@plumsail.onsharepoint.com
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl
+          [%Workflow Context:Current Site URL%]subSite
                 
-    *  -  Properties
-       -  Output dictionary value
-       -  [Variable:Properties]
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
 
 
 Example
@@ -206,6 +232,19 @@ Get User Property by Name
 --------------------------------------------------
 Get specific user property as string value
 
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example         
+    *  -  Property value
+       -  The string value of the property
+       -  [Variable:PropertyValue]
+
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -215,15 +254,29 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  UserIdentity
-       -  User ID, Email or login name
-       -  roman@plumsail.onsharepoint.com
     *  -  Property Name
        -  Name of the property
        -  WorkEmail                
-    *  -  Property value
-       -  Output string value
-       -  [Variable:PropertyValue]
+    *  -  UserIdentity
+       -  User ID, Email or login name
+       -  roman@plumsail.onsharepoint.com
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl
+          [%Workflow Context:Current Site URL%]subSite
+                
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
 
 
 Example
@@ -234,6 +287,56 @@ Example
 Get Site Option Value as String
 --------------------------------------------------
 Read string value from Site Options (Property Bag)
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example         
+    *  -  Property value
+       -  The string value of the property
+       -  [Variable:ResultString]
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Property Name
+       -  Name of the property
+       -  PortalSettings
+          [Variable:SettingsKey]
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/GetStringProperty.png
+   :alt: Get Site Option Value as String
+
+Get Site Option Value as Dictionary
+--------------------------------------------------
+Read json value from Site Options (Property Bag) and save it to Dictionary variable
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example         
+    *  -  Property value
+       -  Dictionary with found user properties and their values
+       -  [Variable:ResultDictionary]
 
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -248,37 +351,6 @@ Input parameters
        -  Name of property
        -  PortalSettings
           [Variable:SettingsKey]
-                
-    *  -  Property Value
-       -  Output string value
-       -  [Variable:ResultString]
-
-
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetStringProperty.png
-   :alt: Get Site Option Value as String
-
-Get Site Option Value as Dictionary
---------------------------------------------------
-Read json value from Site Options (Property Bag) and save it to Dictionary variable
-
-Input parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  Property Name
-       -  Name of property
-       -  PortalSettings
-          [Variable:SettingsKey] 
-    *  -  Property Value
-       -  Output dictionary value
-       -  [Variable:ResultDictionary]
 
 
 Example
@@ -296,6 +368,19 @@ To get more informaiton about available operators, values and functions visit f
 * `Operators <https://ncalc.codeplex.com/wikipage?title=operators&referringTitle=Home>`_
 * `Values <https://ncalc.codeplex.com/wikipage?title=values&referringTitle=Home>`_
 * `Functions <https://ncalc.codeplex.com/wikipage?title=functions&referringTitle=Home>`_
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example         
+    *  -  Result dictionary
+       -  Dictionary that contains output result in "Result" key
+       -  ``[Variable:ResultDictionary]``
 
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -315,9 +400,6 @@ Input parameters
               sin(1)
               true or false = true
 
-    *  -  OutputResult
-       -  Dictionary that contains output result in "Result" key
-       -  ``[Variable:ResultDictionary]``
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -373,7 +455,7 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Input string 
+    *  -  Expression 
        -  Input XML string
        -  ::
 
@@ -386,11 +468,73 @@ Input parameters
                     <repeatInstances>10</repeatInstances>
                 </rule>
             </recurrence>
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/ParseXMLWorkflowAction.png
    :alt: Parse XML to Dictionary
+
+
+HTML Encode
+--------------------------------------------------
+The workflow action receives HTML string and encode it. 
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Result
+       -  Output string value
+       -  ::
+
+            &lt;div&gt;
+		&lt;span&gt;
+			Hello!
+		&lt;/span&gt;
+	    &lt;/div&gt;
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  HTML
+       -  Input HTML string
+       -  ::
+
+            <div>
+		<span>
+		       Hello!
+		</span>
+	   </div>
+
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/HTMLEncode.png
+   :alt: HTML Encode
 
 
 Build Dictionary from JSON string
@@ -406,7 +550,7 @@ Output parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Result dictionary
+    *  -  ResultDictionary
        -  Output dictionary value. Please check out the following article to know more.
           `How to work with dictionaries in SharePoint 2013 and Office 365 workflow <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_
        -  ::
@@ -435,7 +579,7 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Input string 
+    *  -  JsonString 
        -  Input JSON string
        -  ::
 

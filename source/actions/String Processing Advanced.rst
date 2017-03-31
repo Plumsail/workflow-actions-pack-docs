@@ -32,12 +32,12 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Template
-       -  The input template string. You can find more information about syntax `in the documentation for Mustache <http://mustache.github.io/mustache.5.html>`_.Store your templates in the separate list and query it by name to simplify templates management.
-       -  Dear ``{{name}}``, Thank you for your order.
     *  -  Template data
        -  Input dictionary data that will be used for rendering. For example it can be result of `Build Dictionary <http://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/#BuildDictionaryManually>`_ or `Get Items by Query <List%20items%20processing.html#get-items-by-query>`_ workflow actions. 
        -  ``{ "name":"John Smith" }``
+    *  -  Text
+       -  The input template string. You can find more information about syntax `in the documentation for Mustache <http://mustache.github.io/mustache.5.html>`_.Store your templates in the separate list and query it by name to simplify templates management.
+       -  Dear ``{{name}}``, Thank you for your order.
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -63,7 +63,7 @@ Output parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  URL of result file
+    *  -  Result file URL
        -  In specific variable will be stored URL at file
        -  http://contoso.onmicrosoft.com/Invoices/Invoice_4.pdf
 
@@ -79,12 +79,19 @@ Input parameters
        -  Example
     *  -  Input HTML
        -  Input html for convertation
-       -  [Variable:InputHtml]
+       -  ::
+
+		[Variable:InputHtml]
+		<div>
+		     <h1>
+			  Hello!
+		     </h1>
+		</div>
     *  -  File name
        -  File name in document library, can contain path
        -  Invoice1.pdf or Folder1/Folder2/Invoice.pdf
     *  -  List
-       -  Name, url or guid of list
+       -  Name, url or guid of the list
        -  Invoices/Invoices
     *  -  Paper Size
        -  Size of the page, it supports the `following values <http://doc.qt.io/qt-4.8/qprinter.html#PaperSize-enum>`_::
@@ -102,6 +109,9 @@ Input parameters
                   ...
             
        -  A4
+    *  -  Is landscape
+       -  Page orientation
+       -  No
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin@contoso.com
@@ -123,6 +133,176 @@ Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/HtmlToPdf.png
    :alt: Convert HTML to PDF
+
+
+Convert HTML to PDF and Save as Attachment
+--------------------------------------------------
+This workflow action converts specified HTML to PDF file and save it as attachment in specified item.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Result file URL
+       -  In specific variable will be stored URL at file
+       -  http://contoso.onmicrosoft.com/Invoices/Lists/Employees/Attachments/18/PdfFile.pdf
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Input HTML
+       -  Input html for convertation
+       -  ::
+
+		[Variable:InputHtml]
+		<div>
+		     <h1>
+			  Hello!
+		     </h1>
+		</div>
+    *  -  File name
+       -  The Name of the result PDF file
+       -  PdfFile.pdf
+    *  -  Item ID
+       -  The ID of the item
+       -  18
+    *  -  List Url
+       -  Name, url or guid of the list
+       -  Employees
+    *  -  Paper Size
+       -  Size of the page, it supports the `following values <http://doc.qt.io/qt-4.8/qprinter.html#PaperSize-enum>`_::
+
+                  A0
+                  A1
+                  A2
+                  A3
+                  A4
+                  A5
+                  Folio
+                  Ledger
+                  Legal
+                  Letter
+                  ...
+            
+       -  A4
+    *  -  Is landscape
+       -  Page orientation
+       -  No
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl [%Workflow Context:Current Site URL%]subSite
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/ConvertHtmlToPdfAttachment.png
+   :alt: Convert HTML to PDF and Save as Attachment
+
+
+Convert HTML to PDF and Save as Attachment in Current Item
+--------------------------------------------------
+This workflow action converts specified HTML to PDF file and save it as attachment in current item.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Result file URL
+       -  In specific variable will be stored URL at file
+       -  http://contoso.onmicrosoft.com/Invoices/Lists/Employees/Attachments/18/PdfFile.pdf
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Input HTML
+       -  Input html for convertation
+       -  ::
+
+		[Variable:InputHtml]
+		<div>
+		     <h1>
+			  Hello!
+		     </h1>
+		</div>
+    *  -  File name
+       -  The Name of the result PDF file
+       -  PdfFile.pdf
+    *  -  Paper Size
+       -  Size of the page, it supports the `following values <http://doc.qt.io/qt-4.8/qprinter.html#PaperSize-enum>`_::
+
+                  A0
+                  A1
+                  A2
+                  A3
+                  A4
+                  A5
+                  Folio
+                  Ledger
+                  Legal
+                  Letter
+                  ...
+            
+       -  A4
+    *  -  Is landscape
+       -  Page orientation
+       -  No
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl [%Workflow Context:Current Site URL%]subSite
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/ConvertHtmlToPdfCurrentAttachment.png
+   :alt: Convert HTML to PDF and Save as Attachment in Current Item
 
 
 Regular Expression Match
@@ -230,9 +410,6 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  String
-       -  String to search for a match
-       -  ``Too   much   whitespace``
     *  -  Expression
        -  Regular expression pattern. This pattern can contain inline options to modify behavior of the regular expression. Such options have to be placed in the beginning of the expression inside brackets with question mark: ``(?YOUR_OPTIONS)``. For example options ``(?mi)`` will allow to process multi line text with case insensitivity. 
           Example of regular expression with options:``(?mi)(?[^>]*@[^<]*)`` List of available options:: 
@@ -245,6 +422,9 @@ Input parameters
 
           You can find additional information about inline options in the `MSDN article <http://msdn.microsoft.com/en-us/library/yd1hzczs%28v=vs.110%29.aspx>`_.
        -  ``\s+``
+    *  -  String
+       -  String to search for a match
+       -  ``Too   much   whitespace``
     *  -  Replacement
        -  Replacement string
        -  ``_``

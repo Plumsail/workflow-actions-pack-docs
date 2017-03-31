@@ -6,6 +6,21 @@ Publish to Wordpress
 --------------------------------------------------
 Publish a blog post with the given title, content, categories and tags.
 
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  URLToPost
+       -  Specify workflow variable to store blog post URL.
+          type: string
+       -  ``http://blog.contoso.com/Corpotate-news``
+
+
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -38,21 +53,6 @@ Input parameters
        -  P@ssw0rd$=)
 
 
-Output parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  URLToPost
-       -  Specify workflow variable to store blog post URL.
-          type: string
-       -  ``http://blog.contoso.com/Corpotate-news``
-
-
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/PublishToWordpress.png
@@ -74,12 +74,25 @@ Input parameters
     *  -  Message
        -  Text of the message
        -  I approved a sales report
-    *  -  UserEmail
-       -  E-mail of the SharePoint Online User
-       -  JackDaniels@contoso.com
-    *  -  UserPassword
-       -  Password of the SharePoint Online User
-       -  Jackâ€™sP@ssw0rd
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+        
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
 
 
 Example

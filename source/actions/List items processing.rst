@@ -134,7 +134,7 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  List
+    *  -  List Url
        -  List for querying. The value could be list name, guid or list url
        -  Documents
     *  -  CAML Query
@@ -248,7 +248,7 @@ Input parameters
             https://demo.plumsail.com/sites/Prod1; 
             https://demo.plumsail.com/sites/Workgroup2
 
-    *  -  Order By
+    *  -  Sort By
        -  Field name to sort by
        -  Title
     *  -  Group By
@@ -280,6 +280,71 @@ Example
 .. image:: /_static/img/GetItemsFromSite.png
    :alt: Run CAML query and get items SharePoint Online
 
+Get Items from View
+--------------------------------------------------
+Gets items from the specified view.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Items
+       -  The output variable where the results will be saved.
+       -  Variable:Items
+    *  -  Count Items
+       -  Contains count of items in result dictionary
+       -  Variable:CountItems
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, Url or Guid 
+       -  ::
+
+            Employees
+            /SiteUrl/Employees
+            [%Workflow Context:Current Site URL%]SiteUrl/Employees
+    *  -  View Name
+       -  The name of the view from which items will be get
+       -  ``All Items``
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+        
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/GetItemsFromView.png
+   :alt: Get Items From View
+
 Create List Item at Any Site
 --------------------------------------------------
 It creates new list item and set field values
@@ -293,7 +358,7 @@ Output parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  ItemId
+    *  -  Item ID
        -  Return integer value, ID of created item
        -  144 
 
@@ -366,6 +431,13 @@ Parameters
     *  -  Parameter
        -  Description
        -  Example
+    *  -  Item ID
+       -  ID of the item for update
+       -  ::
+
+            144 
+            [%Workflow Variable:ItemID%]
+	
     *  -  List Url
        -  The URL of the list where the folder item be updated. You can use full URL as well as domain relative URL. Also it supports list name. We would recommend to use constants from the workflow context.
        -  ::
@@ -373,14 +445,7 @@ Parameters
             IssuesList 
             /SiteUrl/ListName 
             [%Workflow Context:Current Site URL%]SiteUrl/ListName
-				
-    *  -  ItemId
-       -  ID of item for update
-       -  ::
-
-            144 
-            [%Workflow Variable:ItemID]
-				
+							
     *  -  Properties
        -  Dictionary contains data for update. Keys - field names Values - updated values
        -  ::
@@ -416,6 +481,276 @@ Example
 .. image:: /_static/img/UpdateListItem.png
    :alt: Update list item in list SharePoint Online
 
+Copy List Item to List
+--------------------------------------------------
+Copy the specified list item to another list.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Item ID
+       -  The ID of the copied item in the new list
+       -  ``18``
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Item ID
+       -  The ID of the item in source list
+       -  ::
+
+            99 
+            [%Workflow Variable:ItemID%]
+    *  -  List Name
+       -  List name, Url or Guid 
+       -  ::
+
+            Employees
+            /SiteUrl/Employees
+            [%Workflow Context:Current Site URL%]SiteUrl/Employees
+    *  -  Destination List Url
+       -  The URL of the destination list. This list must contain same fields like in the source list  
+       -  ::
+
+	     https://siteaddress.sharepoint.com/sites/Collection/Lists/Employees2
+             [%Workflow Context:Current Site URL%]Lists/Employees2
+    *  -  Copy Attachments
+       -  Copy the item with attached files or not
+       -  No
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+        
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/CopyListItemToList.png
+   :alt: Copy List Item to List
+
+Move List Item to List
+--------------------------------------------------
+Move the specified list item to another list.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Item ID
+       -  The ID of the moved item in the new list
+       -  ``18``
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Item ID
+       -  The ID of the item in source list
+       -  ::
+
+            99 
+            [%Workflow Variable:ItemID%]
+    *  -  List Name
+       -  List name, Url or Guid 
+       -  ::
+
+            Employees
+            /SiteUrl/Employees
+            [%Workflow Context:Current Site URL%]SiteUrl/Employees
+    *  -  Destination List Url
+       -  The URL of the destination list. This list must contain same fields like in the source list  
+       -  ::
+
+	     https://siteaddress.sharepoint.com/sites/Collection/Lists/Employees2
+             [%Workflow Context:Current Site URL%]Lists/Employees2
+    *  -  Move Attachments
+       -  Move the item with attached files or not
+       -  Yes
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+        
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/MoveListItemToList.png
+   :alt: Move List Item to List
+
+Copy Current List Item to List
+--------------------------------------------------
+Copy the current list item to another list.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Item ID
+       -  The ID of the copied item in the new list
+       -  ``18``
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Destination List Url
+       -  The URL of the destination list. This list must contain same fields like in the source list  
+       -  ::
+
+	     https://siteaddress.sharepoint.com/sites/Collection/Lists/Employees2
+             [%Workflow Context:Current Site URL%]Lists/Employees2
+    *  -  Copy Attachments
+       -  Copy the item with attached files or not
+       -  No
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+        
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/CopyCurrentListItemToList.png
+   :alt: Copy Current List Item to List
+
+Move Current List Item to List
+--------------------------------------------------
+Move the current list item to another list.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List Item ID
+       -  The ID of the moved item in the new list
+       -  ``18``
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Destination List Url
+       -  The URL of the destination list. This list must contain same fields like in the source list  
+       -  ::
+
+	     https://siteaddress.sharepoint.com/sites/Collection/Lists/Employees2
+             [%Workflow Context:Current Site URL%]Lists/Employees2
+    *  -  Move Attachments
+       -  Move the item with attached files or not
+       -  No
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+        
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/MoveCurrentListItemToList.png
+   :alt: Move Current List Item to List
+
 Copy Attachments to URL
 --------------------------------------------------
 Copies attachments from the list item to the library using the specified folder URL.
@@ -448,21 +783,21 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  ListUrl
+    *  -  List Url
        -  The URL of the source list. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
        -  ::
 
             https://contoso/SiteUrl/Lists/Issues
             [%Workflow Context:Current Site URL%]SiteUrl/Lists/Issues
 
-    *  -  ItemId
+    *  -  Item ID
        -  The ID of the source item.
        -  ::
 
             22
             Variable:ItemId
 
-    *  -  DestinationUrl
+    *  -  Destination folder Url
        -  The URL of the folder where the attachments will be copied.
        -  ::
 
@@ -528,21 +863,21 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  ListUrl
+    *  -  List Url
        -  The URL of the source list. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
        -  ::
             
             https://contoso/SiteUrl/Lists/Issues
             [%Workflow Context:Current Site URL%]SiteUrl/Lists/Issues
         
-    *  -  ItemId
+    *  -  Item ID
        -  The ID of the source item.
        -  :: 
 
             22
             Variable:ItemId
         
-    *  -  DestinationUrl
+    *  -  Destination folder Url
        -  The URL of folder where the source documents will be moved.
        -  ::
             
@@ -603,14 +938,14 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  ListUrl
+    *  -  List Url
        -  The URL of the source list. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
        -  ::
 
             https://contoso/SiteUrl/Lists/Issues
             [%Workflow Context:Current Site URL%]SiteUrl/Lists/Issues
         
-    *  -  ItemId
+    *  -  Item ID
        -  The ID of the source item.
        -  ::
 
@@ -696,12 +1031,12 @@ Input parameters
     *  -  Field Name
        -  Name of the field for which you want to get the version history.
        -  ``Title``
+    *  -  Item ID
+       -  Item ID of the item for which you want to get the version history. 
+       -  ``10``
     *  -  List
        -  Title or Url of chosen list
        -  ``Documents``
-    *  -  Item ID
-       -  Item ID of the for which you want to get the version history. 
-       -  ``10``
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin@contoso.com

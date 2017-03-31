@@ -1,4 +1,4 @@
-Permissions management
+﻿Permissions management
 ==================================================
 
 
@@ -21,7 +21,7 @@ Input parameters
     *  -  Group
        -  Name or ID of group
        -  Approvers
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -63,7 +63,7 @@ Input parameters
     *  -  Group
        -  Name or ID of group
        -  Approvers
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -119,7 +119,7 @@ Input parameters
     *  -  Group
        -  Name or ID of group
        -  Approvers
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -183,7 +183,7 @@ Input parameters
     *  -  Group
        -  Name or ID of group
        -  Approvers
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -205,7 +205,7 @@ Example
 .. image:: /_static/img/GetMembersGroup.png
    :alt: Get Members of SharePoint Group
 
-Set Up Default Group for the Site
+Set Default Site Group
 --------------------------------------------------
 You can configure default groups for the site it is analogue of the permsetup.aspx page.
 
@@ -224,7 +224,7 @@ Input parameters
     *  -  Group type
        -  type of the group: owners, members or visitors
        -  Owners
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -270,18 +270,18 @@ Input parameters
                    * ViewOnly
                 
        -  5
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl[%Workflow Context:Current Site URL%]subSite
     *  -  User or group
        -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  Workflow Context:Initiator
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
-    *  -  SiteUrl
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl[%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -318,19 +318,19 @@ Input parameters
                    * ViewOnly
                 
        -  5
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl
+              [%Workflow Context:Current Site URL%]subSite
     *  -  User or group
        -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  Company administrator
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
-    *  -  SiteUrl
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-              [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -373,7 +373,7 @@ Input parameters
     *  -  User or group
        -  Login, Email or Name of the User. Also you can specify multiple items using semicolon ';' delimited
        -  Workflow Context:Initiator
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -425,7 +425,7 @@ Input parameters
     *  -  User or group
        -  Login, Email or Name of the User. Also you can specify multiple items using semicolon ';' delimited
        -  Jack@contoso.com
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -471,16 +471,16 @@ Input parameters
                    * ViewOnly
                 
        -  5
-    *  -  List
-       -  Title or Url of chosen list
-       -  Tickets
     *  -  Item
        -  Item ID
        -  44
+    *  -  List
+       -  Title or Url of chosen list
+       -  Tickets
     *  -  User or group
        -  Login, Email or Name of the User. Also you can specify multiple items using semicolon ';' delimited
        -  Jack@contoso.com
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -526,16 +526,16 @@ Input parameters
                    * ViewOnly
                 
        -  5
-    *  -  List
-       -  Title or Url of chosen list
-       -  Tickets
     *  -  Item
        -  Item ID
        -  44
+    *  -  List
+       -  Title or Url of chosen list
+       -  Tickets
     *  -  User or group
        -  Login, Email or Name of the User. Also you can specify multiple items using semicolon ';' delimited
        -  Jack@contoso.com
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -571,16 +571,16 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  AdminEmail
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl
+             [%Workflow Context:Current Site URL%]subSite
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
-    *  -  SiteUrl
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-             [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -610,7 +610,7 @@ Input parameters
     *  -  List
        -  Title or Url of chosen list
        -  Tickets
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -646,13 +646,13 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  List
-       -  Title or Url of chosen list
-       -  Tickets
     *  -  Item
        -  Item ID
        -  44
-    *  -  AdminEmail
+    *  -  List
+       -  Title or Url of chosen list
+       -  Tickets
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -688,16 +688,16 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  AdminEmail
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl
+              [%Workflow Context:Current Site URL%]subSite
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
-    *  -  SiteUrl
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-              [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -727,7 +727,7 @@ Input parameters
     *  -  List
        -  Title or Url of chosen list
        -  Tickets
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
@@ -763,13 +763,13 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  List
-       -  Title or Url of chosen list
-       -  Tickets
     *  -  Item
        -  Item ID
        -  44
-    *  -  AdminEmail
+    *  -  List
+       -  Title or Url of chosen list
+       -  Tickets
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword

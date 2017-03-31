@@ -1,4 +1,4 @@
-Azure AD Administration 
+﻿Azure AD Administration 
 ==================================================
 
 
@@ -452,7 +452,7 @@ Input parameters
     *  -  User principal name
        -  The user ID of the user to set the password for.
        -  john.davis@plumsail.com
-    *  -  ForceChangePassword
+    *  -  Change on next login
        -  When true, the user will be required to change their password the next time they sign in.
        -  True
     *  -  NewPassword

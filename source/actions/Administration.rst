@@ -15,24 +15,15 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  SiteUrl
-       -  URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  empty
     *  -  WebTitle
        -  Title of new site.
        -  Sales department
-    *  -  WebTemplate
-       -  Title of the site template that will be used for new site.
-       -  Team Site
     *  -  WebUrl
        -  Part of site URL. SiteUrl defines current SharePoint site, WebUrl defines part of URL related to SiteUrl. Thus, new site will be created using following URL: SiteUrl/WebUrl.
        -  Sales_Department
-    *  -  AdminEmail
-       -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
-    *  -  AdminPassword
-       -  Password of the SharePoint administrator (for Office 365 only).
-       -  admin’sP@ssw0rd$
+    *  -  WebTemplate
+       -  Title of the site template that will be used for new site.
+       -  Team Site
     *  -  WebDescription
        -  Description of the web.
        -  Sales department's site
@@ -51,7 +42,21 @@ Input parameters
     *  -  WebSharedNav
        -  Use the top link bar from the parent site. Default value is No.
        -  No
-
+    *  -  AdminLogin
+       -  E-mail of the SharePoint administrator (for Office 365 only).
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  Password of the SharePoint administrator (for Office 365 only).
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  empty
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,14 +77,20 @@ Input parameters
        -  Description
        -  Example
     *  -  SiteUrl
-       -  URL of the site for delete
+       -  URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  empty
-    *  -  AdminEmail
+    *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  admin@contoso.com
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
 
 
 Example
@@ -144,29 +155,35 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  SiteUrl
-       -  URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  empty
     *  -  ListTitle
        -  Title of the list.
        -  Sales reports
-    *  -  ListTemplate
-       -  Title of the template that will be used for this list.
-       -  Team Site
-    *  -  AdminEmail
-       -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
-    *  -  AdminPassword
-       -  Password of the SharePoint administrator (for Office 365 only).
-       -  admin’sP@ssw0rd$
     *  -  List Partial Url
        -  Usually, when you create a list you can't control which URL it will get. For example, if you create a document library with the name ``Some document lib`` it will get the following URL: ``Some%20doc%20lib``. But in some cases more useful to choose other URL, using this field, you can specify required value. This is an optional field you can leave it blank. By default, URL will be automatically generated.
        -  Sales_Department
+    *  -  ListTemplate
+       -  Title of the template that will be used for this list.
+       -  Team Site
     *  -  ListDescription
        -  Description of the list.
        -  Library contains sales reports
     *  -  ListOnQuickNav
        -  Display this list on the Quick Launch.
+       -  Yes
+    *  -  AdminLogin
+       -  E-mail of the SharePoint administrator (for Office 365 only).
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  Password of the SharePoint administrator (for Office 365 only).
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  empty
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
        -  Yes
 
 
@@ -174,6 +191,54 @@ Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/CreateList.png
    :alt: Create List or Library
+
+Add Content Type to List
+--------------------------------------------------
+Add the specified content type to list
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  ContentType Name
+       -  Name of the content type
+       -  ``Contact``
+    *  -  List Url
+       -  List name, Url or Guid 
+       -  ::
+
+            Employees
+            /SiteUrl/Employees
+            [%Workflow Context:Current Site URL%]SiteUrl/Employees
+    *  -  MakeItDefault
+       -  Make the content typedefault for the list
+       -  No
+    *  -  AdminLogin
+       -  E-mail of the SharePoint administrator (for Office 365 only).
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  Password of the SharePoint administrator (for Office 365 only).
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  empty
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/AddContentTypeToList.png
+   :alt: Add Content Type to List
 
 Create SharePoint Group
 --------------------------------------------------
@@ -190,12 +255,12 @@ Input parameters
     *  -  Group name
        -  Name of group
        -  Approvers
-    *  -  Group owner
-       -  Owner of group, can be email or user login, if empty it is current AdminLogin
-       -  admin@yourdomain.com
     *  -  Group description
        -  Description of group
        -  Can approve documents
+    *  -  Group owner
+       -  Owner of group, can be email or user login, if empty it is current AdminLogin
+       -  admin@yourdomain.com
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin@contoso.com
@@ -255,7 +320,7 @@ Example
 .. image:: /_static/img/RemoveGroup.png
    :alt: Remove SharePoint Group
 
-Update Group Properties
+Update SharePoint Group Properties
 --------------------------------------------------
 It allows you to update group properties like AutoAcceptRequestToJoinLeave, AllowMembersEditMembership or other options described in MSDN
 
@@ -268,7 +333,7 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Propertis
+    *  -  Properties
        -  In this dictionary should be specified properties for upgrade
        -  ::
 
@@ -305,7 +370,7 @@ Example
 
 Invite External Users
 --------------------------------------------------
-Invite external users to specific group
+Invite external users with specified permission on the site
 More information about external users you can find from the link Manage sharing with external users in Office 365 Small Business
 
 Input parameters
@@ -320,13 +385,25 @@ Input parameters
     *  -  Email Addresses
        -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter
        -  Chris@plumsail.com;John@plumsail.com
-    *  -  Group Name
-       -  Name of the group which will include invited users
-       -  External Users
-    *  -  Email subject
+    *  -  Role
+       -  The permission role which will granted to the user
+       -  ::
+
+		Full Controll
+		Design
+		Edit
+		Contribute
+		Read
+		ViewOnly
+		Approve
+		Manage Hierarchy
+		Restricted Read
+		Restricted Interfaces for Translation
+
+    *  -  Email Subject
        -  The subject of the invitation email
        -  The body of the invitation email
-    *  -  Email body
+    *  -  Email Body
        -  Body of the invitation message
        -  External Users
     *  -  AdminLogin
@@ -351,6 +428,54 @@ Example
 .. image:: /_static/img/InviteExternalUser.png
    :alt: Invite external users
 
+Invite External Users to Group
+--------------------------------------------------
+Invite external users to specific group
+More information about external users you can find from the link Manage sharing with external users in Office 365 Small Business
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter
+       -  Chris@plumsail.com;John@plumsail.com
+    *  -  Group Name
+       -  Name of the group which will include invited users
+       -  External Users
+    *  -  Email Subject
+       -  The subject of the invitation email
+       -  The body of the invitation email
+    *  -  Email Body
+       -  Body of the invitation message
+       -  External Users
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl  [%Workflow Context:Current Site URL%]subSite
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/InviteExternalUserToGroup.png
+   :alt: Invite external users
+
 Update Site Properties
 --------------------------------------------------
 It allows you to update web properties like Title, Description or other string options described in at MSDN
@@ -364,7 +489,7 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  Propertis
+    *  -  Properties
        -  In this dictionary should be specified properties for upgrade
        -  ::
 
@@ -397,4 +522,60 @@ Example
 
 .. image:: /_static/img/UpdateWebProperties2.png
    :alt: Update Web Properties
+
+Share the Item
+--------------------------------------------------
+Grant to the user rights on item in the list
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Email Addresses
+       -  Email addresses to send an invitation, you can specify multiple using semicolon as delimiter
+       -  Chris@plumsail.com;John@plumsail.com
+    *  -  Permission Role
+       -  ID of the permission role which will granted to the user
+       -  1073741826
+    *  -  List item or Url
+       -  ID or Url of the item for which you want to grant the permission
+       -  25
+    *  -  List Name
+       -  Name of the list which contain the item
+       -  Employees
+    *  -  Email Subject
+       -  The subject of the invitation email
+       -  The body of the invitation email
+    *  -  Email Body
+       -  Body of the invitation message
+       -  External Users
+    *  -  Require sing-in
+       -  Add anonymous link to the email
+       -  No
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  https://contoso/SiteUrl  [%Workflow Context:Current Site URL%]subSite
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/ShareTheItem.png
+   :alt: Share the item
 

@@ -6,23 +6,6 @@ Split string
 --------------------------------------------------
 The workflow action splits string into collection of substrings using separator string.
 
-Input parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  SourceDate
-       -  Source string
-       -  test1;test2;test3;test4
-    *  -  SplitString
-       -  Separator string
-       -  ``;``
-
-
 Output parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -42,6 +25,22 @@ Output parameters
               "test3",
               "test4"
             ]                   
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  SourceString
+       -  Source string
+       -  test1;test2;test3;test4
+    *  -  SplitString
+       -  Separator string
+       -  ``;``
 
 
 Example
@@ -97,6 +96,20 @@ Format date
 --------------------------------------------------
 The workflow action formats date using specified format string.
 
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  ResultString
+       -  Specify workflow variable to formatted string
+       -  Friday 29 August
+
+
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -124,20 +137,6 @@ Input parameters
               ddd d MMM
 
 
-Output parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  ResultString
-       -  Specify workflow variable to formatted string
-       -  Friday 29 August
-
-
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/FormatDateActionExample.png
@@ -147,20 +146,6 @@ Example
 Get length of string
 --------------------------------------------------
 The workflow action returns length of a string.
-
-Input parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  SourceString
-       -  Source string
-       -  test string
-
 
 Output parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -176,6 +161,19 @@ Output parameters
        -  11
 
 
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  SourceString
+       -  Source string
+       -  test string
+
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/GetLengthOfStringExample.png
@@ -185,6 +183,20 @@ Example
 String contains
 --------------------------------------------------
 The workflow action checks if a string contains a substring. It allows optionally ignore case of the source string and the substing.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  ResultVariable
+       -  Specify workflow variable to store result.
+       -  Yes
+
 
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -206,6 +218,16 @@ Input parameters
        -  test
 
 
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/StringContainsActionExample.png
+   :alt: String contains workflow action example
+
+ 
+String starts with
+--------------------------------------------------
+The workflow action checks if a string starts with a substring. It allows optionally ignore case of the source string and the substing.
+
 Output parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -219,16 +241,6 @@ Output parameters
        -  Specify workflow variable to store result.
        -  Yes
 
-
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/StringContainsActionExample.png
-   :alt: String contains workflow action example
-
- 
-String starts with
---------------------------------------------------
-The workflow action checks if a string starts with a substring. It allows optionally ignore case of the source string and the substing.
 
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -250,6 +262,16 @@ Input parameters
        -  te
 
 
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/StringStartsWithActionExample.png
+   :alt: String starts with workflow action example
+
+ 
+String ends with
+--------------------------------------------------
+The workflow action checks if a string ends with a substring. It allows optionally ignore case of the source string and the substing.
+
 Output parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -263,16 +285,6 @@ Output parameters
        -  Specify workflow variable to store result.
        -  Yes
 
-
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/StringStartsWithActionExample.png
-   :alt: String starts with workflow action example
-
- 
-String ends with
---------------------------------------------------
-The workflow action checks if a string ends with a substring. It allows optionally ignore case of the source string and the substing.
 
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -294,20 +306,6 @@ Input parameters
        -  ing
 
 
-Output parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  ResultVariable
-       -  Specify workflow variable to store result.
-       -  Yes
-
-
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/StringEndsWithActionExample.png
@@ -317,6 +315,20 @@ Example
 String to lower
 --------------------------------------------------
 The workflow action transforms a string to lower case.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  ResultString
+       -  Specify workflow variable to store lower string.
+       -  test string
+
 
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -330,20 +342,6 @@ Input parameters
     *  -  SourceString
        -  Source string
        -  TEST STRING
-
-
-Output parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  ResultVariable
-       -  Specify workflow variable to store lower string.
-       -  test string
 
 
 Example
@@ -356,6 +354,20 @@ String to upper
 --------------------------------------------------
 The workflow action transforms a string to upper case.
 
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  ResultString
+       -  Specify workflow variable to store upper string
+       -  TEST STRING
+
+
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. list-table::
@@ -368,20 +380,6 @@ Input parameters
     *  -  SourceString
        -  Source string
        -  test string
-
-
-Output parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  ResultVariable
-       -  Specify workflow variable to store upper string
-       -  TEST STRING
 
 
 Example

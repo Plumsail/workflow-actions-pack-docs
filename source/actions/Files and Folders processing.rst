@@ -151,9 +151,9 @@ Example
 .. image:: /_static/img/MoveFile.png
    :alt: Move file to another document library SharePoint Online
 
-Remove Document by URL
+Remove File by URL
 --------------------------------------------------
-Remove the document by a specific URL 
+Remove the file by a specific URL 
 
 Input Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,8 +164,8 @@ Input Parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  SourceUrl
-       -  The URL of the document to be removed. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
+    *  -  File Url
+       -  The URL of the file to be removed. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
        -  ::
 
             https://contoso/SiteUrl/LibraryName/FolderName/DocumentName.docx
@@ -428,7 +428,7 @@ Input Parameters
             https://contoso/SiteUrl/LibraryName/SiteUrl/LibraryName
             [%Workflow Context:Current Site URL%]SiteUrl/LibraryName
 
-    *  -  TargetPath
+    *  -  New Folder Path
        -  The path where the folder will be created. The workflow action will create all folders included into the path.
        -  ``Projects/Project1Documents/2014 June``
     *  -  AdminLogin
@@ -643,3 +643,130 @@ Example
 .. image:: /_static/img/MoveFolderFromUrl.png 
    :alt: Move folder to another document library SharePoint Online
 
+Check In Document
+--------------------------------------------------
+Check-in the document at the specified URL with the specified comment.
+
+Output Parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File ID
+       -  The ID of the file which was check in
+       -  ``1030``
+    *  -  File Url 
+       -  The URL of the file which was check in
+       -  ``https://contoso.sharepoint.com/Shared Documents/Example.txt``
+
+Input Parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document Url
+       -  Url of the file to check in
+       -  ::
+
+            https://contoso.sharepoint.com/SiteUrl/Shared Documents/Example.txt
+            [%Workflow Context:Current Site URL%]SiteUrl/Shared Documents/Example.txt
+
+    *  -  Comment
+       -  Comment to accompany file check in
+       -  Comment to the file
+
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/CheckInDocument.png
+   :alt: Check In Document
+
+Check Out Document
+--------------------------------------------------
+Check-out the document at the specified URL.
+
+Output Parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  File ID
+       -  The ID of the file which was check in
+       -  ``1030``
+    *  -  File Url 
+       -  The URL of the file which was check in
+       -  ``https://contoso.sharepoint.com/Shared Documents/Example.txt``
+
+Input Parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Document Url
+       -  Url of the file to check out
+       -  ::
+
+            https://contoso.sharepoint.com/SiteUrl/Shared Documents/Example.txt
+            [%Workflow Context:Current Site URL%]SiteUrl/Shared Documents/Example.txt
+
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/CheckOutDocument.png
+   :alt: Check Out Document

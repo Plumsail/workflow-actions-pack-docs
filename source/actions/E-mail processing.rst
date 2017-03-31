@@ -1,4 +1,4 @@
-E-mail Processing
+﻿E-mail Processing
 ==================================================
 Workflow actions to work with email, it allows you send and receive the emails.
 
@@ -29,15 +29,6 @@ Input parameters
           * **From**, **To**, **Subject** (type: Single line of text) 
           * **Body** (type: multiline of text)
        -  Tickets
-    *  -  AdminLogin
-       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
-    *  -  AdminPassword
-       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin’sP@ssw0rd$
-    *  -  SiteUrl
-       -  SharePoint URL, if blank will be detected automatically
-       -  empty
     *  -  mTo
        -  Specifies mapping of 'To' filed to list item field
        -  To
@@ -49,12 +40,30 @@ Input parameters
        -  Title
     *  -  mBody
        -  Specifies mapping of 'Body' filed to list item field
-       -  Body
+       -  Body    
+    *  -  mCc
+       -  Specifies mapping of 'Cc' filed to list item field
+       -  Cc
     *  -  RegexTemplate
        -  Specifies regular expression template which allows to add new messages to existing discussion according to subject. This property is used for discussion boards only.
        -  ``Ticket#(? \d+)``
     *  -  SyncAttachments
        -  Synchronize e-mail messages with attachments
+       -  Yes
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  SharePoint URL, if blank will be detected automatically
+       -  empty
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
        -  Yes
 
 
@@ -89,13 +98,7 @@ Input parameters
           * **From**, **To**, **Subject** (type: Single line of text) 
           * **Body** (type: multiline of text)
        -  Tickets
-    *  -  AdminLogin
-       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
-    *  -  AdminPassword
-       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin’sP@ssw0rd$
-    *  -  Host
+    *  -  IMAP Server
        -  IMAP Server name
        -  outlook.office365.com
     *  -  Port
@@ -104,9 +107,6 @@ Input parameters
     *  -  SSL
        -  Is encryption required? (SSL or TLS)
        -  Yes
-    *  -  SiteUrl
-       -  SharePoint URL, if blank will be detected automatically
-       -  empty
     *  -  mTo
        -  Specifies mapping of 'To' filed to list item field
        -  To
@@ -118,12 +118,30 @@ Input parameters
        -  Title
     *  -  mBody
        -  Specifies mapping of 'Body' filed to list item field
-       -  Body
+       -  Body  
+    *  -  mCc
+       -  Specifies mapping of 'Cc' filed to list item field
+       -  Cc
     *  -  RegexTemplate
        -  Specifies regular expression template which allows to add new messages to existing discussion according to subject. This property is used for discussion boards only.
        -  ``Ticket#(? \d+)``
     *  -  SyncAttachments
        -  Synchronize e-mail messages with attachments
+       -  Yes
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  SharePoint URL, if blank will be detected automatically
+       -  empty
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
        -  Yes
 
 
@@ -156,15 +174,6 @@ Input parameters
           * **From**, **To**, **Subject** (type: Single line of text) 
           * **Body** (type: multiline of text)
        -  Tickets
-    *  -  AdminLogin
-       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
-    *  -  AdminPassword
-       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin’sP@ssw0rd$
-    *  -  SiteUrl
-       -  SharePoint URL, if blank will be detected automatically
-       -  empty
     *  -  mTo
        -  Specifies mapping of 'To' filed to list item field
        -  To
@@ -176,12 +185,30 @@ Input parameters
        -  Title
     *  -  mBody
        -  Specifies mapping of 'Body' filed to list item field
-       -  Body
+       -  Body  
+    *  -  mCc
+       -  Specifies mapping of 'Cc' filed to list item field
+       -  Cc
     *  -  RegexTemplate
        -  Specifies regular expression template which allows to add new messages to existing discussion according to subject. This property is used for discussion boards only.
        -  ``Ticket#(? \d+)``
     *  -  SyncAttachments
        -  Synchronize e-mail messages with attachments
+       -  Yes
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  SharePoint URL, if blank will be detected automatically
+       -  empty
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
        -  Yes
 
 
@@ -207,7 +234,7 @@ Input parameters
     *  -  Parameter
        -  Description
        -  Example
-    *  -  To
+    *  -  Address
        -  E-mail of the recipient
        -  SomeUser@gmail.com
     *  -  Subject
@@ -216,16 +243,37 @@ Input parameters
     *  -  Body
        -  Body of message (may contain HTML)
        -  ``<h1>Approve notification</h1> <p>Dear Mr....</p>``
-    *  -  Add Item Attachments
-       -  If the option is checked, a workflow will send attachments from the current list item or a document set.
-       -  True
     *  -  FromDisplayName
        -  You can change a display name of the From header
        -  Plumsail notification system
-    *  -  Email
+    *  -  ReplyTo
+       -  Address for reply
+       -  no-reply@plumsail.com
+    *  -  Cc
+       -  E-mail carbon copy addressee
+       -  no-reply@plumsail.com
+    *  -  Bcc
+       -  E-mail blind carbon copy addressee
+       -  no-reply@plumsail.com
+    *  -  AttachmentUrls
+       -  Urls of attachments delimited by ';'
+       -  /somefolder/sometxt.txt;http://somesite.com/images/someimage.img
+    *  -  Add Item Attachments
+       -  If the option is checked, a workflow will send attachments from the current list item or a document set.
+       -  True
+    *  -  ParseLinks
+       -  Search embedded links in the message body
+       -  False
+    *  -  ParseImages
+       -  Search for embedded images in the message body
+       -  False
+    *  -  From
+       -  Sender email
+       -  support@contoso.com
+    *  -  EXEmail
        -  E-mail that is used to connect to the SMTP server
        -  support@contoso.com
-    *  -  Password
+    *  -  EXPassword
        -  Password to connect to SMTP server
        -  Support’sP@ssw0rd$
     *  -  Host
@@ -237,18 +285,6 @@ Input parameters
     *  -  SSL
        -  Is encryption required? (SSL or TLS)
        -  Yes
-    *  -  ReplyTo
-       -  Address for reply
-       -  no-reply@plumsail.com
-    *  -  ParseLinks
-       -  Search embedded links in the message body
-       -  False
-    *  -  ParseImages
-       -  Search for embedded images in the message body
-       -  False
-    *  -  AttachmentUrls
-       -  Urls of attachments delimited by ';'
-       -  /somefolder/sometxt.txt;http://somesite.com/images/someimage.img
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
        -  admin@contoso.com
@@ -258,6 +294,12 @@ Input parameters
     *  -  SiteUrl
        -  SharePoint URL, if blank will be detected automatically
        -  empty
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
 
 
 Example
