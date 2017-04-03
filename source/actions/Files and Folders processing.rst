@@ -239,8 +239,7 @@ Input Parameters
             [%Workflow Context:Current Item URL%]
 
     *  -  DestinationUrl
-       -  The URL where the source document set will be copied. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
-          ``If the url ends with slash '/' the document sets will be placed in this folder without name changes. Otherwise the Document set will be renamed.``
+       -  The URL where the source document set will be copied. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context. If the url ends with slash '/' the document sets will be placed in this folder without name changes. Otherwise the Document set will be renamed.
 
        -  ::
 
@@ -313,8 +312,7 @@ Input Parameters
             [%Workflow Context:Current Item URL%]
 
     *  -  DestinationUrl
-       -  The URL where the source document set will be copied. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
-          ``If the url ends with slash '/' the document sets will be placed in this folder without name changes. Otherwise the Document set will be renamed.``
+       -  The URL where the source document set will be copied. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context. If the url ends with slash '/' the document sets will be placed in this folder without name changes. Otherwise the Document set will be renamed.
 
        -  ::
 
