@@ -34,6 +34,13 @@ Input parameters
     *  -  List Name
        -  List or document library name for querying. 
        -  ``Documents``
+    *  -  Endpoint
+       -  A service which will be used for getting items.You may use listdata.svc to access the list data and client.svc, which supports the OData interface, to access all SharePoint objects. The listdata.svc will be used by default.
+       -  ::
+
+            listdata.svc
+            client.svc
+        
     *  -  Select
        -  A list of comma separated columns which will be selected
        -  ``Title, FirstName, LastName, Email, Manager/Title``
