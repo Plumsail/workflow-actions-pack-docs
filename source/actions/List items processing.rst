@@ -111,6 +111,71 @@ Example
    :alt: Run query and get items SharePoint Online
 
 
+Get Items from View
+--------------------------------------------------
+Gets items from the specified view.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Items
+       -  The output variable where the results will be saved.
+       -  Variable:Items
+    *  -  Count Items
+       -  Contains count of items in result dictionary
+       -  Variable:CountItems
+
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  List URL
+       -  List name, Url or Guid 
+       -  ::
+
+            Employees
+            /SiteUrl/Employees
+            [%Workflow Context:Current Site URL%]SiteUrl/Employees
+    *  -  View Name
+       -  The name of the view from which items will be get
+       -  ``All Items``
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin@contoso.com
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  ::
+
+            https://contoso/SiteUrl
+            [%Workflow Context:Current Site URL%]subSite
+        
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: /_static/img/GetItemsFromView.png
+   :alt: Get Items From View
+
 Get Items by CAML Query
 --------------------------------------------------
 Executes the CAML query on the list or on the document library and returns the collection of elements as dictionary variable. Read `this article <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_ to learn how to query items using this workfow action. We would recommend to read whole article to understand how to work with dictionaries in general, but you can read only the part related to this workflow action.
@@ -286,71 +351,6 @@ Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: /_static/img/GetItemsFromSite.png
    :alt: Run CAML query and get items SharePoint Online
-
-Get Items from View
---------------------------------------------------
-Gets items from the specified view.
-
-Output parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  Items
-       -  The output variable where the results will be saved.
-       -  Variable:Items
-    *  -  Count Items
-       -  Contains count of items in result dictionary
-       -  Variable:CountItems
-
-
-Input parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. list-table::
-    :header-rows: 1
-    :widths: 10 30 20
-
-    *  -  Parameter
-       -  Description
-       -  Example
-    *  -  List URL
-       -  List name, Url or Guid 
-       -  ::
-
-            Employees
-            /SiteUrl/Employees
-            [%Workflow Context:Current Site URL%]SiteUrl/Employees
-    *  -  View Name
-       -  The name of the view from which items will be get
-       -  ``All Items``
-    *  -  AdminLogin
-       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
-    *  -  AdminPassword
-       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin’sP@ssw0rd$
-    *  -  SiteUrl
-       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  ::
-
-            https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
-        
-    *  -  ThrowError
-       -  Detects whether workflow should be interrupted in case of error or not.
-       -  Yes
-    *  -  RunAsPublisher
-       -  Detects whether the workflow action has to be runned under the user account who published the workflow (for SharePoint 2013 on-premise only).
-       -  Yes
-
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetItemsFromView.png
-   :alt: Get Items From View
 
 Create List Item at Any Site
 --------------------------------------------------
