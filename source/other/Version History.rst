@@ -4,7 +4,7 @@ Version history
 
 2.10
 --------------------------------------------------
-* New workflow action Add Content Typre to List
+* New workflow action Add Content Type to List
 * New workflow action Check In Document 
 * New workflow action Check Out Document
 * New workflow action Convert HTML to PDF and Save as Attachment 
