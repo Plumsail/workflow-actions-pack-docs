@@ -64,9 +64,10 @@ All documentation articles
    	Workflow actions Pack for SharePoint 2013 <https://plumsail.com/forum/viewforum.php?f=24>
 
    .. toctree:: 
-   	:caption: How-to
+      :caption: How-to
 
-   	Work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow>
+      Workflow Credentials Management <https://github.com/RFlipper/WFPackCredsManager>
+   	Work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/>how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow>
    	Generate PDF file from template <https://plumsail.com/blog/2014/11/generate-pdf-document-using-workflow-sharepoint-2013-office-365>
    	Move documents and create document libraries by template <https://plumsail.com/blog/2014/06/how-to-move-documents-using-workflow-in-sharepoint-2013-and-office-365/>
    	Send bulk e-mail with attachments to external users <https://plumsail.com/blog/2014/04/how-to-send-bulk-e-mail-with-attachment>
