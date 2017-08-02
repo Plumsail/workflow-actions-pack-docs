@@ -478,7 +478,7 @@ Example
 
 Update Site Properties
 --------------------------------------------------
-It allows you to update web properties like Title, Description or other string options described in `MSDN <https://msdn.microsoft.com/en-us/library/office/jj247216.aspx>`_
+It allows you to update web properties like Title, Description or other string options described in at MSDN
 
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

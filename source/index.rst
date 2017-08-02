@@ -65,19 +65,38 @@ All documentation articles
 
    .. toctree:: 
       :caption: How-to
+      :maxdepth: 1
 
-      Workflow Credentials Management <https://github.com/RFlipper/WFPackCredsManager>
-   	Work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/>how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow>
-   	Generate PDF file from template <https://plumsail.com/blog/2014/11/generate-pdf-document-using-workflow-sharepoint-2013-office-365>
-   	Move documents and create document libraries by template <https://plumsail.com/blog/2014/06/how-to-move-documents-using-workflow-in-sharepoint-2013-and-office-365/>
-   	Send bulk e-mail with attachments to external users <https://plumsail.com/blog/2014/04/how-to-send-bulk-e-mail-with-attachment>
-   	Create site by custom template and grant permissions <https://plumsail.com/blog/2014/07/create-site-by-custom-template-and-grant-permissions-using-sharepoint-2013-or-office-365-workflow>
-   	Automate Office 365 user accounts creation <https://plumsail.com/blog/2014/06/how-to-automatically-create-office-365>
-   	Create HelpDesk on SharePoint 2013\Online <https://plumsail.com/blog/2013/12/how-to-create-helpdesk-on-sharepoint-2013online>
-   	Use free string processing workflow actions <https://plumsail.com/blog/2014/03/string-processing-workflow-actions-for-sharepoint-2013-and-sharepoint-online>
-   	Send periodic expiration email notifications in Office 365 and SharePoint 2013 Workflows <https://plumsail.com/blog/2015/02/send-periodic-expiration-email-notifications>
-   	Start SharePoint 2013 Workflows on Selected Items <https://plumsail.com/blog/2015/02/start-sharepoint-2013-workflows-selected-items>
-   	Deploy custom SharePoint 2013 workflows with site template <https://plumsail.com/blog/2015/01/deploy-site-template-configured-workflows>
+      Manage workflow credentials with the help of Credentials Manager <https://github.com/RFlipper/WFPackCredsManager>   	
+      Work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/>how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow>
+      Create HelpDesk on SharePoint 2013\Online <https://plumsail.com/blog/2013/12/how-to-create-helpdesk-on-sharepoint-2013online>
+      Use free string processing workflow actions <https://plumsail.com/blog/2014/03/string-processing-workflow-actions-for-sharepoint-2013-and-sharepoint-online>
+      Start SharePoint 2013 Workflows on Selected Items <https://plumsail.com/blog/2015/02/start-sharepoint-2013-workflows-selected-items>
+      Deal with SharePoint 2013 Designer and Workflow Tips, Tricks & Traps <https://plumsail.com/blog/2015/05/sharepoint-designer-workflow-tips-tricks-traps/>
+      how-to/Deploy custom workflows with site template
+      how-to/Generate PDF file from template      
+      how-to/Move documents      
+      how-to/Send bulk e-mail with attachments to external users      
+      how-to/Create site by custom template and grant permissions      
+      how-to/Automatically create Office 365 user accounts      
+   	how-to/Send periodic expiration email notifications         	      
+   	how-to/Deploy custom workflows with site template            
+      how-to/Change Author field in SharePoint list Item
+      how-to/Check-in multiple files
+      how-to/Copy document set to another library
+      how-to/Copy list item with attachments across site collections            
+      how-to/How to use dynamic text and HTML templates
+      how-to/Invite external users
+      how-to/Send periodic expiration email notifications
+      how-to/Manage credentials for workflow actions      
+      how-to/Move list item attachments to Document Set
+      how-to/Query multiple lists across multiple sites and group results      
+      how-to/Send e-mails with attachments      
+      how-to/Set item level permissions (break role inheritance and assign permissions)
+      how-to/Use Call SharePoint REST Service instead of standard Call HTTP Web Service
+      how-to/Use Get items actions
+      how-to/Use Get Items by Query action
+      how-to/Workflow Actions Pack is not code-based sandbox solution
 
    .. toctree:: 
       :caption: Videos
