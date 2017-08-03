@@ -1,4 +1,4 @@
-https://plumsail.com/blog/2017/04/sharepoint-get-items-workflow-actions/
+https://plumsail.com/blog/2017/04/sharepoint-get-items-workflow-actions/ 
 https://plumsail.com/docs/workflow-actions-pack/how-to/Use%20Get%20items%20actions.html
 
 https://plumsail.com/blog/2017/04/how-to-check-in-multiple-files-via-workflow-in-sharepoint-online-office365/
@@ -55,7 +55,6 @@ https://plumsail.com/docs/workflow-actions-pack/how-to/Create%20site%20by%20cust
 https://plumsail.com/blog/2014/06/how-to-automatically-create-office-365-user-accounts-using-sharepoint-workflow/ 
 https://plumsail.com/docs/workflow-actions-pack/how-to/Automatically%20create%20Office%20365%20user%20accounts.html
 
-!!!
 https://plumsail.com/blog/2014/06/how-to-move-documents-using-workflow-in-sharepoint-2013-and-office-365/
 https://plumsail.com/docs/workflow-actions-pack/how-to/Move%20documents.html
 

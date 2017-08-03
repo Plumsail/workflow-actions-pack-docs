@@ -1,8 +1,7 @@
 Send bulk e-mail with attachments to external users
 ###################################################
 
-This article will show how to configure SharePoint 2013/Online workflow to send bulk email with attachments to external users using SharePoint 2013/Online workflow. For many business tasks it is required to send mass messages to customers or employees. Sometimes such messages has to contain attachments.There are multiple use cases, look at just a few of them:
-
+This article will show how to configure SharePoint 2013 workflow to send bulk email with attachments to external users. This approach works for SharePoint 2013 / 2016 as well as for SharePoint Online in Office 365. For many business tasks it is required to send mass messages to customers or employees. Sometimes such messages has to contain attachments.There are multiple use cases, look at just a few of them:
 
 * To send information about new releases to customers.
 * To notify customers about upcoming downtime.
@@ -36,11 +35,8 @@ Out of the box workflow actions don’t provide required functionality. It will 
 
 
 
-*  `Get items by query <http://plumsail.com/workflow-actions-pack/docs/actions-description/#GetItems>`_ 
-*  `Send e-mail with attachment (SMTP) <http://plumsail.com/workflow-actions-pack/docs/actions-description/#SmtpSendEmail>`_ 
-
-
-You can also use `Send e-mail with attachment (Exchange) <http://plumsail.com/workflow-actions-pack/docs/actions-description/#SendEmail>`_ .
+*  `Get items by query </docs/workflow-actions-pack/actions/List items processing.html#get-items-by-caml-query>`_ 
+*  `Send e-mail with attachment </docs/workflow-actions-pack/actions/E-mail processing.html#send-e-mail-with-attachments>`_ 
 
 How to create list of subscribers and document library
 ------------------------------------------------------
@@ -97,17 +93,23 @@ Get items by query workflow action configuration
 ++++++++++++++++++++++++++++++++++++++++++++++++
 This is how the workflow action is configured:
 
-*List:*  Maillist. *Save result items to variable:*  ‘Recepients’. *Caml query:* 
+List: *Maillist*.
 
-| <View>
-|   <Query>
-|     <Where>
-|     </Where>
-|   </Query>
-|   <ViewFields>
-|     <FieldRef Name="EMail" />
-|   </ViewFields>
-| </View>
+Save result items to variable: *‘Recepients’*. 
+
+Caml query:
+
+.. code:: xml
+
+  <View>
+    <Query>
+      <Where>
+      </Where>
+    </Query>
+    <ViewFields>
+      <FieldRef Name="EMail" />
+    </ViewFields>
+  </View>
 
 As you see it was used quite simple CAML query ‘’, it doesn’t contain any conditions. It was used such query because I don’t need to filter exclude subscribers from the list. I want to notify all of them, but feel free to add conditions in this query. For example you can add ‘Unsubscribe’ column into the list of subscribers and add condition into this query to exclude such subscribers.
 
@@ -125,6 +127,7 @@ As you can see it was composed the path dynamically based on the current index w
 
 Send e-mail with attachment workflow action configuration
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Great, now we have recipient. The next step is to send e-mail.
 
 Firstly it configures general settings.

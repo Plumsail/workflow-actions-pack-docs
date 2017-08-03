@@ -1,5 +1,5 @@
-Move documents
-##############
+Move documents in current site and cross-site
+#############################################
 
 This article will show how to move documents using SharePoint 2013 workflows. This approach works well for SharePoint 2013 on premise deployment as well as for SharePoint Online in Office 365. I will implement archival workflow as a proof of concept, which moves documents from one document library to another, but you can modify it a little and use to copy documents or folders cross-site.
 
@@ -52,7 +52,6 @@ As you can see, there is stage transition condition after *‘Querying documents
 Take a look at `documentation <http://plumsail.com/workflow-actions-pack/docs/>`_ to get more information about properties of workflow actions used in this article.
 
 Before we dive in, also take a look at workflow variables of the archival workflow:
-
  
 .. image:: /_static/img/move-document-4.png
    :alt: 
@@ -63,7 +62,6 @@ At this stage it just saved credentials which I use within workflow actions in w
 
 You can see text-based view of this stage below:
 
-
 .. image:: /_static/img/move-document-5.png
    :alt: 
 
@@ -71,14 +69,10 @@ Querying documents stage
 ++++++++++++++++++++++++
 At this stage it was used two custom workflow actions:
 
-
-
-* Format date – allows to format dates using format string. You can find description date format strings on
-*  `MSDN <http://msdn.microsoft.com/library/8kb3ddd4%28v=vs.110%29.aspx>`_ 
+* Format date – allows to format dates using format string. You can find description date format strings on `MSDN <http://msdn.microsoft.com/library/8kb3ddd4%28v=vs.110%29.aspx>`_ 
 * Get items by query – allows to query documents using CAML query
 
 You can see text-based view of the stage below:
-
 
 .. image:: /_static/img/move-document-6.png
    :alt: 
@@ -87,28 +81,26 @@ At this stage it used *‘dd’*  format string which allows to get day number. 
 
 This is how CAML query looks:
 
+.. code:: xml
 
-
-|    <View>
-|        <Query>
-|            <Where>
-|                <Lt>
-|                    <FieldDef Name="Last_x0020_Modified">
-|                        <Value type="DateTime">
-|                            <Today OffsetDays="-[%Variable: CurrentDay%]"></Today>
-|                        </Value>
-|                    </FieldDef>
-|                </Lt>
-|            </Where>
-|        </Query>
-|        <ViewFields>
-|            <FieldDef Name="Title">
-|            <FieldDef Name="FileRef">
-|            <FieldDef Name="FileLeafRef">
-|        </ViewFields>
-|    </View>
-
-
+     <View>
+         <Query>
+             <Where>
+                 <Lt>
+                     <FieldDef Name="Last_x0020_Modified">
+                         <Value type="DateTime">
+                             <Today OffsetDays="-[%Variable: CurrentDay%]"></Today>
+                         </Value>
+                     </FieldDef>
+                 </Lt>
+             </Where>
+         </Query>
+         <ViewFields>
+             <FieldDef Name="Title">
+             <FieldDef Name="FileRef">
+             <FieldDef Name="FileLeafRef">
+         </ViewFields>
+     </View>
 
 As you can see it used *-[%Variable: CurrentDay%]*  inside offsetdays of the CAML query. Note, there is minus (-) sign before *CurrentDay*  variable. This allows the workflow action to query documents created earlier than *Today – CurrendDay* . So, I the workflow action will query all documents created earlier than current month.
 
@@ -122,7 +114,7 @@ At this stage it generates name for new document library and create new library.
 
 Firstly it was used *‘Add Time to Date’*  workflow action to subtract one month from the current date to get date of the previous month. Then I used this date inside *‘Format date’*  workflow action to get name for new document library. I used *‘yyyy MMM’*  format string. It allows the workflow to generate string in the following format *‘{YEAR} {MONTH}’* .
 
-To create new document library I used *‘Create list or library’*  workflow action. As mentioned in the beginning of this article, I added two metedata columns into document library, therefore archival document libraries also have to contain such columns. To guarantee that archival document libraries will have such columns I saved source document library as template. To save library as template navigate to ‘ *Library Settings’*  and **  click *‘Save document library as template’.*  I named the template as *‘Project Documents’* . I used this template’s name in the workflow action as well as name generated in the *‘Format date’*  workflow action. See text-based view of this stage:
+To create new document library I used *‘Create list or library’*  workflow action. As mentioned in the beginning of this article, I added two metedata columns into document library, therefore archival document libraries also have to contain such columns. To guarantee that archival document libraries will have such columns I saved source document library as template. To save library as template navigate to *‘Library Settings’*  and click *‘Save document library as template’*.  I named the template as *‘Project Documents’* . I used this template’s name in the workflow action as well as name generated in the *‘Format date’*  workflow action. See text-based view of this stage:
 
 
 .. image:: /_static/img/move-document-7.png
@@ -139,18 +131,18 @@ Moving documents stage
 ++++++++++++++++++++++
 At this stage the workflow iterates through documents received from the CAML query and moves them into created document library.
 
-To move documents it was used *‘Move document from library’*  workflow action. Firstly I initialized the index variable. The workflow increments this variable in the loop. I used this variable to get values from dictionary with information about documents by index. You can see two workflow actions *‘Get an Item from a Dictionary’*  in the text-based view below *.*  I used them to get the URL and the name of the document from dictionary. To get value from current item of dictionary I use following paths:
+To move documents it was used *‘Move document from library’*  workflow action. Firstly I initialized the index variable. The workflow increments this variable in the loop. I used this variable to get values from dictionary with information about documents by index. You can see two workflow actions *‘Get an Item from a Dictionary’*  in the text-based view below.  I used them to get the URL and the name of the document from dictionary. To get value from current item of dictionary I use following paths:
 
+.. code::
 
-
-|    ([%Variable: ind%])/FieldValues/FileRef
-|    ([%Variable: ind%])/FieldValues/FileLeafRef
+    ([%Variable: ind%])/FieldValues/FileRef
+    ([%Variable: ind%])/FieldValues/FileLeafRef
 
 Paths has following format:
 
+.. code::
 
-
-| ({INDEX})/FieldValues/{FIELD_INTERNAL_NAME}
+    ({INDEX})/FieldValues/{FIELD_INTERNAL_NAME}
 
 The *‘ind’*  variable stores current index within the loop. You can see how I used it on the picture below.
 
@@ -158,11 +150,11 @@ The *‘ind’*  variable stores current index within the loop. You can see how 
    :alt: 
 
 
-It was used *‘FileName’*  and *‘DocumentURL’*  in the *‘Move documents from library’*  workflow action. The *‘FileName*  ‘ is required to build the URL of the new documents. To build the URL I used following combination of workflow constants and variables:
+It was used *‘FileName’*  and *‘DocumentURL’*  in the *‘Move documents from library’*  workflow action. The *‘FileName‘* is required to build the URL of the new documents. To build the URL I used following combination of workflow constants and variables:
 
+.. code::
 
-
-| [%Workflow Context: Current Site URL%][%Variable: LibName%]/[%Variable: FileName%]
+    [%Workflow Context: Current Site URL%][%Variable: LibName%]/[%Variable: FileName%]
 
 It is current site URL plus document library name plus file name.
 
@@ -183,10 +175,12 @@ Full schemes of the workflow
 ----------------------------
 
 .. image:: /_static/img/move-document-11.png
-   :alt: 
+   :alt:
+   :target: https://plumsail.com/docs/workflow-actions-pack/_images/move-document-11.png
 
 
 .. image:: /_static/img/move-document-12.png
    :alt: 
+   :target: https://plumsail.com/docs/workflow-actions-pack/_images/move-document-12.png
 
 

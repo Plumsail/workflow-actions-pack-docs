@@ -62,6 +62,12 @@ a{
     padding: 0 10px;
 }
 
+.document img {
+    max-width: 800px;
+    border: 1px solid lightgray;
+    margin: 10px 0 24px 0;
+}
+
 .text-logo{    
     background: url(img/logo.png) no-repeat;
     width: 200px;
