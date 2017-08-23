@@ -107,6 +107,7 @@ All documentation articles
    .. toctree::
       :caption: Additional resources
       
+      SharePoint Designer workflows are not going to be deprecated <https://medium.com/plumsail/sharepoint-designer-workflows-are-not-deprecated-and-will-work-in-feasible-future-6e2d083bc474>
       other/recommended-sharepoint-designer-updates
       Getting started with SharePoint Server 2013 workflow <http://technet.microsoft.com/en-Us/library/jj227177%28v=office.15%29.aspx>
       Configure Workflow Manager for SharePoint 2013 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>      
