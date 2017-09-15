@@ -3,10 +3,7 @@ Documentation for Workflow Actions Pack
 
 Workflow Actions Pack official page: `https://plumsail.com/workflow-actions-pack/`
 
-Workflow Actions Pack description
----------------------------------
-
-More than hundred workflow actions for creating custom workflows via SharePoint Designer
+It provides more than a hundred workflow actions for creating custom workflows via SharePoint Designer
 
 - Cross-site workflow actions
 - No code solution for SharePoint sites' management
