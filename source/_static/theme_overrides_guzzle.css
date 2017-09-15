@@ -106,3 +106,8 @@ a{
     background-image: none;
     box-shadow: none;
 }
+
+.comment-container{
+    margin: 24px auto 24px 300px;
+    padding: 30px;
+}
