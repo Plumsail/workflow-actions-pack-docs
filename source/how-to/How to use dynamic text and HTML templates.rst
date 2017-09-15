@@ -63,12 +63,12 @@ And iterator:{{each Documents}} … {{/each}}
 
 After rendering we will see such HTML email message:
 
-.. image:: /_static/img/dynamic-text-html-1.png
+.. image:: ../_static/img/dynamic-text-html-1.png
    :alt: EmailTemplateMessageSample
 
 This message is rendered based on some data. As you see on the picture below, the workflow action receives the text template, which we prepared earlier and the dictionary variable. The dictionary variable stores data to render. The workflow action stores result in the string variable.
 
-.. image:: /_static/img/dynamic-text-html-2.png
+.. image:: ../_static/img/dynamic-text-html-2.png
    :alt: RenderTemplateExample
 
 In the template above you can see dots in expressions like this{{ApprovalProcess.ApproverName}}. It means we refer to nested object *ApproverName* . During execution of workflow I collected data from different sources and putted it into single dictionary. You can see final structure of dictionary below. I created quite complex dictionary to show flexibility of templating workflow action. I will show how I did it later in this article.
@@ -129,12 +129,12 @@ It was created list level workflow for *‘Contracts’*  document library. It h
 
 To reproduce the workflow you need to know all workflow variables I used. You will see how I used it below.
 
-.. image:: /_static/img/dynamic-text-html-3.png
+.. image:: ../_static/img/dynamic-text-html-3.png
    :alt: EmailTemplateWorkflowVariable
 
 And this is the workflow I which created:
 
-.. image:: /_static/img/dynamic-text-html-4.png
+.. image:: ../_static/img/dynamic-text-html-4.png
    :alt: EmailTemplateWorkflow
 
 It consists of three stages:
@@ -211,7 +211,7 @@ As you remember it had already two dictionaries. One stores information about ne
 
 You can see settings for this workflow action below:
 
-.. image:: /_static/img/dynamic-text-html-5.png
+.. image:: ../_static/img/dynamic-text-html-5.png
    :alt: EmailTemplateWorkflowApprovalProccDict
 
 As you see it was added four additional properties to dictionary and initialized them from current item and workflow context.
@@ -220,7 +220,7 @@ As you see it was added four additional properties to dictionary and initialized
 
 Finally it needs to combine all created dictionaries to single dictionary. I used another *‘Build a Dictionary’*  workflow action to do this:
 
-.. image:: /_static/img/dynamic-text-html-6.png
+.. image:: ../_static/img/dynamic-text-html-6.png
    :alt: EmailTemplateWorkflowApprovalProccDict2
 
 I stored nested documents in *‘Documents’* , field values from current item to *‘CurrentItem’*  and additional information collected earlier to *‘ApprovalProcess’* .
@@ -229,12 +229,12 @@ Render template and send email message
 ++++++++++++++++++++++++++++++++++++++++++++++
 This is the last stage of the workflow. I used `Render Text Template <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ workflow action to render dictionary using predefined template. It receives dictionary which I created earlier and text template and returns rendered string to *‘Message body’*  variable:
 
-.. image:: /_static/img/dynamic-text-html-7.png
+.. image:: ../_static/img/dynamic-text-html-7.png
    :alt: RenderTemplateExample
 
 Earlier mentioned that I created separate list to store templates and named it *‘Templates’* . In the rendering workflow action I just looked up the template by title directly from the list:
 
-.. image:: /_static/img/dynamic-text-html-8.png
+.. image:: ../_static/img/dynamic-text-html-8.png
    :alt: EmailTemplateLookupForTemplate
 
 There's no need to store complete HTML markup within the *‘Templates’*  list, because I want to simplify management of templates. That is why I stored the template only for HTML body and wrapped it in DOCTYPE and HTML tags directly in the workflow. I saved the result to the *‘Message’*  variable:

@@ -15,7 +15,7 @@ It will create SharePoint document library to store PDF files, then I will creat
 As result end user will have to select document and click ‘Send to subscribers’ to send bulk e-mail to all subscribers:
 
 
-.. image:: /_static/img/bulk-email-attachments-1.png
+.. image:: ../_static/img/bulk-email-attachments-1.png
    :alt: 
 
 
@@ -43,7 +43,7 @@ How to create list of subscribers and document library
 To store subscribers it was created new SharePoint list and named it ‘Maillist’. The structure of the list is quite simple:
 
 
-.. image:: /_static/img/bulk-email-attachments-2.png
+.. image:: ../_static/img/bulk-email-attachments-2.png
    :alt: 
 
 
@@ -52,7 +52,7 @@ It was added only one text column ‘E-mail’. Internal name of this field is �
 This is how my list of subscribers looks:
 
 
-.. image:: /_static/img/bulk-email-attachments-3.png
+.. image:: ../_static/img/bulk-email-attachments-3.png
    :alt: 
 
 
@@ -71,14 +71,14 @@ If one wants to send notifications for each corporate newsletter file separately
 This is how the workflow looks:
 
 
-.. image:: /_static/img/bulk-email-attachments-4.png
+.. image:: ../_static/img/bulk-email-attachments-4.png
    :alt: 
 
 
 To reproduce this workflow you need to know names of workflow variables with types:
 
 
-.. image:: /_static/img/bulk-email-attachments-5.png
+.. image:: ../_static/img/bulk-email-attachments-5.png
    :alt: 
 
 In the first stage it initializes credentials. It will use them for SMTP settings. It also needs credentials for SharePoint Online to query list by CAML. Workflow action for SharePoint 2013 on-premise doesn’t require credentials to query list items.
@@ -137,7 +137,7 @@ It uses variable ‘Recepient’ as e-mail address. It was also specified some s
 To attach files I added link into AttachmentsUrls property. Look at the picture below for details:
 
  
-.. image:: /_static/img/bulk-email-attachments-6.png
+.. image:: ../_static/img/bulk-email-attachments-6.png
    :alt: 
 
 For SharePoint Online it is also required to specify AdminLogin and AdminPassword properties. SharePoint 2013 on-premise doesn’t require it.
@@ -149,12 +149,12 @@ How to create menu item for document library to start workflow manually
 In the beginning of this article it was mentioned that end user will be able to send notifications using context menu of the file. It looks like this:
 
 
-.. image:: /_static/img/bulk-email-attachments-7.png
+.. image:: ../_static/img/bulk-email-attachments-7.png
    :alt: 
 
 To add custom action for document context menu you need to open ‘Corporate newsletter’ document library using SharePoint Designer. Select ‘Custom Actions’ section and click ‘Custom action -\>List Item Menu’ in the ribbon. Then configure workflow action to initiate workflow:
 
 
-.. image:: /_static/img/bulk-email-attachments-8.png
+.. image:: ../_static/img/bulk-email-attachments-8.png
    :alt: 
 

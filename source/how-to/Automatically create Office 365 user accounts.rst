@@ -15,7 +15,7 @@ Create ‘Employees’ list
 -----------------------
 Firstly it was created new SharePoint list named *‘Employees’* . I added commonly used fields only, but feel free to add other fields you need to set in Azure AD. This is how the list looks:
 
- .. image:: /_static/img/automatic-user-o365-1.png
+ .. image:: ../_static/img/automatic-user-o365-1.png
    :alt: Log in into office 365
    
 It was used choice field to store department to simplify this ‘proof of concept’, but you can use lookup instead and store departments in the separate list. On the picture above you can see that it was added *‘Alternate e-mail’*  address field. The workflow uses this fields to send temporary password and other account related information to the new employee.
@@ -27,7 +27,7 @@ The next step is to create the workflow which creates Azure AD user accounts on 
 This is how the workflow looks. It was will describe it in detail below:
 
 
-.. image:: /_static/img/automatic-user-o365-2.png
+.. image:: ../_static/img/automatic-user-o365-2.png
    :alt: 
 
 Stage: Initializing variables
@@ -35,7 +35,7 @@ Stage: Initializing variables
 To reproduce the workflow you may need to know workflow variables it was used:
 
  
-.. image:: /_static/img/automatic-user-o365-3.png
+.. image:: ../_static/img/automatic-user-o365-3.png
    :alt: 
 
 At this stage it was initialized variables with credentials required to create new Azure AD users and specified SKU for Office 365 license. SKU is a code of Office 365 subscription.
@@ -55,7 +55,7 @@ To get available for you SKU codes you need to use *PowerShell Windows Azure Act
 \As result you will see the screen like this:
 
  
-.. image:: /_static/img/automatic-user-o365-4.png
+.. image:: ../_static/img/automatic-user-o365-4.png
    :alt: 
 
 Copy and paste AccountSkuId to *‘Set Workflow Variable’*  workflow action.
@@ -67,7 +67,7 @@ To create new user it was used *‘Create Azure AD User’*  workflow action fro
 It is possible to create new user without assigning a license, but in my case I want to assign licenses automatically. That is why it was also set LicenseAssignment property to SKU code stored in the License variable.
 
  
-.. image:: /_static/img/automatic-user-o365-5.png
+.. image:: ../_static/img/automatic-user-o365-5.png
    :alt: 
 
 This workflow action stores properties of the new user including password into dictionary variable. The next step is to get password from the dictionary using *‘Get an Item from a Dictionary’*  workflow action. See the picture wit text-based view of the workflow to understand how to configure it.
@@ -83,7 +83,7 @@ As prerequisite it was created SharePoint groups for each department and named t
 To add new user to group it was used *‘Add User to SharePoint Group’*  workflow action. It requires user name in the correct format. You need to add *‘i:0#.f|membership|’*  string just before principal name. I saved the result of concatenation in the *‘UserName’*  variable. See the picture below for example of configuration:
 
  
-.. image:: /_static/img/automatic-user-o365-6.png
+.. image:: ../_static/img/automatic-user-o365-6.png
    :alt: 
 
 Finally it was used *‘UserName’*  and *‘GroupName’*  variables in the *‘Add User to SharePoint Group’*  workflow action.
@@ -97,12 +97,12 @@ It is possible that some information about employees will be changed in the futu
 This is how the workflow looks:
 
  
-.. image:: /_static/img/automatic-user-o365-7.png
+.. image:: ../_static/img/automatic-user-o365-7.png
    :alt: 
 
 It was used *‘Update Azure AD user’*  workflow action to update information about an employee. The configuration of this workflow action is very much the same with *‘Create Azure AD User’* . It was specified principal name and other information from list item fields in the properties of the workflow action:
 
  
-.. image:: /_static/img/automatic-user-o365-8.png
+.. image:: ../_static/img/automatic-user-o365-8.png
    :alt: 
 

@@ -14,7 +14,7 @@ Out of the box workflow actions don’t allow to `query list items by CAML </wor
 Below is the configured workflow:
 
 
-.. image:: /_static/img/send-periodic-email-1.png
+.. image:: ../_static/img/send-periodic-email-1.png
    :alt:
 
 It was used the following CAML query to get all list items that expire in two days in `Get Items by query </workflow-actions-pack/docs/documents-list-items-processing/#GetItems>`_ workflow action:
@@ -60,7 +60,7 @@ Send email workflow action configuration (to simplify the process I designed the
 You can see the sceenshot below as result:
 
 
-.. image:: /_static/img/send-periodic-email-2.png
+.. image:: ../_static/img/send-periodic-email-2.png
    :alt:
 
 Daily/Weekly/Mounthly aggregated expiration reports by email
@@ -72,7 +72,7 @@ Below it was implemented the workflow for typical case when an administrator wan
 At the figure below you can see the configured workflow, It was split on two stages to simplify configuration and copying to other document libraries.
 
 
-.. image:: /_static/img/send-periodic-email-3.png
+.. image:: ../_static/img/send-periodic-email-3.png
    :alt:
 
 The first step is just configuration section. Next, all list items where the field *CheckoutUser*  is not null, using the following CAML query for this:
@@ -125,6 +125,6 @@ Before sending the message it was used `Regular Expression Replace </workflow-ac
 And at the final step I sent complete email report to an administrator
 
 
-.. image:: /_static/img/send-periodic-email-4.png
+.. image:: ../_static/img/send-periodic-email-4.png
    :alt:
 

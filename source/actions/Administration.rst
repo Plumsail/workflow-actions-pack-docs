@@ -60,7 +60,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/CreateWeb.png
+.. image:: ../_static/img/CreateWeb.png
    :alt: Create site by template
 
 Delete Site
@@ -95,7 +95,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/DeleteWeb.png
+.. image:: ../_static/img/DeleteWeb.png
    :alt: Delete site at URL
 
 Activate Feature
@@ -139,7 +139,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/ActivateFeature.png
+.. image:: ../_static/img/ActivateFeature.png
    :alt: Activate a feature on the web or site
 
 Create List or Library
@@ -189,7 +189,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/CreateList.png
+.. image:: ../_static/img/CreateList.png
    :alt: Create List or Library
 
 Add Content Type to List
@@ -237,7 +237,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/AddContentTypeToList.png
+.. image:: ../_static/img/AddContentTypeToList.png
    :alt: Add Content Type to List
 
 Create SharePoint Group
@@ -280,7 +280,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/CreateGroup.png
+.. image:: ../_static/img/CreateGroup.png
    :alt: Create SharePoint Group
 
 Remove SharePoint Group
@@ -317,7 +317,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/RemoveGroup.png
+.. image:: ../_static/img/RemoveGroup.png
    :alt: Remove SharePoint Group
 
 Update SharePoint Group Properties
@@ -365,7 +365,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/UpdateGroupProperties.png
+.. image:: ../_static/img/UpdateGroupProperties.png
    :alt: Update Site Group Properties
 
 Invite External Users
@@ -425,7 +425,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/InviteExternalUser.png
+.. image:: ../_static/img/InviteExternalUser.png
    :alt: Invite external users
 
 Invite External Users to Group
@@ -473,7 +473,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/InviteExternalUserToGroup.png
+.. image:: ../_static/img/InviteExternalUserToGroup.png
    :alt: Invite external users
 
 Update Site Properties
@@ -517,10 +517,10 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/UpdateWebProperties1.png
+.. image:: ../_static/img/UpdateWebProperties1.png
    :alt: Update Web Properties
 
-.. image:: /_static/img/UpdateWebProperties2.png
+.. image:: ../_static/img/UpdateWebProperties2.png
    :alt: Update Web Properties
 
 Share the Item
@@ -576,6 +576,6 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/ShareTheItem.png
+.. image:: ../_static/img/ShareTheItem.png
    :alt: Share the item
 

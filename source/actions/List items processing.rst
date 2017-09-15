@@ -107,7 +107,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetItemsByQueryRest.png
+.. image:: ../_static/img/GetItemsByQueryRest.png
    :alt: Run query and get items SharePoint Online
 
 
@@ -173,7 +173,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetItemsFromView.png
+.. image:: ../_static/img/GetItemsFromView.png
    :alt: Get Items From View
 
 Get Items by CAML Query
@@ -253,7 +253,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetItemsByQuery.png
+.. image:: ../_static/img/GetItemsByQuery.png
    :alt: Run CAML query and get items SharePoint Online
 
 Get Items by CAML Query (Many Lists)
@@ -349,7 +349,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetItemsFromSite.png
+.. image:: ../_static/img/GetItemsFromSite.png
    :alt: Run CAML query and get items SharePoint Online
 
 Create List Item at Any Site
@@ -422,7 +422,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/CreateListItem.png
+.. image:: ../_static/img/CreateListItem.png
    :alt: Create list item in list SharePoint Online
 
 Update List Item at Any Site
@@ -485,7 +485,7 @@ Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/UpdateListItem.png
+.. image:: ../_static/img/UpdateListItem.png
    :alt: Update list item in list SharePoint Online
 
 Copy List Item to List
@@ -559,7 +559,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/CopyListItemToList.png
+.. image:: ../_static/img/CopyListItemToList.png
    :alt: Copy List Item to List
 
 Move List Item to List
@@ -633,7 +633,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/MoveListItemToList.png
+.. image:: ../_static/img/MoveListItemToList.png
    :alt: Move List Item to List
 
 Copy Current List Item to List
@@ -694,7 +694,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/CopyCurrentListItemToList.png
+.. image:: ../_static/img/CopyCurrentListItemToList.png
    :alt: Copy Current List Item to List
 
 Move Current List Item to List
@@ -755,7 +755,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/MoveCurrentListItemToList.png
+.. image:: ../_static/img/MoveCurrentListItemToList.png
    :alt: Move Current List Item to List
 
 Copy Attachments to URL
@@ -835,7 +835,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/CopyAttachments.png
+.. image:: ../_static/img/CopyAttachments.png
    :alt: Copy attachments SharePoint Online
 
 Move Attachments to URL
@@ -915,7 +915,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/MoveAttachments.png
+.. image:: ../_static/img/MoveAttachments.png
    :alt: Move attachments to document library SharePoint Online
 
 Get Attachments to Dictionary
@@ -982,7 +982,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetAttachments.png
+.. image:: ../_static/img/GetAttachments.png
    :alt: Get attachments to dictionary SharePoint Online
 
 Get Versions History
@@ -1067,7 +1067,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetVersions.png
+.. image:: ../_static/img/GetVersions.png
    :alt: Run CAML query and get items SharePoint Online
 
 
@@ -1133,6 +1133,6 @@ Example
 
   This is an example workflow which waits for changes in the fields 'Status' and 'Priority'. Then the workflow iterates through the result dictionary, extracts old and new values and logs it to the workflow history.
   
-.. image:: /_static/img/WaitForAnyChangeInFields.png
+.. image:: ../_static/img/WaitForAnyChangeInFields.png
    :alt: Example: Wait for any change in fields
 

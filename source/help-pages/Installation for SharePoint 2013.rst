@@ -12,22 +12,22 @@ Before installing Workflow Actions Pack ensure that Workflow Manager is configur
 
 After that you have to activate Web Application level feature **Plumsail Auth Service** for this please open your central administration site and navigate to **Application Management** section, click on the link **Manage web application**, choose your using web application, click to the **Features** button on the ribbon and activate the **Plumsail Auth Service** feature.
     
-.. image:: /_static/img/SiteAdm_appMng_MngWebApp.png
+.. image:: ../_static/img/SiteAdm_appMng_MngWebApp.png
    :alt: SharePoint Application Management
 
 Next, you have to activate feature on your site. Navigate to the site, open site settings and select Manage site features.
 
-.. image:: /_static/img/WFPack_6.-ManageSiteFeatures.png
+.. image:: ../_static/img/WFPack_6.-ManageSiteFeatures.png
    :alt: SharePoint Manage Site features
 
 Find feature called **Plumsail Workflow Actions Pack** and click **Activate**
 
-.. image:: /_static/img/WFPack_7.ActivateFeature.png
+.. image:: ../_static/img/WFPack_7.ActivateFeature.png
    :alt: SharePoint Activate Feature
 
 Now, you can find the following actions in SharePoint Designer under Plumsail section
 
-.. image:: /_static/img/WFPack_8.CheckInSPD.png
+.. image:: ../_static/img/WFPack_8.CheckInSPD.png
    :alt: SharePoint Designer new Actions
 
 Install license
@@ -45,7 +45,7 @@ Uninstall
 
 Run setup file and choose **Remove**, then finish the installation wizard.
 
-.. image:: /_static/img/RemoveWFActivityPack.png
+.. image:: ../_static/img/RemoveWFActivityPack.png
    :alt: RemoveWFActivityPack
 
 \
@@ -62,12 +62,12 @@ Upgrade
 Firstly, you have to deactivate **Plumsail Workflow Actions Pack** feature at the site level.
 `Download setup file </workflow-actions-pack/download/>`_ and run it on one of the servers in your Sharepoint 2013 farm as Farm Administrator. Choose **Upgrade** and follow the wizard steps.
 
-.. image:: /_static/img/UpgradeWFActivityPack.png
+.. image:: ../_static/img/UpgradeWFActivityPack.png
    :alt: Upgrade workflow actions pack
 
 Find the feature called **Plumsail Workflow Actions** Pack and click **Activate**
 
-.. image:: /_static/img/WFPack_7.ActivateFeature.png
+.. image:: ../_static/img/WFPack_7.ActivateFeature.png
    :alt: SharePoint Activate Feature
 
 
@@ -78,7 +78,7 @@ Upgrade workflows
 Sometimes after upgrade WSP package, you also need to upgrade your workflows. 
 To upgrade workflows you need to navigate to Site Settings -> Plumsail Workflow Actions and click ‘Upgrade’ button for workflows where you see it. After upgrading of workflows you need to clear Sharepoint Designer cache and open it again. You may need to reopen SharePoint Designer second time, it is specific of SharePoint Designer.
 
-.. image:: /_static/img/WFPack_Upgrade1.png
+.. image:: ../_static/img/WFPack_Upgrade1.png
    :alt: SharePoint upgrade workflows step 1
 
 

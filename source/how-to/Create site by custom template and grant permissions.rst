@@ -33,21 +33,18 @@ At this stage it was created the new SharePoint list *‘Projects’*  with foll
 * Contributors – Person or Group field. User accounts to be included in the project contributors group
 
 This is how the new form looks like:
+ 
+.. image:: ../_static/img/create-site-custom-1.png
+   :alt: Create site
 
- 
-.. image:: /_static/img/create-site-custom-1.png
-   :alt: 
- 
 As I mentioned above I simplified this example to keep it clear. You can add more fields to this list to work with your projects. For example you can add field *‘Management’*  and use it to create new SharePoint group for project management. I will show how to create new group below in the workflow.
 
 Save site as template
 ---------------------
 For demo purposes it was customized SharePoint team site to use it as a project workspace. I added some web parts to the main page and changed style of the site. You can see my project site below:
-
  
-.. image:: /_static/img/create-site-custom-2.png
-   :alt: 
-   
+.. image:: ../_static/img/create-site-custom-2.png
+   :alt: Create site   
  
  Then it was saved it as template. To save a site as template navigate to *‘Site Settings’*  and click at *‘Save site as template’* . You can read official `Microsoft documentation <http://msdn.microsoft.com/en-us/library/office/jj938033%28v=office.15%29.aspx#bkmk_SaveTemplate>`_ for more information.
 
@@ -61,29 +58,23 @@ You can find more information about specific parameters of workflow actions in `
 
 It was used only four variables in the workflow:
 
-
-.. image:: /_static/img/create-site-custom-3.png
-   :alt: 
+.. image:: ../_static/img/create-site-custom-3.png
+   :alt: Create site
 
 First two variables to store credentials. They are required for Office 365 only. *‘ProjectName*  ‘ to store name of a new project and *‘SecurityGroupName’*  to store the name for a new group of project contributors.
 
 The complete workflow is below:
 
-
-.. image:: /_static/img/create-site-custom-4.png
-   :alt: 
+.. image:: ../_static/img/create-site-custom-4.png
+   :alt: Create site
 
 As you can see it was divided the workflow to three stages *‘Setting variables’* , *‘Creating project site’*  and *‘Creating group and granting permissions’* .
-
-\
 
 Setting variables
 +++++++++++++++++
 At the first stage it was initialized credentials variables. Then I saved title of current list item to *‘ProjectName’*  variable (to keep workflow readable) and generated the new name for project contributors group.
 
 This workflow creates a new SharePoint group for each project to simplify permissions management. In this example I generated group name by concatenating *‘ProjectName’*  variable and “ *Contributors”*  string. See the picture above. You can use the same\approach to generate names for other groups, for example *‘[%ProjectName%] Project management’*  or *‘[%ProjectName%] Analysts’* .
-
-\
 
 Creating project site
 +++++++++++++++++++++
@@ -99,10 +90,8 @@ Additionally in the setting of workflow action it was switched *‘WebPermAsPare
 
 Also pay attention to the property *‘WebOnTopNav*  ‘, it has *‘Yes’*  value by default. It allows to add new sites to the top navigation of the parent site automatically. Thus, you will be able to start working with project site without adding it to navigation manually.
 
-
-.. image:: /_static/img/create-site-custom-5.png
-   :alt: 
-
+.. image:: ../_static/img/create-site-custom-5.png
+   :alt: Create site
 
 Creating group and granting permissions
 +++++++++++++++++++++++++++++++++++++++
@@ -116,10 +105,7 @@ In the *‘Grant permissions on Site’*  workflow action it was specified permi
 
 I also opened settings of this workflow action and changed *‘SiteUrl*  ‘ property. It was concatenated partial URL from *‘Site partial URL*  ‘ field with current site URL from the workflow context. See the picture below. It allows this workflow action to change permissions for the new project site.
 
-
-.. image:: /_static/img/create-site-custom-6.png
-   :alt: 
+.. image:: ../_static/img/create-site-custom-6.png
+   :alt: Create site
 
 That is all, the workflow is configured.
-
-

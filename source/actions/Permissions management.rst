@@ -41,7 +41,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/AddUserToGroup.png
+.. image:: ../_static/img/AddUserToGroup.png
    :alt: Add User to SharePoint Group
 
 Remove User from SharePoint Group
@@ -83,7 +83,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/RemoveUserFromGroup.png
+.. image:: ../_static/img/RemoveUserFromGroup.png
    :alt: Remove User from SharePoint Group
 
 Is User Member of SharePoint Group
@@ -139,7 +139,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/CheckUserInGroup.png
+.. image:: ../_static/img/CheckUserInGroup.png
    :alt: Is User Member of SharePoint Group
 
 Get Members of SharePoint Group
@@ -202,7 +202,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GetMembersGroup.png
+.. image:: ../_static/img/GetMembersGroup.png
    :alt: Get Members of SharePoint Group
 
 Set Default Site Group
@@ -244,7 +244,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/ChangeDefaultGroups.png
+.. image:: ../_static/img/ChangeDefaultGroups.png
    :alt: Set Up Groups for the Site
 
 Grant Permission on Site
@@ -292,7 +292,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GrantPermissionOnWeb.png
+.. image:: ../_static/img/GrantPermissionOnWeb.png
    :alt: Grant Permission on Site
 
 Remove Permissions from Site
@@ -341,7 +341,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/RevokePermissionOnWeb.png
+.. image:: ../_static/img/RevokePermissionOnWeb.png
    :alt: Remove Permissions from Site
 
 Grant Permission on List
@@ -393,7 +393,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GrantPermissionOnList.png
+.. image:: ../_static/img/GrantPermissionOnList.png
    :alt: Grant Permission on List
 
 Remove Permissions from List
@@ -445,7 +445,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/RevokePermissionOnList.png
+.. image:: ../_static/img/RevokePermissionOnList.png
    :alt: Remove Permissions from List
 
 Grant Permission on Item
@@ -500,7 +500,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/GrantPermissionOnItem.png
+.. image:: ../_static/img/GrantPermissionOnItem.png
    :alt: Grant Permission on Item
 
 Remove Permissions from Item
@@ -555,7 +555,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/RevokePermissionOnItem.png
+.. image:: ../_static/img/RevokePermissionOnItem.png
    :alt: Remove Permissions from Item
 
 Restore Permissions Inheritance for Site
@@ -591,7 +591,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/ResetPermissionOnWeb.png
+.. image:: ../_static/img/ResetPermissionOnWeb.png
    :alt: Restore Permissions Inheritance for Site
 
 Restore Permissions inheritance for List
@@ -630,7 +630,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/ResetPermissionOnList.png
+.. image:: ../_static/img/ResetPermissionOnList.png
    :alt: Restore Permissions inheritance for List
 
 Restore Permissions Inheritance for Item
@@ -672,7 +672,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/ResetPermissionOnItem.png
+.. image:: ../_static/img/ResetPermissionOnItem.png
    :alt: Restore Permissions Inheritance for Item
 
 Remove All Permissions from Site
@@ -708,7 +708,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/DeleteAllPermissionsFromWeb.png
+.. image:: ../_static/img/DeleteAllPermissionsFromWeb.png
    :alt: Remove All Permissions from Web
 
 Remove All Permissions from List
@@ -747,7 +747,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/DeleteAllPermissionsFromList.png
+.. image:: ../_static/img/DeleteAllPermissionsFromList.png
    :alt: Remove All Permissions from List
 
 Remove All Permissions from Item
@@ -789,6 +789,6 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/DeleteAllPermissionsFromItem.png
+.. image:: ../_static/img/DeleteAllPermissionsFromItem.png
    :alt: Remove All Permissions from Item
 

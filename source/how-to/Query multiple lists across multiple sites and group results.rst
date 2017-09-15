@@ -12,13 +12,13 @@ As a prof of concept I will create two workflows which send reports about checke
 This is case where `Get Items by Query (Many Lists) <https://plumsail.com/workflow-actions-pack/docs/documents-list-items-processing/#GetItemsFromSite>`_ will be very useful, because it allows us to run one CAML query to many lists and as result, it will be single Dictionary object.\
 
 
-.. image:: /_static/img/query-multiple-lists-1.png
+.. image:: ../_static/img/query-multiple-lists-1.png
    :alt: Get Items by Query from many lists
 
 Moreover, we can sort and group list items by one of fields. For example you group checked out documents by user. Result of query can be structured like this:
 
 
-.. image:: /_static/img/query-multiple-lists-2.png
+.. image:: ../_static/img/query-multiple-lists-2.png
    :alt: Get Items by Query from many lists and group results
 
 Checked out documents – Administrators’ Report
@@ -26,7 +26,7 @@ Checked out documents – Administrators’ Report
 So, let’s back to our Document Management System based on SharePoint. To build report by checked out documents for administrator we need to query all checked out documents and create composed email for administrator, below you can see the whole workflow process:
 
  
-.. image:: /_static/img/query-multiple-lists-3.png
+.. image:: ../_static/img/query-multiple-lists-3.png
    :alt: SharePoint Checked-out documents report
 
 The workflow is divided into two parts. First part it is configuration. It contains email account and password. Also it contains Email Template which I provide below:
@@ -87,7 +87,7 @@ Below I provide a sample of CAML query which I use
 On next important step that is required for `Render Text Template <https://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ we build DataDictionary following way:
 
 
-.. image:: /_static/img/query-multiple-lists-4.png
+.. image:: ../_static/img/query-multiple-lists-4.png
    :alt: SharePoint Build a Dictionary Dynamic Value
 I just created new variable and placed collection of checked out documents and site URL to separate properties of the dictionary. Now we can use this composed object as data for our HTML template.
 
@@ -98,7 +98,7 @@ Checked out documents – Users’ Report
 The second workflow should send individual notifications to users, it uses the same principles as previous, but the only difference it uses loop to iterate received data. The whole workflow you can see at the figure below:
 
 
-.. image:: /_static/img/query-multiple-lists-5.png
+.. image:: ../_static/img/query-multiple-lists-5.png
    :alt: SharePoint Checked-out documents user report
 
 The loop iterates groups with selected users. This is required because I use ‘group by’ option in `Get Items by Query (Many Lists) <https://plumsail.com/workflow-actions-pack/docs/documents-list-items-processing/#GetItemsFromSite>`_ activity and our data looks like at the picture at the beginning of the article. Inside the loop, we receive documents which were checked out by this user and create individual email notification for the user.
@@ -106,7 +106,7 @@ The loop iterates groups with selected users. This is required because I use ‘
 Other steps are very similar to previous report and I don’t think I should explain it more. One little detail it is Build Dictionary workflow action, which is configured the following way:
 
 
-.. image:: /_static/img/query-multiple-lists-6.png
+.. image:: ../_static/img/query-multiple-lists-6.png
    :alt: SharePoint Build a Dictionary Dynamic Value
    
 The CAML query in this workflow is the same as in previous workflow, but the HTML template is a little different.

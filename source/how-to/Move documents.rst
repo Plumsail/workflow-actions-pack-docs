@@ -12,7 +12,7 @@ As result it is not always possible to store 30 000 000 documents in the single 
 It will show how to set up periodical archival process, which will run monthly. This workflow will create new document library and move documents created during the previous month into this document library. The workflow produces the structure of libraries like this:
 
 
-.. image:: /_static/img/move-document-1.png
+.. image:: ../_static/img/move-document-1.png
    :alt: 
 
 It has single document library *‘Documents’*  at work, once per month the workflow creates new document library and names it using such pattern *‘Archive – {YEAR} {MONTH}’* .
@@ -20,7 +20,7 @@ It has single document library *‘Documents’*  at work, once per month the wo
 The document library has plain structure without folders, it was use metadata navigation by project and by department instead of folders. I added two metadata columns into document library ‘Project’ and ‘Department’. You can see how it looks below:
 
 
-.. image:: /_static/img/move-document-2.png
+.. image:: ../_static/img/move-document-2.png
    :alt: 
 
 To implement archival workflow with such functionality, it has to be able to create new document libraries by custom template, because I have two metadata column in the library. I also need to query documents using CAML query, because I have to archive documents created in the last month only. To create document library I need to generate appropriate name using template *‘Archive – {YEAR} {MONTH}’* . Then I have to move documents which I received from CAML query into created document library. In this example I work within the same SharePoint site, but I want to have possibility to move documents cross-site. Finally I need to schedule the archival workflow to run periodically.
@@ -38,7 +38,7 @@ It was created one site level workflow named *‘Move to archive’* . It consis
 
 You can see the stage outline for the workflow below:
 
-.. image:: /_static/img/move-document-3.png
+.. image:: ../_static/img/move-document-3.png
    :alt: 
 
 
@@ -53,7 +53,7 @@ Take a look at `documentation <http://plumsail.com/workflow-actions-pack/docs/>`
 
 Before we dive in, also take a look at workflow variables of the archival workflow:
  
-.. image:: /_static/img/move-document-4.png
+.. image:: ../_static/img/move-document-4.png
    :alt: 
 
 Setting credentials stage
@@ -62,7 +62,7 @@ At this stage it just saved credentials which I use within workflow actions in w
 
 You can see text-based view of this stage below:
 
-.. image:: /_static/img/move-document-5.png
+.. image:: ../_static/img/move-document-5.png
    :alt: 
 
 Querying documents stage
@@ -74,7 +74,7 @@ At this stage it was used two custom workflow actions:
 
 You can see text-based view of the stage below:
 
-.. image:: /_static/img/move-document-6.png
+.. image:: ../_static/img/move-document-6.png
    :alt: 
 
 At this stage it used *‘dd’*  format string which allows to get day number. It needed this to build CAML query which could return documents from the previous month only except documents created in the current month.
@@ -117,14 +117,14 @@ Firstly it was used *‘Add Time to Date’*  workflow action to subtract one mo
 To create new document library I used *‘Create list or library’*  workflow action. As mentioned in the beginning of this article, I added two metedata columns into document library, therefore archival document libraries also have to contain such columns. To guarantee that archival document libraries will have such columns I saved source document library as template. To save library as template navigate to *‘Library Settings’*  and click *‘Save document library as template’*.  I named the template as *‘Project Documents’* . I used this template’s name in the workflow action as well as name generated in the *‘Format date’*  workflow action. See text-based view of this stage:
 
 
-.. image:: /_static/img/move-document-7.png
+.. image:: ../_static/img/move-document-7.png
    :alt: 
 
 
 One important note about configuration of *‘Create list or library’*  workflow action. There is ‘ThrowError’ property and I set it to *‘No’* , because I don’t want to interrupt the workflow if the document library already exists. You can find this property in workflow action’s properties:
 
 
-.. image:: /_static/img/move-document-8.png
+.. image:: ../_static/img/move-document-8.png
    :alt: 
 
 Moving documents stage
@@ -146,7 +146,7 @@ Paths has following format:
 
 The *‘ind’*  variable stores current index within the loop. You can see how I used it on the picture below.
 
-.. image:: /_static/img/move-document-9.png
+.. image:: ../_static/img/move-document-9.png
    :alt: 
 
 
@@ -167,19 +167,19 @@ Workflow scheduling
 Scheduling of workflows is quite useful, especially for SharePoint Online in Office 365, because there is not any possibility to create custom timer job or something like this. To schedule the archival workflow I used Workflow Scheduler. I configured schedule to run the workflow at 6th day of each month. So, in the beginning of the month I still can use documents from the previous month, but at 6th day, if I didn’t use them, they will be moved to the newly created document library archive. As I described above, I created the workflow with possibility to change the schedule. Do you remember *‘dayoffset minus current day’* ? So it is possible to specify any other day to start the workflows. You can see configuration of the workflow scheduling task below:
 
 
-.. image:: /_static/img/move-document-10.png
+.. image:: ../_static/img/move-document-10.png
    :alt: 
 
 
 Full schemes of the workflow
 ----------------------------
 
-.. image:: /_static/img/move-document-11.png
+.. image:: ../_static/img/move-document-11.png
    :alt:
    :target: https://plumsail.com/docs/workflow-actions-pack/_images/move-document-11.png
 
 
-.. image:: /_static/img/move-document-12.png
+.. image:: ../_static/img/move-document-12.png
    :alt: 
    :target: https://plumsail.com/docs/workflow-actions-pack/_images/move-document-12.png
 

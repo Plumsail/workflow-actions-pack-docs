@@ -7,12 +7,12 @@ Let’s imagine a situation where during a day people work with documents in Sha
 
 Below you can find an example of a small workflow which gets all documents in check-out status and does check-in for each one.
 
-.. image:: /_static/img/check-in-docs-1.png
+.. image:: ../_static/img/check-in-docs-1.png
    :alt:
 
 The action `Get Item by Query <https://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-query>`_ was used with the following configuration:
 
-.. image:: /_static/img/check-in-docs-2.png
+.. image:: ../_static/img/check-in-docs-2.png
    :alt:
 
 Notice that the endpoint was “client.svc” to get the data and expand File property to get File/ServerRelativeUrl

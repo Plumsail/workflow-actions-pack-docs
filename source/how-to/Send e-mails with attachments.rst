@@ -24,7 +24,7 @@ How to get attachment URLs from current item
 When you are configuring Send Email workflow action, you might need to specify attachment URLs. If you create a list level workflow, you can use `Get Attachments to Dictionary </workflow-actions-pack/docs/documents-list-items-processing/#GetAttachments>`_ in conjunction with `Join Dictionary Values </workflow-actions-pack/docs/string-processing-workflow-actions/#DynamicValueJoinToString>`_ to get attachments from current item (or any Item by ID) into array and join it into the string. You have to join to string to create correct semicolon delimitated list of URLs. The example of use you can see at figure below:
 
 
-.. image:: /_static/img/send-email-with-attachments-1.png
+.. image:: ../_static/img/send-email-with-attachments-1.png
    :alt: SharePoint get current item attachment links
 
 How to specify multiple recipients or Reply mailbox (To, CC, BCC, ReplyTo fields)
@@ -32,7 +32,7 @@ How to specify multiple recipients or Reply mailbox (To, CC, BCC, ReplyTo fields
 Using advanced properties you can fill in additional fields. In addition, you can specify multiple fields using semicolon (‘;’) as separator.
 
 
-.. image:: /_static/img/send-email-with-attachments-2.png
+.. image:: ../_static/img/send-email-with-attachments-2.png
    :alt: Send email to multiple receipients
 
 How to setup complex formatting
@@ -40,7 +40,7 @@ How to setup complex formatting
 The workflow actions support HTML in the message body . You can use any HTML tags with style attributes to format you email message. As example, I provide open source `Responsive HTML Email Template <https://github.com/leemunroe/responsive-html-email-template>`_ .
 
 
-.. image:: /_static/img/send-email-with-attachments-3.png
+.. image:: ../_static/img/send-email-with-attachments-3.png
    :alt: SharePoint Workflow Email HTML template
  
 How to embed images into text
@@ -48,6 +48,6 @@ How to embed images into text
 You can specify “Parse Images” option in workflow action properties. Once you did it, the email body will be parsed (it will try to parse all img tags). The workflow action will download all images and include it as embed images. Note, you can embed images located inside SharePoint site. The workflow action can’t embed images from other sources.
 
 
-.. image:: /_static/img/send-email-with-attachments-4.png
+.. image:: ../_static/img/send-email-with-attachments-4.png
    :alt: SharePoint Workflow Send Embed Images
 

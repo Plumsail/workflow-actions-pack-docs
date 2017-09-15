@@ -7,7 +7,7 @@ Below you can see the screenshot of generated PDF invoice:
 
 `Click here <https://static.plumsail.com/wp-content/uploads/Blog/Local/GeneratePdfFromTemplate/Invoice.pdf>`_ to download the PDF file.
 
-.. image:: /_static/img/generate-pdf-1.png
+.. image:: ../_static/img/generate-pdf-1.png
    :alt: GeneratedPDF
  
 It was used workflow actions from `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ to generate a document. Especially `Render Text Template <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ workflow action to convert template to HTML and `Convert HTML to PDF <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#HtmlToPdf>`_ to generate a PDF file from HTML.
@@ -59,7 +59,7 @@ Complete HTML template is more complex and contains additional CSS styles, you c
 HTML generation and PDF conversion workflow actions of my workflow look like this:
 
 
-.. image:: /_static/img/generate-pdf-2.png
+.. image:: ../_static/img/generate-pdf-2.png
    :alt: DocumentGeneration
  
  You can find complete workflow at the end of this article.
@@ -118,7 +118,7 @@ As you can see this nested object contains all information required to generate 
 For this proof of concept it was created following structure of SharePoint lists:
 
 
-.. image:: /_static/img/generate-pdf-3.png
+.. image:: ../_static/img/generate-pdf-3.png
    :alt: DataStructure
    
 This structure is quite simplified, real life examples can be more complex, but I don’t want to confuse you with complex relationships. I used ‘Orders’ list to store information for header and footer of an invoice. The list ‘Invoice positions’ is required to store information about invoice positions. I used it to generate table in the middle of an invoice.
@@ -126,7 +126,7 @@ This structure is quite simplified, real life examples can be more complex, but 
 It was created list level workflow for ‘Orders’ list. Once it is started on order list item it collects all necessary information and generates a PDF file. You can see below the part of workflow which queries data and combines it to single dictionary:
 
 
-.. image:: /_static/img/generate-pdf-4.png
+.. image:: ../_static/img/generate-pdf-4.png
    :alt: DataCollection
 
 The first workflow action is `Get Items by Query <http://plumsail.com/workflow-actions-pack/docs/documents-list-items-processing/#GetItems>`_ . I used it to query list items from ‘Invoice positions’ list. Each list item in this list is linked to specific order by lookup field ‘Order’. I used it to query items for current order only. See the CAML query:
@@ -147,7 +147,7 @@ The first workflow action is `Get Items by Query <http://plumsail.com/workflow-a
 The second workflow action is out of the box ‘Build a Dictionary’. I used it to combine list results of CAML query and field values from current item (Client Name, Client Company, etc) into single dictionary. This dictionary is used in HTML template, see ‘Render Text Template’ workflow action which I mentioned above. This is how I configured the workflow action:
 
 
-.. image:: /_static/img/generate-pdf-5.png
+.. image:: ../_static/img/generate-pdf-5.png
    :alt: FinalDictionaryCollecting
 
 How to embed images into PDF
@@ -170,7 +170,7 @@ Complete workflow
 Now there's all data required for generation of invoice. Complete workflow looks like this:
 
 
-.. image:: /_static/img/generate-pdf-6.png
+.. image:: ../_static/img/generate-pdf-6.png
    :alt: CompleteWorkflow
 
 

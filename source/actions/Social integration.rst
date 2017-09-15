@@ -55,7 +55,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/PublishToWordpress.png
+.. image:: ../_static/img/PublishToWordpress.png
    :alt: 
 
 Post to MicroFeed
@@ -79,7 +79,7 @@ Input parameters
        -  admin@contoso.com
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin’sP@ssw0rd$
+       -  adminï¿½sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  ::
@@ -97,7 +97,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/PublishFeed.png
+.. image:: ../_static/img/PublishFeed.png
    :alt: 
 
 Post to Twitter
@@ -131,6 +131,6 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/PublishToTwitter.png
+.. image:: ../_static/img/PublishToTwitter.png
    :alt: 
 

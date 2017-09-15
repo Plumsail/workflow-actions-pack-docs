@@ -69,7 +69,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/SyncExchangeEmails.png
+.. image:: ../_static/img/SyncExchangeEmails.png
    :alt: Sync Exchange Emails to SharePoint
 
 Sync Mailbox with List (IMAP)
@@ -147,7 +147,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/SyncIMAPEmails.png
+.. image:: ../_static/img/SyncIMAPEmails.png
    :alt: Sync Mailbox to SharePoint via IMAP
 
 Sync Mailbox with List (Shared Mailbox)
@@ -214,7 +214,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/ExchangeRestToSP.png
+.. image:: ../_static/img/ExchangeRestToSP.png
    :alt: Sync SharedMailbox to SharePoint
 
 Send E-Mail with Attachments
@@ -304,6 +304,6 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: /_static/img/SendEmail.png
+.. image:: ../_static/img/SendEmail.png
    :alt: Send email with attachments
 

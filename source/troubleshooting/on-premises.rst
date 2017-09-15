@@ -30,20 +30,20 @@ Troubleshooting workflow engine
 3. Is the user account starting the workflow different from the Worflow Manager setup account? (`more info <http://technet.microsoft.com/en-us/library/jj658588.aspx#section7>`_)
 4. Are the *User Profile Service*  and *App Management Service* started? See the green frames in the screenshot below, taken from *Central Administration* \\ *Manage Services on Server*
    
-.. image:: /_static/img/troubleshooting/Services-Started.png
+.. image:: ../_static/img/troubleshooting/Services-Started.png
    :align: center
 
 
 5. Are the *App Management Service Application*  and *User Profile Service Application*  started? Their proxies should be started as well. See the green frames in the screenshot below, taken from *Central Administration* \\ *Manage Services on Server*
    
-.. image:: /_static/img/troubleshooting/Service-Applications-Started.png
+.. image:: ../_static/img/troubleshooting/Service-Applications-Started.png
    :align: center
 
 Is SharePoint 2013 server connected?
 ------------------------------------
 In *Central Admin* -> *Service Applications* -> *Workflow Service Application Proxy* : check the status. Does it read *Workflow is Connected*  as in the below screenshot?
 
-.. image:: /_static/img/troubleshooting/Workflow-Status.png
+.. image:: ../_static/img/troubleshooting/Workflow-Status.png
    :alt: Workflow Status
    :align: center
 
@@ -55,7 +55,7 @@ On a server member of the Workflow Manager farm:
 2. Run the *Get-WFFarmStatus* command
 3. Are the statuses *Running* , as on the screenshot below?`
 
-.. image::  /_static/img/troubleshooting/Workflow-Status-PowerShell.png
+.. image::  ../_static/img/troubleshooting/Workflow-Status-PowerShell.png
    :alt: Workflow Status PowerShell
    :align: center
 
@@ -63,7 +63,7 @@ Is the Oauth Metadata information published and accessible from the SharePoint s
 --------------------------------------------------------------------------------------
 On the SharePoint 2013 server, start Internet Explorer, and check whether theOauth metadatais accessible. The url is like "http://wfm1:12291/$SYSTEM/$Metadata/json/1". Below an example:
 
-.. image:: /_static/img/troubleshooting/OAuth-JSon-Info.png
+.. image:: ../_static/img/troubleshooting/OAuth-JSon-Info.png
    :alt: OAuth JSon Info
    :align: center
 

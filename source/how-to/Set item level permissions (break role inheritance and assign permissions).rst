@@ -7,14 +7,14 @@ But there are some nuances in the case. When a user sends a document to approve,
 
 In this case, we guarantee that no one else could change the document after the process was started.
 
-.. image:: /_static/img/item-level-permissions-1.png
+.. image:: ../_static/img/item-level-permissions-1.png
    :alt:
 
 If the document was rejected at some stage, the workflow will change permission back and allow to author to fix the issues with the document.
 
 In case, that everything is OK, at the final stage of the approval workflow it will set up read-only permissions for all users. Please have a look at the whole workflow in the SharePoint Designer. You can use it as basic skillet of the similar workflow of course in the real-world scenario you need to add notifications and may be some more approvals or different permission levels.
 
-.. image:: /_static/img/item-level-permissions-2.png
+.. image:: ../_static/img/item-level-permissions-2.png
    :alt:
 
 At the end of the article I want to notice that to implement the case I used only two workflow actions, but `Workflow Actions Pack <https://plumsail.com/workflow-actions-pack/>`_ contains a bit more, please have a look at the list below:

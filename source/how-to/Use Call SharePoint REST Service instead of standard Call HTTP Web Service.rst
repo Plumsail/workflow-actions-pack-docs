@@ -16,28 +16,28 @@ A guy describes how to create a simple workflow which gets items from a list and
 I reproduced the case and it takes almost half an hour to create it.
 
 
-.. image:: /_static/img/rest-oob-vs-plumsail-1.png
+.. image:: ../_static/img/rest-oob-vs-plumsail-1.png
    :alt: Get Items via REST Service out of the box 
 
 \
  
-.. image:: /_static/img/rest-oob-vs-plumsail-2.png
+.. image:: ../_static/img/rest-oob-vs-plumsail-2.png
    :alt: 
 
 \
 
-.. image:: /_static/img/rest-oob-vs-plumsail-3.png
+.. image:: ../_static/img/rest-oob-vs-plumsail-3.png
    :alt: 
 
 \
 
-.. image:: /_static/img/rest-oob-vs-plumsail-4.png
+.. image:: ../_static/img/rest-oob-vs-plumsail-4.png
    :alt: 
 
 After that, it was installed `Workflow Actions Pack <https://plumsail.com/workflow-actions-pack/>`_ and it was created the same use case\but using actions from Workflow Actions Pack. Of course, it took just 5 mins and the final workflow looks more clear for anyone who has to maintain it in the future.
 
 
-.. image:: /_static/img/rest-oob-vs-plumsail-5.png
+.. image:: ../_static/img/rest-oob-vs-plumsail-5.png
    :alt: Get Items via REST API SharePoint Workflow
 
 

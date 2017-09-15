@@ -5,12 +5,12 @@ This short post will describe `Copy List Item <https://plumsail.com/docs/workflo
 
 This is an example of configured workflow action:
 
-.. image:: /_static/img/copy-list-attachment-1.png
+.. image:: ../_static/img/copy-list-attachment-1.png
    :alt:
 
 On the example, above you see the basic of usage the action, but you can open properties window of the action to see advanced options. To open the properties window please right click on the workflow action and select properties.
 
-.. image:: /_static/img/copy-list-attachment-2.png
+.. image:: ../_static/img/copy-list-attachment-2.png
    :alt:
 
 Please pay attention that the action allows you to copy the item cross-site as well, also it can copy attachments, for this, you need to turn on Copy Attachments option. Also, you can save the ID of created list item, the option can be useful if you want to send a link to the list item by email or maybe save it anywhere, for this you can use List Item ID variable. 
