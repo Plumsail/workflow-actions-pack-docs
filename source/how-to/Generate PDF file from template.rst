@@ -22,37 +22,35 @@ Below you can see a part of my template which generates table with invoice posit
 
 .. code:: html
 
-  <pre class = "prettyprint linenums"><table id= "invoice-amount">
-  <thead\>
-   <tr id = "header_row">
-   <th class = "index_th">#</th>
-   <th class = "left details_th">Title</th>
-   <th class = "quantity_th">Quantity</th>
-   <th class = "unitprice_th">Unit Price ($)</th>
-   <th class = "subtotal_th">Subtotal ($)</th>
-   </tr>
-  </thead>
-  <tfoot>
-   <tr id = "total_tr">
-   <td colspan = "2">&amp;nbsp;</td>
-   <td colspan = "2" class = "total" id = "total_currency"><span class = "currency">$</span> Total </td>
-   <td class = "total"> ${{Total}} </td>
-   </tr>
-  </tfoot>
-   <tbody>
-   {{#each Items}}
-   {{#with FieldValues}}
-   <tr class = "item"> 
-    <td class = "item_l"> {{#index}} </td>
-    <td class = "item_l"> {{Title}} </td>
-    <td class = "item_r"> {{Quantity}} </td>
-    <td class = "item_r" > {{UnitPrice}} </td>
-    <td class = "item_r" > {{SubTotal}} </td>
-   </tr>
-   {{/with}}
-   {{/each}}   
-   </tbody>
-   </table></pre>
+  <table id="invoice-amount">
+    <thead>
+        <tr id="header_row">
+            <th class="index_th">#</th>
+            <th class="left details_th">Title</th>
+            <th class="quantity_th">Quantity</th>
+            <th class="unitprice_th">Unit Price ($)</th>
+            <th class="subtotal_th">Subtotal ($)</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr id="total_tr">
+            <td colspan="2">&amp;nbsp;</td>
+            <td colspan="2" class="total" id="total_currency"><span class="currency">$</span> Total </td>
+            <td class="total"> ${{Total}} </td>
+        </tr>
+    </tfoot>
+    <tbody>
+        {{#each Items}} {{#with FieldValues}}
+        <tr class="item">
+            <td class="item_l"> {{#index}} </td>
+            <td class="item_l"> {{Title}} </td>
+            <td class="item_r"> {{Quantity}} </td>
+            <td class="item_r"> {{UnitPrice}} </td>
+            <td class="item_r"> {{SubTotal}} </td>
+        </tr>
+        {{/with}} {{/each}}
+    </tbody>
+  </table>
 
 Complete HTML template is more complex and contains additional CSS styles, you can `download it here <https://static.plumsail.com/wp-content/uploads/Blog/Local/GeneratePdfFromTemplate/Template.txt>`_ .
 
@@ -176,4 +174,6 @@ Now there's all data required for generation of invoice. Complete workflow looks
 
 Files to download
 -----------------
-`HTML template <https://static.plumsail.com/wp-content/uploads/Blog/Local/GeneratePdfFromTemplate/Template.txt>`_  `Sample generated PDF <https://static.plumsail.com/wp-content/uploads/Blog/Local/GeneratePdfFromTemplate/Invoice.pdf>`_ 
+`HTML template <https://static.plumsail.com/wp-content/uploads/Blog/Local/GeneratePdfFromTemplate/Template.txt>`_  
+
+`Sample generated PDF <https://static.plumsail.com/wp-content/uploads/Blog/Local/GeneratePdfFromTemplate/Invoice.pdf>`_ 
