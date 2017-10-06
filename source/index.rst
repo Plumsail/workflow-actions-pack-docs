@@ -84,7 +84,8 @@ All documentation articles
       how-to/Change Author field in SharePoint list Item
       how-to/Check-in multiple files
       how-to/Copy document set to another library
-      how-to/Copy list item with attachments across site collections            
+      how-to/Copy list item with attachments across site collections
+      how-to/How to create or update a list item at any site            
       how-to/How to use dynamic text and HTML templates
       how-to/Invite external users
       how-to/Send periodic expiration email notifications
