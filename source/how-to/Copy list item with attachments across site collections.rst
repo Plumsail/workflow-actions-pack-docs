@@ -13,4 +13,4 @@ On the example, above you see the basic of usage the action, but you can open pr
 .. image:: ../_static/img/copy-list-attachment-2.png
    :alt:
 
-Please pay attention that the action allows you to copy the item cross-site as well, also it can copy attachments, for this, you need to turn on Copy Attachments option. Also, you can save the ID of created list item, the option can be useful if you want to send a link to the list item by email or maybe save it anywhere, for this you can use List Item ID variable. .
+Please pay attention that the action allows you to copy the item cross-site as well, also it can copy attachments, for this, you need to turn on Copy Attachments option. Also, you can save the ID of created list item, the option can be useful if you want to send a link to the list item by email or maybe save it anywhere, for this you can use List Item ID variable.
