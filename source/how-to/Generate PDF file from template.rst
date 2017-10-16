@@ -16,7 +16,7 @@ At the end of this article I will describe how to embed images to PDF. For examp
 
 How does templating work?
 -------------------------
-‘Render Text Template’ workflow action uses Mustache templating engine to render text templates. It supports tokens for single values as well as iterators to render collections of elements. You can play around with sample template on `github <http://mustache.github.io/#demo>`_ . Mustache is quite flexible templating engine, you can use it to generate complex HTML which then can be used to convert to PDF file. In my `previous article <plumsail.com/blog/2014/09/dynamic-templates-using-workflows-sharepoint2013-office365/>`_ I described how to use it to generate email messages based on SharePoint list items. It is the same for PDF file generation, you just need to create HTML template and it will be converted to HTML.
+‘Render Text Template’ workflow action uses Mustache templating engine to render text templates. It supports tokens for single values as well as iterators to render collections of elements. You can play around with sample template on `github <http://mustache.github.io/#demo>`_ . Mustache is quite flexible templating engine, you can use it to generate complex HTML which then can be used to convert to PDF file. In my `previous article <How%20to%20use%20dynamic%20text%20and%20HTML%20templates.html>`_ I described how to use it to generate email messages based on SharePoint list items. It is the same for PDF file generation, you just need to create HTML template and it will be converted to HTML.
 
 Below you can see a part of my template which generates table with invoice positions:
 
