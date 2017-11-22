@@ -35,7 +35,7 @@ Out of the box workflow actions don’t provide required functionality. It will 
 
 
 
-*  `Get items by query </docs/workflow-actions-pack/actions/List items processing.html#get-items-by-caml-query>`_ 
+*  `Get items by query </docs/workflow-actions-pack/actions/List items processing.html#get-items-by-query>`_ 
 *  `Send e-mail with attachment </docs/workflow-actions-pack/actions/E-mail processing.html#send-e-mail-with-attachments>`_ 
 
 How to create list of subscribers and document library

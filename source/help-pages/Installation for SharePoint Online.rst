@@ -101,7 +101,7 @@ In the window fill credentials for your Office 365 account and click **Sign in**
 If any of workflows are required to upgrade, you should see the upgrade notification, otherwise all alright.
 
 Then click **Upgrade** to upgrade the workflow. 
-Please pay attention on `Version history <../Other/Version%20History.html>`_ page in some cases you need to do additional actions.
+Please pay attention on `Version history <../other/Version%20History.html>`_ page in some cases you need to do additional actions.
 	
 
 Issues
