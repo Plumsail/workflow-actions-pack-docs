@@ -3,7 +3,7 @@ SharePoint On-Premises
 
 Check list for workflow manager server
 --------------------------------------
-1. Check https://[wfms]:12290 or http://[wfms]:12291 if they are responding
+1. Check :code:`https://[wfms]:12290` or :code:`http://[wfms]:12291` if they are responding
 2. Check *WorkflowMgmtPool* is started 
 3. Following services are running::
 
@@ -14,7 +14,7 @@ Check list for workflow manager server
 
 4. Get workflow farm information, workflow database by Start Workflow Manager PowerShell **Get-WFFarm** 
 5. Check if the Workflow Manager farm running (workflow service backend and front end should be running) by Start Workflow Manager PowerShell **get-WFfarmStatus**
-6. Check OAuth in accessible by **http://[wfms]:12291/$SYSTEM/$Metadata/json/1** (more info `Is the Oauth Metadata information published and accessible from the SharePoint server?`_)
+6. Check OAuth in accessible by :code:`http://[wfms]:12291/$SYSTEM/$Metadata/json/1` (more info `Is the Oauth Metadata information published and accessible from the SharePoint server?`_)
 7. Restart the **WorkflowServiceBackend** service::
 
       net stop WorkflowServiceBackend
@@ -25,7 +25,7 @@ If all is fine then probably something with Workflow Engine or Actions Pack.
 Troubleshooting workflow engine
 -------------------------------
 
-1. Look in the Workflow History list, eg http://sp2013/Lists/Workflow History. Do you find any errors in there? 
+1. Look in the Workflow History list, eg :code:`http://sp2013/Lists/Workflow%20History`. Do you find any errors in there? 
 2. Is the user account starting the workflow correctly synchronized in the user profile database?
 3. Is the user account starting the workflow different from the Worflow Manager setup account? (`more info <http://technet.microsoft.com/en-us/library/jj658588.aspx#section7>`_)
 4. Are the *User Profile Service*  and *App Management Service* started? See the green frames in the screenshot below, taken from *Central Administration* \\ *Manage Services on Server*

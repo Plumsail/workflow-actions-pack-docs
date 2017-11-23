@@ -23,14 +23,14 @@ Input parameters
        -  Approvers
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -65,13 +65,13 @@ Input parameters
        -  Approvers
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
+       -  :code:`https://contoso/SiteUrl`
           [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -121,13 +121,13 @@ Input parameters
        -  Approvers
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
+       -  :code:`https://contoso/SiteUrl`
           [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -185,13 +185,14 @@ Input parameters
        -  Approvers
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl[%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -226,13 +227,13 @@ Input parameters
        -  Owners
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
+       -  :code:`https://contoso/SiteUrl`
           [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -272,13 +273,14 @@ Input parameters
        -  5
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl[%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  User or group
        -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  Workflow Context:Initiator
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
@@ -320,14 +322,14 @@ Input parameters
        -  5
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-              [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  User or group
        -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  Company administrator
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
@@ -375,14 +377,14 @@ Input parameters
        -  Workflow Context:Initiator
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-              [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -424,17 +426,17 @@ Input parameters
        -  Tickets
     *  -  User or group
        -  Login, Email or Name of the User. Also you can specify multiple items using semicolon ';' delimited
-       -  Jack@contoso.com
+       -  :code:`Jack@contoso.com`
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-             [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -479,17 +481,17 @@ Input parameters
        -  Tickets
     *  -  User or group
        -  Login, Email or Name of the User. Also you can specify multiple items using semicolon ';' delimited
-       -  Jack@contoso.com
+       -  :code:`Jack@contoso.com`
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-             [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -534,17 +536,17 @@ Input parameters
        -  Tickets
     *  -  User or group
        -  Login, Email or Name of the User. Also you can specify multiple items using semicolon ';' delimited
-       -  Jack@contoso.com
+       -  :code:`Jack@contoso.com`
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-             [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -573,11 +575,11 @@ Input parameters
        -  Example
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-             [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
@@ -612,14 +614,14 @@ Input parameters
        -  Tickets
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-             [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -654,14 +656,14 @@ Input parameters
        -  Tickets
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-             [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -690,11 +692,11 @@ Input parameters
        -  Example
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-              [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
@@ -729,14 +731,14 @@ Input parameters
        -  Tickets
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-              [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -771,14 +773,14 @@ Input parameters
        -  Tickets
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  Password of the SharePoint administrator (for Office 365 only).
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
-             [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes

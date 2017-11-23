@@ -18,7 +18,7 @@ Input parameters
        -  Example
     *  -  Email
        -  E-mail of the Exchange User
-       -  support@contoso.com
+       -  :code:`support@contoso.com`
     *  -  Password
        -  Password of Exchange User
        -  Support’sP@ssw0rd$
@@ -52,7 +52,7 @@ Input parameters
        -  Yes
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -87,7 +87,7 @@ Input parameters
        -  Example
     *  -  Email
        -  Mailbox for sync
-       -  support@contoso.com
+       -  :code:`support@contoso.com`
     *  -  Password
        -  Password for Mailbox
        -  Support’sP@ssw0rd$
@@ -100,7 +100,7 @@ Input parameters
        -  Tickets
     *  -  IMAP Server
        -  IMAP Server name
-       -  outlook.office365.com
+       -  :code:`outlook.office365.com`
     *  -  Port
        -  IMAP Port
        -  993
@@ -130,7 +130,7 @@ Input parameters
        -  Yes
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -166,7 +166,7 @@ Input parameters
        -  Example
     *  -  Mailbox
        -  E-mail of the SharePoint online shared mailbox
-       -  SMO-Main@plumsail.com
+       -  :code:`SMO-Main@plumsail.com`
     *  -  List
        -  SharePoint List for synchronization. 
           The following fields will be filled from e-mail automatically: 
@@ -197,7 +197,7 @@ Input parameters
        -  Yes
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -236,7 +236,7 @@ Input parameters
        -  Example
     *  -  Address
        -  E-mail of the recipient
-       -  SomeUser@gmail.com
+       -  :code:`SomeUser@gmail.com`
     *  -  Subject
        -  Subject of the message
        -  SharePoint notification
@@ -248,16 +248,16 @@ Input parameters
        -  Plumsail notification system
     *  -  ReplyTo
        -  Address for reply
-       -  no-reply@plumsail.com
+       -  :code:`no-reply@plumsail.com`
     *  -  Cc
        -  E-mail carbon copy addressee
-       -  no-reply@plumsail.com
+       -  :code:`no-reply@plumsail.com`
     *  -  Bcc
        -  E-mail blind carbon copy addressee
-       -  no-reply@plumsail.com
+       -  :code:`no-reply@plumsail.com`
     *  -  AttachmentUrls
        -  Urls of attachments delimited by ';'
-       -  /somefolder/sometxt.txt;http://somesite.com/images/someimage.img
+       -  /somefolder/sometxt.txt;:code:`http://somesite.com/images/someimage.img`
     *  -  Add Item Attachments
        -  If the option is checked, a workflow will send attachments from the current list item or a document set.
        -  True
@@ -269,16 +269,16 @@ Input parameters
        -  False
     *  -  From
        -  Sender email
-       -  support@contoso.com
+       -  :code:`support@contoso.com`
     *  -  EXEmail
        -  E-mail that is used to connect to the SMTP server
-       -  support@contoso.com
+       -  :code:`support@contoso.com`
     *  -  EXPassword
        -  Password to connect to SMTP server
        -  Support’sP@ssw0rd$
     *  -  Host
        -  SMTP Server name
-       -  outlook.office365.com
+       -  :code:`outlook.office365.com`
     *  -  Port
        -  SMTP Port
        -  587
@@ -287,7 +287,7 @@ Input parameters
        -  Yes
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn’t exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$

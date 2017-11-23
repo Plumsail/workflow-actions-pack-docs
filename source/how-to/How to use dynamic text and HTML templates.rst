@@ -7,23 +7,25 @@ As a proof of concept it will generate email messages for contract approval noti
 
 There's need to allow users to manage email templates without modifying workflows. That is why I will store text templates in separate SharePoint list. The workflow will find a template by name and render it according to data collected from current document set.
 
-It was used two additional workflow actions to achieve my goal. `Get Items by Query <http://plumsail.com/workflow-actions-pack/docs/documents-list-items-processing/#GetItems>`_ to query information about contract and nested documents and `Render Text Template <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ to render HTML based on predefined template. Both workflow actions are included in `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ . Out of the box workflow actions don’t provide such functionality.
+It was used two additional workflow actions to achieve my goal. `Get Items by Query <http://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-query>`_ to query information about contract and nested documents and `Render Text Template <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ to render HTML based on predefined template. Both workflow actions are included in `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ . Out of the box workflow actions don’t provide such functionality.
 
 This article was divided into the following parts:
 
-*  `Templating workflow action and syntax <#TemplatingWorkflowAction>`_ 
-*  `Structure of templates list and contracts library <#StructureOfLists>`_ 
-*  `Creating the workflow <#CreateWorkflow>`_ 
-*  `Collect information to dictionary <#CollectInfoToDictionary>`_ 
-*  `Render template and send email message <#RemderTemplate>`_ 
+*  :ref:`TemplatingWorkflowAction`
+*  :ref:`StructureOfLists` 
+*  :ref:`CreateWorkflow` 
+*  :ref:`CollectInfoToDictionary`
+*  :ref:`RemderTemplate`
+
+.. _TemplatingWorkflowAction:
 
 Templating workflow action and syntax
 ---------------------------------------------
 
-First, how to render text templates based on data from dictionary variable. Dictionary type in SharePoint workflows allows to store complex nested objects. You can get data from various data sources, such as web services, CAML queries or build dictionary manually. The workflow action which I will describe supports rendering of such objects or even collections of items. I wrote `separate article </blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_ about workflow dictionaries, you can read it to understand how to work with it.
+First, how to render text templates based on data from dictionary variable. Dictionary type in SharePoint workflows allows to store complex nested objects. You can get data from various data sources, such as web services, CAML queries or build dictionary manually. The workflow action which I will describe supports rendering of such objects or even collections of items. I wrote `separate article <http://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_ about workflow dictionaries, you can read it to understand how to work with it.
 
 
-To render text template for my email message I used `Render Text Template <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ workflow action. It uses `Mustache templating engine <http://en.wikipedia.org/wiki/Mustache_%28template_system%29>`_ to render text templates. It supports tokens for single values as well as iterators to render collections of elements. You can play around with sample template on `github <http://mustache.github.io/#demo>`_ .
+To render text template for my email message I used `Render Text Template <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ workflow action. It uses `Mustache templating engine <http://en.wikipedia.org/wiki/Mustache_%28template_system%29>`_ to render text templates. It supports tokens for single values as well as iterators to render collections of elements. You can play around with sample template on `github <http://mustache.github.io/#demo>`_ .
 
 
 It was prepared HTML template for our email message. You can see it below:
@@ -104,6 +106,9 @@ As you can see, the dictionary contains three nested dictionaries:
 
 Take a look at the HTML template in the beginning of this section one time more to understand how this structure is mapped to the HTML template.
 
+
+.. _StructureOfLists:
+
 Structure of templates list and contracts library
 ---------------------------------------------------------
 For this proof of concept it was created *‘Templates’*  SharePoint list and *‘Contracts’*  document library. I will get template for the workflow action from templates list using SharePoint workflow. The *‘Contracts’*  document library allows to add document sets (contracts) and documents to document sets (documents related to contract).
@@ -122,6 +127,8 @@ The *‘Contracts’*  document library has following fields:
 * Title – Single line of text
 * Description – multiple lines of text
 * Approver – User or Group
+
+.. _CreateWorkflow:
 
 Creating the workflow
 -----------------------------
@@ -144,9 +151,11 @@ It consists of three stages:
 * Set credentials – here I specified credentials to work with SharePoint Online in Office 365. This stage is not required for SharePoint 2013 on-premises.
 * Collect information to dictionary – this stage is required to prepare data for rendering.
 * Render template and send e-mail message – this stage is required for rendering of HTML template and sending it as email message.
+ 
+.. _CollectInfoToDictionary:
 
 Collect information to dictionary
-+++++++++++++++++++++++++++++++++++++++++
+----------------------------------
 As mentioned above, this stage is required to collection information to render.
 
 Describing step by step. It was named sections below as the hints on the picture of the workflow above to simplify understanding.
@@ -225,8 +234,10 @@ Finally it needs to combine all created dictionaries to single dictionary. I use
 
 I stored nested documents in *‘Documents’* , field values from current item to *‘CurrentItem’*  and additional information collected earlier to *‘ApprovalProcess’* .
 
+.. _RemderTemplate:
+
 Render template and send email message
-++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------------------
 This is the last stage of the workflow. I used `Render Text Template <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ workflow action to render dictionary using predefined template. It receives dictionary which I created earlier and text template and returns rendered string to *‘Message body’*  variable:
 
 .. image:: ../_static/img/dynamic-text-html-7.png

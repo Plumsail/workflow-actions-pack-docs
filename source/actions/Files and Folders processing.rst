@@ -20,7 +20,7 @@ Output Parameters
        -  ``1024``
     *  -  File Url
        -  The URL of the copied file
-       -  ``https://contoso.sharepoint.com/Shared Documents/Example.docx``
+       -  :code:`https://contoso.sharepoint.com/Shared Documents/Example.docx`
 
 Input Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,7 +54,7 @@ Input Parameters
        -  `False`
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -96,7 +96,7 @@ Output Parameters
        -  ``1024``
     *  -  File Url
        -  The URL of the moved file
-       -  ``https://contoso.sharepoint.com/Shared Documents/Example.docx``
+       -  :code:`https://contoso.sharepoint.com/Shared Documents/Example.docx`
 
 Input Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,7 +127,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -175,7 +175,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -217,7 +217,7 @@ Output Parameters
        -  ``1025``
     *  -  DocSet Url 
        -  The URL of the moved Document Set
-       -  ``https://contoso.sharepoint.com/Shared Documents/Example``
+       -  :code:`https://contoso.sharepoint.com/Shared Documents/Example`
 
 
 Input Parameters
@@ -249,7 +249,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -290,7 +290,7 @@ Output Parameters
        -  ``1025``
     *  -  DocSet Url 
        -  The URL of the moved Document Set
-       -  ``https://contoso.sharepoint.com/Shared Documents/Example``
+       -  :code:`https://contoso.sharepoint.com/Shared Documents/Example`
 
 
 Input Parameters
@@ -322,7 +322,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -382,7 +382,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -431,7 +431,7 @@ Input Parameters
        -  ``Projects/Project1Documents/2014 June``
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -477,7 +477,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -519,7 +519,7 @@ Output Parameters
        -  ``1030``
     *  -  Folder Url 
        -  The URL of the moved Document Set
-       -  ``https://contoso.sharepoint.com/Shared Documents/Example``
+       -  :code:`https://contoso.sharepoint.com/Shared Documents/Example`
 
 Input Input Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -547,7 +547,7 @@ Input Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -589,7 +589,7 @@ Output Parameters
        -  ``1030``
     *  -  Folder Url 
        -  The URL of the moved Document Set
-       -  ``https://contoso.sharepoint.com/Shared Documents/Example``
+       -  :code:`https://contoso.sharepoint.com/Shared Documents/Example`
 
 Input Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -617,7 +617,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -659,7 +659,7 @@ Output Parameters
        -  ``1030``
     *  -  File Url 
        -  The URL of the file which was check in
-       -  ``https://contoso.sharepoint.com/Shared Documents/Example.txt``
+       -  :code:`https://contoso.sharepoint.com/Shared Documents/Example.txt`
 
 Input Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -683,7 +683,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -725,7 +725,7 @@ Output Parameters
        -  ``1030``
     *  -  File Url 
        -  The URL of the file which was check in
-       -  ``https://contoso.sharepoint.com/Shared Documents/Example.txt``
+       -  :code:`https://contoso.sharepoint.com/Shared Documents/Example.txt`
 
 Input Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -745,7 +745,7 @@ Input Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$

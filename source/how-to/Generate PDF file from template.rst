@@ -10,7 +10,7 @@ Below you can see the screenshot of generated PDF invoice:
 .. image:: ../_static/img/generate-pdf-1.png
    :alt: GeneratedPDF
  
-It was used workflow actions from `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ to generate a document. Especially `Render Text Template <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ workflow action to convert template to HTML and `Convert HTML to PDF <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#HtmlToPdf>`_ to generate a PDF file from HTML.
+It was used workflow actions from `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ to generate a document. Especially `Render Text Template <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ workflow action to convert template to HTML and `Convert HTML to PDF <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#convert-html-to-pdf>`_ to generate a PDF file from HTML.
 
 At the end of this article I will describe how to embed images to PDF. For example you can embed image of a signature. You can even extend this case by using a form customized by `Forms Designer <http://spform.com/>`_ and it’s hand-written signature control. This control allows to create a hand-written note created with a tablet, a cell phone, or a mouse. For example you can sign your invoices right in your tablet and then convert it to PDF. You can find more information about hand-written notes in `this article <http://formsdesigner.blogspot.com/2014/12/capture-signature-or-hand-written-notes.html>`_ .
 

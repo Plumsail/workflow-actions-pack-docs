@@ -87,7 +87,7 @@ Input parameters
        -  ``Manager``
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -153,7 +153,7 @@ Input parameters
        -  ``All Items``
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -233,7 +233,7 @@ Input parameters
        -  ``/SiteUrl/Lists/ListName/Folder1/SubFolder``
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -328,7 +328,7 @@ Input parameters
        -  Title
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -401,7 +401,7 @@ Input parameters
        -  ``/SiteUrl/Lists/ListName/Projects``
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -464,7 +464,7 @@ Parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -539,7 +539,7 @@ Input parameters
        -  No
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -613,7 +613,7 @@ Input parameters
        -  Yes
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -674,7 +674,7 @@ Input parameters
        -  No
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -735,7 +735,7 @@ Input parameters
        -  No
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -814,7 +814,7 @@ Input parameters
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -894,7 +894,7 @@ Input parameters
         
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -961,7 +961,7 @@ Input parameters
         
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
@@ -1046,7 +1046,7 @@ Input parameters
        -  ``Documents``
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$

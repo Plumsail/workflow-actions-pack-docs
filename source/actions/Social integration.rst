@@ -18,7 +18,7 @@ Output parameters
     *  -  URLToPost
        -  Specify workflow variable to store blog post URL.
           type: string
-       -  ``http://blog.contoso.com/Corpotate-news``
+       -  :code:`http://blog.contoso.com/Corpotate-news`
 
 
 Input parameters
@@ -44,13 +44,13 @@ Input parameters
        -  Market research, our product
     *  -  WPUrl
        -  URL of the blog site or URL to xmlrpc.php
-       -  ``http://blog.contoso.com/xmlrpc.php``
+       -  :code:`http://blog.contoso.com/xmlrpc.php`
     *  -  WPLogin
        -  Wordpress username (requires permission to create new posts in blog)
        -  SPPublish
     *  -  WPPassword
        -  Wordpress password
-       -  P@ssw0rd$=)
+       -  :code:`P@ssw0rd$=)`
 
 
 Example
@@ -76,10 +76,10 @@ Input parameters
        -  I approved a sales report
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin�sP@ssw0rd$
+       -  admin'sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  ::

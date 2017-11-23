@@ -68,10 +68,10 @@ All documentation articles
       :maxdepth: 1
 
       Manage workflow credentials with the help of Credentials Manager <https://github.com/RFlipper/WFPackCredsManager>   	
-      Work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow>
-      Create HelpDesk on SharePoint 2013\Online <https://plumsail.com/blog/2013/12/how-to-create-helpdesk-on-sharepoint-2013online>
-      Use free string processing workflow actions <https://plumsail.com/blog/2014/03/string-processing-workflow-actions-for-sharepoint-2013-and-sharepoint-online>
-      Start SharePoint 2013 Workflows on Selected Items <https://plumsail.com/blog/2015/02/start-sharepoint-2013-workflows-selected-items>
+      Work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>
+      Create HelpDesk on SharePoint 2013\Online <https://plumsail.com/blog/2013/12/how-to-create-helpdesk-on-sharepoint-2013online/>
+      Use free string processing workflow actions <https://plumsail.com/blog/2014/03/string-processing-workflow-actions-for-sharepoint-2013-and-sharepoint-online/>
+      Start SharePoint 2013 Workflows on Selected Items <https://plumsail.com/blog/2015/02/start-sharepoint-2013-workflows-selected-items/>
       Deal with SharePoint 2013 Designer and Workflow Tips, Tricks & Traps <https://plumsail.com/blog/2015/05/sharepoint-designer-workflow-tips-tricks-traps/>
       how-to/Deploy custom workflows with site template
       how-to/Generate PDF file from template      

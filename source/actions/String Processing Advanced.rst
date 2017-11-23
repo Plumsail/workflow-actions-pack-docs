@@ -65,7 +65,7 @@ Output parameters
        -  Example
     *  -  Result file URL
        -  In specific variable will be stored URL at file
-       -  http://contoso.onmicrosoft.com/Invoices/Invoice_4.pdf
+       -  :code:`http://contoso.onmicrosoft.com/Invoices/Invoice_4.pdf`
 
 
 Input parameters
@@ -114,13 +114,13 @@ Input parameters
        -  No
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl [%Workflow Context:Current Site URL%]subSite`
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -150,7 +150,7 @@ Output parameters
        -  Example
     *  -  Result file URL
        -  In specific variable will be stored URL at file
-       -  http://contoso.onmicrosoft.com/Invoices/Lists/Employees/Attachments/18/PdfFile.pdf
+       -  :code:`http://contoso.onmicrosoft.com/Invoices/Lists/Employees/Attachments/18/PdfFile.pdf`
 
 
 Input parameters
@@ -202,13 +202,13 @@ Input parameters
        -  No
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl [%Workflow Context:Current Site URL%]subSite`
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -238,7 +238,7 @@ Output parameters
        -  Example
     *  -  Result file URL
        -  In specific variable will be stored URL at file
-       -  http://contoso.onmicrosoft.com/Invoices/Lists/Employees/Attachments/18/PdfFile.pdf
+       -  :code:`http://contoso.onmicrosoft.com/Invoices/Lists/Employees/Attachments/18/PdfFile.pdf`
 
 
 Input parameters
@@ -284,13 +284,13 @@ Input parameters
        -  No
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl [%Workflow Context:Current Site URL%]subSite
+       -  :code:`https://contoso/SiteUrl [%Workflow Context:Current Site URL%]subSite`
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes

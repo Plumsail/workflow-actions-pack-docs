@@ -30,13 +30,13 @@ Input parameters
        -  [Variable:InputParameters]
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
+       -  :code:`https://contoso/SiteUrl`
           [%Workflow Context:Current Site URL%]subSite      
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -73,13 +73,13 @@ Input parameters
        -  [Variable:InputParameters]
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
+       -  :code:`https://contoso/SiteUrl`
           [%Workflow Context:Current Site URL%]subSite
                 
     *  -  ThrowError
@@ -153,13 +153,13 @@ Input parameters
             }
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
+       -  :code:`https://contoso/SiteUrl`
           [%Workflow Context:Current Site URL%]subSite
                 
     *  -  ThrowError
@@ -203,16 +203,16 @@ Input parameters
        -  Example
     *  -  UserIdentity
        -  User ID, Email or login name
-       -  roman@plumsail.onsharepoint.com
+       -  :code:`roman@plumsail.onsharepoint.com`
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
+       -  :code:`https://contoso/SiteUrl`
           [%Workflow Context:Current Site URL%]subSite
                 
     *  -  ThrowError
@@ -259,16 +259,16 @@ Input parameters
        -  WorkEmail                
     *  -  UserIdentity
        -  User ID, Email or login name
-       -  roman@plumsail.onsharepoint.com
+       -  :code:`roman@plumsail.onsharepoint.com`
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
-       -  admin@contoso.com
+       -  :code:`admin@contoso.com`
     *  -  AdminPassword
        -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
        -  admin’sP@ssw0rd$
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
-       -  https://contoso/SiteUrl
+       -  :code:`https://contoso/SiteUrl`
           [%Workflow Context:Current Site URL%]subSite
                 
     *  -  ThrowError

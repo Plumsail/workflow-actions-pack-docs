@@ -11,7 +11,7 @@ Workflow Engine
 
 \
 
-2. Check workflow is available on for a tenant, for this open SharePoint Admin Center (https://**[TenantName]**-admin.sharepoint.com/_layouts/15/online/TenantSettings.aspx)
+2. Check workflow is available on for a tenant, for this open SharePoint Admin Center (:code:`https://[TenantName]-admin.sharepoint.com/_layouts/15/online/TenantSettings.aspx`)
 
 .. image:: ../_static/img/troubleshooting/TenantSettingsExample.png
    :alt: Correct tenant settings

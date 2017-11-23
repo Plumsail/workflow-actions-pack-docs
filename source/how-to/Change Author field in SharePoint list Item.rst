@@ -26,7 +26,7 @@ There are two important moments:The first is setting SPUserID variable. As you c
 .. image:: ../_static/img/change-author-list-3.png
    :alt: Lookup SPUser by email
  
-The second is updating ‘Author’ field via\ `Update List Item at Any Site </workflow-actions-pack/docs/documents-list-items-processing/#UpdateListItem>`_ workflow action. For this we pass filled dictionary as input parameter:
+The second is updating ‘Author’ field via `Update List Item at Any Site </docs/workflow-actions-pack/actions/List%20items%20processing.html#update-list-item-at-any-site>`_ workflow action. For this we pass filled dictionary as input parameter:
 
 
 .. image:: ../_static/img/change-author-list-4.png
