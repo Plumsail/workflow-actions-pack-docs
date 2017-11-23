@@ -1,7 +1,7 @@
 Copy document set to another library
 ####################################
 
-This article will show you how to implement a simple use case using SharePoint 2013 workflows, the key features of the case will be “Copy DocumentSet” feature. `Plumsail Workflow Actions Pack <https://plumsail.com/workflow-actions-pack/>`_ has a huge amount (100+) of useful workflow actions for SharePoint Designer. Today we will closely look at the actions related to document management suite – `Documents and folders processing <https://plumsail.com/docs/workflow-actions-pack/Actions/Files%20and%20Folders%20processing.html>`_ .
+This article will show you how to implement a simple use case using SharePoint 2013 workflows, the key features of the case will be “Copy DocumentSet” feature. `Plumsail Workflow Actions Pack <https://plumsail.com/workflow-actions-pack/>`_ has a huge amount (100+) of useful workflow actions for SharePoint Designer. Today we will closely look at the actions related to document management suite – `Documents and folders processing <https://plumsail.com/docs/workflow-actions-pack/actions/Files%20and%20Folders%20processing.html>`_ .
 
 
 

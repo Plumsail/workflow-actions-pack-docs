@@ -61,7 +61,7 @@ On a server member of the Workflow Manager farm:
 
 Is the Oauth Metadata information published and accessible from the SharePoint server?
 --------------------------------------------------------------------------------------
-On the SharePoint 2013 server, start Internet Explorer, and check whether theOauth metadatais accessible. The url is like "http://wfm1:12291/$SYSTEM/$Metadata/json/1". Below an example:
+On the SharePoint 2013 server, start Internet Explorer, and check whether theOauth metadatais accessible. The url is like ":code:`http://wfm1:12291/$SYSTEM/$Metadata/json/1`". Below an example:
 
 .. image:: ../_static/img/troubleshooting/OAuth-JSon-Info.png
    :alt: OAuth JSon Info

@@ -9,7 +9,7 @@ Personal Item/Task/Document expiration reminders
 ************************************************
 The first case which is going to be described has quite simple simple goal: a user wants to track status of sent Item/Task/Document. It could be application form for business trip, day off request, assigned task or something else. It depends on your business process, but core idea is the same. You have an item with specific due date and a person responsible for this item. You need to send notification message to the user when due date will come and of course you can customize the message template. Using SharePoint Designer you can create a site level workflow which will select all list items by specific query and process each item. As an example, it could generate email by template and send it.
 
-Out of the box workflow actions don’t allow to `query list items by CAML </workflow-actions-pack/docs/documents-list-items-processing/#GetItems>`_ or `generate email messages by templates </workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ . That is why I used some workflow actions from Workflow Actions Pack to extend out of the box functionality.
+Out of the box workflow actions don’t allow to `query list items by CAML <https://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-caml-query>`_ or `generate email messages by templates <https://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ . That is why I used some workflow actions from Workflow Actions Pack to extend out of the box functionality.
 
 Below is the configured workflow:
 
@@ -17,7 +17,7 @@ Below is the configured workflow:
 .. image:: ../_static/img/send-periodic-email-1.png
    :alt:
 
-It was used the following CAML query to get all list items that expire in two days in `Get Items by query </workflow-actions-pack/docs/documents-list-items-processing/#GetItems>`_ workflow action:
+It was used the following CAML query to get all list items that expire in two days in `Get Items by CAML query <https://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-caml-query>`_ workflow action:
 
 .. code:: xml
 

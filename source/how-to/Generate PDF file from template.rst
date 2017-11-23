@@ -59,8 +59,9 @@ HTML generation and PDF conversion workflow actions of my workflow look like thi
 
 .. image:: ../_static/img/generate-pdf-2.png
    :alt: DocumentGeneration
- 
- You can find complete workflow at the end of this article.
+   
+.. text::
+You can find complete workflow at the end of this article.
 
 Where does the data come from?
 ------------------------------
@@ -127,7 +128,7 @@ It was created list level workflow for ‘Orders’ list. Once it is started on 
 .. image:: ../_static/img/generate-pdf-4.png
    :alt: DataCollection
 
-The first workflow action is `Get Items by Query <http://plumsail.com/workflow-actions-pack/docs/documents-list-items-processing/#GetItems>`_ . I used it to query list items from ‘Invoice positions’ list. Each list item in this list is linked to specific order by lookup field ‘Order’. I used it to query items for current order only. See the CAML query:
+The first workflow action is `Get Items by Query <http://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-query>`_ . I used it to query list items from ‘Invoice positions’ list. Each list item in this list is linked to specific order by lookup field ‘Order’. I used it to query items for current order only. See the CAML query:
 
 .. code:: xml
 

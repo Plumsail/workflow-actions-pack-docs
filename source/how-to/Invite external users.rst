@@ -45,7 +45,7 @@ There is only one moment on which I want to pay attention, it is parameter *“F
 
 Invite External Users Workflows
 *******************************
-There is another very simple workflow, which contains only a few Workflow Action, please pay attention that I used `Invite External Users <http://plumsail.com/workflow-actions-pack/docs/administration/#InviteExternalUser>`_ workflow action.
+There is another very simple workflow, which contains only a few Workflow Action, please pay attention that I used `Invite External Users <https://plumsail.com/docs/workflow-actions-pack/actions/Administration.html#invite-external-users>`_ workflow action.
 
 This workflow is configured to start on list item creation in *“Companies”*  list.
 

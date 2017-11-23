@@ -14,8 +14,8 @@ Create a folder in a document library
 
 `Workflow Actions Pack <https://plumsail.com/workflow-actions-pack/>`_ contains two workflow actions which can help us to create a folder:
 
-- `Create Folder by URL <https://plumsail.com/docs/workflow-actions-pack/Actions/Files%20and%20Folders%20processing.html#create-folder-by-url>`_
-- `Create Folder in list <https://plumsail.com/docs/workflow-actions-pack/Actions/Files%20and%20Folders%20processing.html#create-folder-in-list>`_
+- `Create Folder by URL <https://plumsail.com/docs/workflow-actions-pack/actions/Files%20and%20Folders%20processing.html#create-folder-by-url>`_
+- `Create Folder in list <https://plumsail.com/docs/workflow-actions-pack/actions/Files%20and%20Folders%20processing.html#create-folder-in-list>`_
 
 As you can guess, they are almost the same but the first one requires only one parameter, that is why I would prefer it, also it can return ID of the created item so in our case it would be very useful because we will use this ID at the last step of the workflow.
 

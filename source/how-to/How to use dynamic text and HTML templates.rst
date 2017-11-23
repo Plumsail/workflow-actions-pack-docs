@@ -238,7 +238,7 @@ I stored nested documents in *‘Documents’* , field values from current item 
 
 Render template and send email message
 ----------------------------------------
-This is the last stage of the workflow. I used `Render Text Template <http://plumsail.com/workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ workflow action to render dictionary using predefined template. It receives dictionary which I created earlier and text template and returns rendered string to *‘Message body’*  variable:
+This is the last stage of the workflow. I used `Render Text Template <https://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ workflow action to render dictionary using predefined template. It receives dictionary which I created earlier and text template and returns rendered string to *‘Message body’*  variable:
 
 .. image:: ../_static/img/dynamic-text-html-7.png
    :alt: RenderTemplateExample
