@@ -34,7 +34,7 @@ You may be noticed that I specified relative URL to the library and I used Curre
 Copy attachments from current list item to the created folder
 -------------------------------------------------------------
 
-Let’s move on, now we need to copy attachments to our folder, to do this we will use `Copy Attachment to URL <https://plumsail.com/docs/workflow-actions-pack/Actions/List%20items%20processing.html#copy-attachments-to-url>`_ workflow action.
+Let’s move on, now we need to copy attachments to our folder, to do this we will use `Copy Attachment to URL <https://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#copy-attachments-to-url>`_ workflow action.
 
 .. image:: ../_static/img/move-list-attachment-3.png
    :alt:

@@ -162,7 +162,7 @@ Describing step by step. It was named sections below as the hints on the picture
 
 **Query nested documents**
 
-It was used `Get Items by Query <http://plumsail.com/workflow-actions-pack/docs/documents-list-items-processing/#GetItems>`_ workflow action to query information about nested documents. It receives CAML query and returns collection of elements. I saved result to the *‘Documents’*  variable. It is a dictionary which stores information about collection of nested documents.
+It was used `Get Items by Query <http://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-query>`_ workflow action to query information about nested documents. It receives CAML query and returns collection of elements. I saved result to the *‘Documents’*  variable. It is a dictionary which stores information about collection of nested documents.
 
 You can find the CAML query below:
 

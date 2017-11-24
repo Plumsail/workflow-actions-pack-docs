@@ -22,7 +22,7 @@ After it, he starts approval workflow. The workflow creates approval tasks accor
 .. image:: ../_static/img/copy-document-set-3.png
    :alt: Matter display form
  
-In the workflow, I want to pay your attention at configuration of `Copy DocumentSet <https://plumsail.com/docs/workflow-actions-pack/Actions/Files%20and%20Folders%20processing.html#copy-documentset>`_ workflow action:\
+In the workflow, I want to pay your attention at configuration of `Copy DocumentSet <https://plumsail.com/docs/workflow-actions-pack/actions/Files%20and%20Folders%20processing.html#copy-documentset>`_ workflow action:\
 
 
 .. image:: ../_static/img/copy-document-set-4.png

@@ -19,23 +19,23 @@ In case, that everything is OK, at the final stage of the approval workflow it w
 
 At the end of the article I want to notice that to implement the case I used only two workflow actions, but `Workflow Actions Pack <https://plumsail.com/workflow-actions-pack/>`_ contains a bit more, please have a look at the list below:
 
-`Permissions management <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html>`_
+`Permissions management <https://plumsail.com/docs/workflow-actions-pack/actionsActions/Permissions%20management.html>`_
 
-- `Add User to SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#add-user-to-sharepoint-group>`_
-- `Remove User from SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#remove-user-from-sharepoint-group>`_
-- `Is User Member of SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#is-user-member-of-sharepoint-group>`_
-- `Get Members of SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#get-members-of-sharepoint-group>`_
-- `Set Up Default Group for the Site <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#set-up-default-group-for-the-site>`_
-- `Grant Permission on Site <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#grant-permission-on-site>`_
-- `Remove Permissions from Site <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#remove-permissions-from-site>`_
-- `Grant Permission on List <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#grant-permission-on-list>`_
-- `Remove Permissions from List <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#remove-permissions-from-list>`_
-- `Grant Permission on Item <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#grant-permission-on-item>`_
-- `Remove Permissions from Item <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#remove-permissions-from-item>`_
-- `Restore Permissions Inheritance for Site <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#restore-permissions-inheritance-for-site>`_
-- `Restore Permissions inheritance for List <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#restore-permissions-inheritance-for-list>`_
-- `Restore Permissions Inheritance for Item <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#restore-permissions-inheritance-for-item>`_
-- `Remove All Permissions from Site <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#remove-all-permissions-from-site>`_
-- `Remove All Permissions from List <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#remove-all-permissions-from-list>`_
-- `Remove All Permissions from Item <https://plumsail.com/docs/workflow-actions-pack/Actions/Permissions%20management.html#remove-all-permissions-from-item>`_
+- `Add User to SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#add-user-to-sharepoint-group>`_
+- `Remove User from SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#remove-user-from-sharepoint-group>`_
+- `Is User Member of SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#is-user-member-of-sharepoint-group>`_
+- `Get Members of SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#get-members-of-sharepoint-group>`_
+- `Set Up Default Group for the Site <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#set-up-default-group-for-the-site>`_
+- `Grant Permission on Site <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#grant-permission-on-site>`_
+- `Remove Permissions from Site <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#remove-permissions-from-site>`_
+- `Grant Permission on List <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#grant-permission-on-list>`_
+- `Remove Permissions from List <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#remove-permissions-from-list>`_
+- `Grant Permission on Item <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#grant-permission-on-item>`_
+- `Remove Permissions from Item <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#remove-permissions-from-item>`_
+- `Restore Permissions Inheritance for Site <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#restore-permissions-inheritance-for-site>`_
+- `Restore Permissions inheritance for List <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#restore-permissions-inheritance-for-list>`_
+- `Restore Permissions Inheritance for Item <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#restore-permissions-inheritance-for-item>`_
+- `Remove All Permissions from Site <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#remove-all-permissions-from-site>`_
+- `Remove All Permissions from List <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#remove-all-permissions-from-list>`_
+- `Remove All Permissions from Item <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#remove-all-permissions-from-item>`_
 
