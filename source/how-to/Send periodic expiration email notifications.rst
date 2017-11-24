@@ -65,7 +65,7 @@ You can see the sceenshot below as result:
 
 Daily/Weekly/Mounthly aggregated expiration reports by email
 ************************************************************
-The second example which shown is based on the same algorithm, but you need to get aggregated summary report instead of sending notifications to each user. To do this you can get all data and use `Render Template </workflow-actions-pack/docs/string-processing-advanced/#RenderTextTemplate>`_ workflow action to build complete email by predefined template.
+The second example which shown is based on the same algorithm, but you need to get aggregated summary report instead of sending notifications to each user. To do this you can get all data and use `Render Template <https://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ workflow action to build complete email by predefined template.
 
 Below it was implemented the workflow for typical case when an administrator wants to get a summary report with a list of all checked out documents ordered by user.
 

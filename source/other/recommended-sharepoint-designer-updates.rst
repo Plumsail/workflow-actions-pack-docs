@@ -11,5 +11,5 @@ Basic SharePoint Designer 2013 installation has multiple issues with workflow ma
 
 `SharePoint Designer 2013 Service Pack 1: <http://support.microsoft.com/kb/2817441>`_
 
-* `Download SharePoint Designer 2013 Service Pack 1 32-bit package <http://www.microsoft.com/downloads/details.aspx?FamilyId=02be1bb4-5bda-41c6-899a-fdfccc59992d>`_
-* `Download SharePoint Designer 2013 Service Pack 1 64-bit package <http://www.microsoft.com/downloads/details.aspx?FamilyId=b057a5fa-eeac-4537-b8b4-e3050a72da7c>`_
+* `Download SharePoint Designer 2013 Service Pack 1 32-bit package <http://www.microsoft.com/en-us/download/details.aspx?id=42015>`_
+* `Download SharePoint Designer 2013 Service Pack 1 64-bit package <https://www.microsoft.com/en-us/download/details.aspx?id=42009>`_

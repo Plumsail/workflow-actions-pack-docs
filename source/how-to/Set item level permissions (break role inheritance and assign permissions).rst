@@ -19,7 +19,7 @@ In case, that everything is OK, at the final stage of the approval workflow it w
 
 At the end of the article I want to notice that to implement the case I used only two workflow actions, but `Workflow Actions Pack <https://plumsail.com/workflow-actions-pack/>`_ contains a bit more, please have a look at the list below:
 
-`Permissions management <https://plumsail.com/docs/workflow-actions-pack/actionsActions/Permissions%20management.html>`_
+`Permissions management <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html>`_
 
 - `Add User to SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#add-user-to-sharepoint-group>`_
 - `Remove User from SharePoint Group <https://plumsail.com/docs/workflow-actions-pack/actions/Permissions%20management.html#remove-user-from-sharepoint-group>`_
