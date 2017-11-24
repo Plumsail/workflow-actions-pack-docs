@@ -120,7 +120,7 @@ After that data was prepared for the *Render Text Template*  workflow action. I 
   Thank you, <br />
   SharePoint Notification System. <br />
 
-Before sending the message it was used `Regular Expression Replace </workflow-actions-pack/docs/string-processing-advanced/#RegExpReplace>`_ workflow action to replace values in the User’s field from value like *24#;John Martin*  to *24 – John Martin* .
+Before sending the message it was used `Regular Expression Replace <https://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#regular-expression-replace>`_ workflow action to replace values in the User’s field from value like *24#;John Martin*  to *24 – John Martin* .
 
 And at the final step I sent complete email report to an administrator
 
