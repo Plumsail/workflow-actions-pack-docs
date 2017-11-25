@@ -178,7 +178,6 @@ Additionally, you can customize the query via advanced properties (to open it, r
 
 .. image:: ../_static/img/get-items-by-query-2.png
    :alt: Select Items by Query Additional property
-\
 
 The workflow action uses SharePoint REST API, to better understand how it works I would recommend the following articles:
 

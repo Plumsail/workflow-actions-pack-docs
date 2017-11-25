@@ -7,7 +7,7 @@ As a proof of concept it will generate email messages for contract approval noti
 
 There's need to allow users to manage email templates without modifying workflows. That is why I will store text templates in separate SharePoint list. The workflow will find a template by name and render it according to data collected from current document set.
 
-It was used two additional workflow actions to achieve my goal. `Get Items by Query <http://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-query>`_ to query information about contract and nested documents and `Render Text Template <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ to render HTML based on predefined template. Both workflow actions are included in `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ . Out of the box workflow actions don’t provide such functionality.
+It was used two additional workflow actions to achieve my goal. `Get Items by Query <../actions/list%20items%20processing.html#get-items-by-query>`_ to query information about contract and nested documents and `Render Text Template`_ to render HTML based on predefined template. Both workflow actions are included in `Workflow Actions Pack <https://plumsail.com/workflow-actions-pack/>`_ . Out of the box workflow actions don’t provide such functionality.
 
 This article was divided into the following parts:
 
@@ -22,10 +22,10 @@ This article was divided into the following parts:
 Templating workflow action and syntax
 ---------------------------------------------
 
-First, how to render text templates based on data from dictionary variable. Dictionary type in SharePoint workflows allows to store complex nested objects. You can get data from various data sources, such as web services, CAML queries or build dictionary manually. The workflow action which I will describe supports rendering of such objects or even collections of items. I wrote `separate article <http://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_ about workflow dictionaries, you can read it to understand how to work with it.
+First, how to render text templates based on data from dictionary variable. Dictionary type in SharePoint workflows allows to store complex nested objects. You can get data from various data sources, such as web services, CAML queries or build dictionary manually. The workflow action which I will describe supports rendering of such objects or even collections of items. I wrote `separate article <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_ about workflow dictionaries, you can read it to understand how to work with it.
 
 
-To render text template for my email message I used `Render Text Template <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ workflow action. It uses `Mustache templating engine <http://en.wikipedia.org/wiki/Mustache_%28template_system%29>`_ to render text templates. It supports tokens for single values as well as iterators to render collections of elements. You can play around with sample template on `github <http://mustache.github.io/#demo>`_ .
+To render text template for my email message I used `Render Text Template`_ workflow action. It uses `Mustache templating engine <http://en.wikipedia.org/wiki/Mustache_%28template_system%29>`_ to render text templates. It supports tokens for single values as well as iterators to render collections of elements. You can play around with sample template on `github <http://mustache.github.io/#demo>`_ .
 
 
 It was prepared HTML template for our email message. You can see it below:
@@ -162,7 +162,7 @@ Describing step by step. It was named sections below as the hints on the picture
 
 **Query nested documents**
 
-It was used `Get Items by Query <http://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-query>`_ workflow action to query information about nested documents. It receives CAML query and returns collection of elements. I saved result to the *‘Documents’*  variable. It is a dictionary which stores information about collection of nested documents.
+It was used `Get Items by Query`_ workflow action to query information about nested documents. It receives CAML query and returns collection of elements. I saved result to the *‘Documents’*  variable. It is a dictionary which stores information about collection of nested documents.
 
 You can find the CAML query below:
 
@@ -238,7 +238,7 @@ I stored nested documents in *‘Documents’* , field values from current item 
 
 Render template and send email message
 ----------------------------------------
-This is the last stage of the workflow. I used `Render Text Template <https://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ workflow action to render dictionary using predefined template. It receives dictionary which I created earlier and text template and returns rendered string to *‘Message body’*  variable:
+This is the last stage of the workflow. I used `Render Text Template <../actions/string%20processing%20advanced.html#render-text-template>`_ workflow action to render dictionary using predefined template. It receives dictionary which I created earlier and text template and returns rendered string to *‘Message body’*  variable:
 
 .. image:: ../_static/img/dynamic-text-html-7.png
    :alt: RenderTemplateExample

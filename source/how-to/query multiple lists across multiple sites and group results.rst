@@ -89,6 +89,7 @@ On next important step that is required for `Render Text Template <https://plums
 
 .. image:: ../_static/img/query-multiple-lists-4.png
    :alt: SharePoint Build a Dictionary Dynamic Value
+
 I just created new variable and placed collection of checked out documents and site URL to separate properties of the dictionary. Now we can use this composed object as data for our HTML template.
 
 The last step which I have to do before send email to administrator it is prettify ugly user name. To replace ‘ID;#’ to just dash I use `Regular Expression Replace <https://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#regular-expression-replace>`_ workflow action.
