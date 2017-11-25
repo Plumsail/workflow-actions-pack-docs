@@ -18,8 +18,8 @@ All documentation articles
       :name: generaltoc
       :maxdepth: 1
 
-      other/Version History
-      other/Licensing
+      other/version history
+      other/licensing
       License agreement <https://plumsail.com/license-agreement/>
       Support plans <https://plumsail.com/support-plans/>
       Refund policy <https://plumsail.com/store/refund-policy/>
@@ -28,17 +28,17 @@ All documentation articles
       :caption: List of SharePoint workflow actions
       :name: mastertoc
       :maxdepth: 2
-      
-      actions/E-mail processing
-      actions/Files and Folders processing
-      actions/List items processing
-      actions/Permissions management
-      actions/Azure AD Administration      
-      actions/Administration
-      actions/SharePoint Utils 
-      actions/String Processing Advanced
-      actions/String processing workflow actions
-      actions/Social integration
+
+      actions/e-mail processing
+      actions/files and folders processing
+      actions/list items processing
+      actions/permissions management
+      actions/azure ad administration
+      actions/administration
+      actions/sharepoint utils 
+      actions/string processing advanced
+      actions/string processing workflow actions
+      actions/social integration
 
 .. container:: pl-right-column
 
@@ -47,8 +47,8 @@ All documentation articles
       :name: helptoc
       :maxdepth: 2
 
-      help-pages/Installation for SharePoint Online
-      help-pages/Installation for SharePoint 2013
+      help-pages/installation for sharepoint online
+      help-pages/installation for sharepoint 2013
 
    .. toctree:: 
       :caption: Troubleshooting
@@ -60,44 +60,42 @@ All documentation articles
    .. toctree:: 
    	:caption: Community forums
 
-   	Workflow actions Pack for Office 365 <https://plumsail.com/forum/viewforum.php?f=22>
-   	Workflow actions Pack for SharePoint 2013 <https://plumsail.com/forum/viewforum.php?f=24>
+   	Workflow actions Pack for Office 365 <https://community.plumsail.com/c/workflow-actions-pack/office-365>
+   	Workflow actions Pack for SharePoint 2013 <https://community.plumsail.com/c/workflow-scheduler/sharepoint-2013-2016>
 
    .. toctree:: 
       :caption: How-to
       :maxdepth: 1
 
       Manage workflow credentials with the help of Credentials Manager <https://github.com/RFlipper/WFPackCredsManager>   	
-      Work with dictionaries, collections and loops <https://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>
-      Create HelpDesk on SharePoint 2013\Online <https://plumsail.com/blog/2013/12/how-to-create-helpdesk-on-sharepoint-2013online/>
-      Use free string processing workflow actions <https://plumsail.com/blog/2014/03/string-processing-workflow-actions-for-sharepoint-2013-and-sharepoint-online/>
-      Start SharePoint 2013 Workflows on Selected Items <https://plumsail.com/blog/2015/02/start-sharepoint-2013-workflows-selected-items/>
-      Deal with SharePoint 2013 Designer and Workflow Tips, Tricks & Traps <https://plumsail.com/blog/2015/05/sharepoint-designer-workflow-tips-tricks-traps/>
-      how-to/Deploy custom workflows with site template
-      how-to/Generate PDF file from template      
-      how-to/Move documents      
-      how-to/Send bulk e-mail with attachments to external users      
-      how-to/Create site by custom template and grant permissions      
-      how-to/Automatically create Office 365 user accounts      
-   	how-to/Send periodic expiration email notifications         	      
-   	how-to/Deploy custom workflows with site template            
-      how-to/Change Author field in SharePoint list Item
-      how-to/Check-in multiple files
-      how-to/Copy document set to another library
-      how-to/Copy list item with attachments across site collections
-      how-to/Create or update a list item at any site            
-      how-to/How to use dynamic text and HTML templates
-      how-to/Invite external users
-      how-to/Send periodic expiration email notifications
-      how-to/Manage credentials for workflow actions      
-      how-to/Move list item attachments to Document Set
-      how-to/Query multiple lists across multiple sites and group results      
-      how-to/Send e-mails with attachments      
-      how-to/Set item level permissions (break role inheritance and assign permissions)
-      how-to/Use Call SharePoint REST Service instead of standard Call HTTP Web Service
-      how-to/Use Get items actions
-      how-to/Use Get Items by Query action
-      how-to/Workflow Actions Pack is not code-based sandbox solution
+      Work with dictionaries, collections and loops <https://medium.com/plumsail/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow-6956bd6bed9f>
+      Create HelpDesk on SharePoint 2013\Online <https://medium.com/plumsail/how-to-create-helpdesk-on-sharepoint-2013-or-office-365-3d62c43c4de5>
+      Use free string processing workflow actions <https://medium.com/plumsail/string-processing-workflow-actions-for-sharepoint-2013-and-sharepoint-online-bd7433fc3578>
+      Start SharePoint 2013 Workflows on Selected Items <https://medium.com/plumsail/how-to-start-sharepoint-2013-workflows-on-selected-items-265ef3d837e0>
+      Deal with SharePoint 2013 Designer and Workflow Tips, Tricks & Traps <https://medium.com/plumsail/sharepoint-2013-designer-and-workflow-tips-tricks-traps-700c73836e1f>
+      how-to/generate pdf file from template
+      how-to/move documents
+      how-to/send bulk e-mail with attachments to external users
+      how-to/create site by custom template and grant permissions
+      how-to/automatically create office 365 user accounts
+      how-to/send periodic expiration email notifications
+      how-to/deploy custom workflows with site template
+      how-to/change author field in sharepoint list item
+      how-to/check-in multiple files
+      how-to/copy document set to another library
+      how-to/copy list item with attachments across site collections
+      how-to/create or update a list item at any site      
+      how-to/how to use dynamic text and html templates
+      how-to/invite external users
+      how-to/manage credentials for workflow actions
+      how-to/move list item attachments to document set
+      how-to/query multiple lists across multiple sites and group results
+      how-to/send e-mails with attachments
+      how-to/set item level permissions (break role inheritance and assign permissions)
+      how-to/use call sharepoint rest service instead of standard call http web service
+      how-to/use get items actions
+      how-to/use get items by query action
+      how-to/workflow actions pack is not code-based sandbox solution
 
    .. toctree:: 
       :caption: Videos
@@ -107,8 +105,8 @@ All documentation articles
 
    .. toctree::
       :caption: Additional resources
-      
+
       SharePoint Designer workflows are not going to be deprecated <https://medium.com/plumsail/sharepoint-designer-workflows-are-not-deprecated-and-will-work-in-feasible-future-6e2d083bc474>
       other/recommended-sharepoint-designer-updates
       Getting started with SharePoint Server 2013 workflow <http://technet.microsoft.com/en-Us/library/jj227177%28v=office.15%29.aspx>
-      Configure Workflow Manager for SharePoint 2013 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>      
+      Configure Workflow Manager for SharePoint 2013 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>   
