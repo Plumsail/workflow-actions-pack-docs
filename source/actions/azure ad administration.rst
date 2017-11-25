@@ -1,4 +1,4 @@
-﻿Azure AD Administration 
+Azure AD Administration 
 ==================================================
 
 
@@ -130,7 +130,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/NewMsolUser.png
+.. image:: ../_static/img/newmsoluser.png
    :alt: Create Azure AD User
 
 Remove Azure AD User
@@ -168,7 +168,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RemoveMsolUser.png
+.. image:: ../_static/img/removemsoluser.png
    :alt: Remove Azure AD User
 
 Update Azure AD User
@@ -272,7 +272,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/SetMsolUser.png
+.. image:: ../_static/img/setmsoluser.png
    :alt: Update Azure AD User
 
 Get properties from Azure AD user
@@ -337,7 +337,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/GetMsolUser.png
+.. image:: ../_static/img/getmsoluser.png
    :alt: Get properties from Azure AD user
 
 Assign License to Azure AD User
@@ -378,7 +378,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/AddMsolUserLicense.png
+.. image:: ../_static/img/addmsoluserlicense.png
    :alt: Assign License to Azure AD User
 
 Remove License from Azure AD User
@@ -419,7 +419,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RemoveMsolUserLicense.png
+.. image:: ../_static/img/removemsoluserlicense.png
    :alt: Remove License from Azure AD User
 
 Reset Password for Azure AD User
@@ -477,7 +477,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/SetMsolUserPassword.png
+.. image:: ../_static/img/setmsoluserpassword.png
    :alt: Reset Password for Azure AD User
 
 Create Azure AD Group
@@ -521,7 +521,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/NewMsolGroup.png
+.. image:: ../_static/img/newmsolgroup.png
    :alt: Create Azure AD Group
 
 Remove Azure AD Group
@@ -559,7 +559,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RemoveMsolGroup.png
+.. image:: ../_static/img/removemsolgroup.png
    :alt: Remove Azure AD Group
 
 Add User to Azure AD Group
@@ -600,7 +600,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/AddMsolGroupMember.png
+.. image:: ../_static/img/addmsolgroupmember.png
    :alt: Add User to Azure AD Group
 
 Remove User from Azure AD Group
@@ -641,6 +641,6 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RemoveMsolGroupMember.png
+.. image:: ../_static/img/removemsolgroupmember.png
    :alt: Remove User from Azure AD Group
 

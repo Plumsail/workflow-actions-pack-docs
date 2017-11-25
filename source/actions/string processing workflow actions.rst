@@ -45,7 +45,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/SplitStringActionExample.png
+.. image:: ../_static/img/splitstringactionexample.png
    :alt: Split string workflow action example
 
 Join Dictionary Values
@@ -88,7 +88,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/DynamicValueJoinToString.png
+.. image:: ../_static/img/dynamicvaluejointostring.png
    :alt: Join Dictionary Values
 
  
@@ -139,7 +139,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/FormatDateActionExample.png
+.. image:: ../_static/img/formatdateactionexample.png
    :alt: Format date workflow action example
 
  
@@ -176,7 +176,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/GetLengthOfStringExample.png
+.. image:: ../_static/img/getlengthofstringexample.png
    :alt: Get length of string workflow action example
 
  
@@ -220,7 +220,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/StringContainsActionExample.png
+.. image:: ../_static/img/stringcontainsactionexample.png
    :alt: String contains workflow action example
 
  
@@ -264,7 +264,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/StringStartsWithActionExample.png
+.. image:: ../_static/img/stringstartswithactionexample.png
    :alt: String starts with workflow action example
 
  
@@ -308,7 +308,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/StringEndsWithActionExample.png
+.. image:: ../_static/img/stringendswithactionexample.png
    :alt: String ends with workflow action example
 
  
@@ -346,7 +346,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/StringToLowerActionExample.png
+.. image:: ../_static/img/stringtoloweractionexample.png
    :alt: String to lower workflow action example
 
  
@@ -384,6 +384,6 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/StringToUpperActionExample.png
+.. image:: ../_static/img/stringtoupperactionexample.png
    :alt: String to upper workflow action example
 

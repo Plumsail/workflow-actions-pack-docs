@@ -46,7 +46,7 @@ Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In this example we build dictionary manually using `Build Dictionary <http://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/#BuildDictionaryManually>`_ workflow action. Then we render it using the workflow action.
 
-.. image:: ../_static/img/RenderTemplate.png
+.. image:: ../_static/img/rendertemplate.png
    :alt: Render text template to HTML
 
 
@@ -131,7 +131,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/HtmlToPdf.png
+.. image:: ../_static/img/htmltopdf.png
    :alt: Convert HTML to PDF
 
 
@@ -219,7 +219,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/ConvertHtmlToPdfAttachment.png
+.. image:: ../_static/img/converthtmltopdfattachment.png
    :alt: Convert HTML to PDF and Save as Attachment
 
 
@@ -301,7 +301,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/ConvertHtmlToPdfCurrentAttachment.png
+.. image:: ../_static/img/converthtmltopdfcurrentattachment.png
    :alt: Convert HTML to PDF and Save as Attachment in Current Item
 
 
@@ -379,7 +379,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RegExpMatch.png
+.. image:: ../_static/img/regexpmatch.png
    :alt: Regular expression match syntax
 
 
@@ -435,7 +435,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RegExpReplace.png
+.. image:: ../_static/img/regexpreplace.png
    :alt: Regular expression replace syntax
 
 Regular Expression Test
@@ -487,5 +487,5 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RegExpTest.png
+.. image:: ../_static/img/regexptest.png
    :alt: Regular expression test syntax
