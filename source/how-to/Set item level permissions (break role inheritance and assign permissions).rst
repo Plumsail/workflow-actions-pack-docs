@@ -1,7 +1,7 @@
 Set item level permissions (break role inheritance and assign permissions)
 ##########################################################################
 
-This article will show you a simple case with approval scenario. In this example a SharePoint seveloper have to implement a document approval scenario. The approach described in this article works in SharePoint 2013 / 2016 as well as in SharePoint Online in Office 365.
+This article will show you a simple case with approval scenario. In this example, a SharePoint developer has to implement a document approval scenario. The approach described in this article works in SharePoint 2013 / 2016 as well as in SharePoint Online in Office 365.
 
 But there are some nuances in the case. When a user sends a document to approve, the workflow should reset permissions for everyone except a user who has approval task now.
 
