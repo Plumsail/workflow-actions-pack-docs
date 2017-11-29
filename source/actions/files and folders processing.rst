@@ -75,7 +75,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CopyFile.png
+.. image:: ../_static/img/copyfile.png
    :alt: Copy file from one library to another SharePoint Online
 
 Move Document from Library
@@ -148,7 +148,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/MoveFile.png
+.. image:: ../_static/img/movefile.png
    :alt: Move file to another document library SharePoint Online
 
 Remove File by URL
@@ -196,7 +196,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RemoveFile.png
+.. image:: ../_static/img/removefile.png
    :alt: Remove file by a URL
 
 Copy DocumentSet
@@ -269,7 +269,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CopyDocSetTo.png
+.. image:: ../_static/img/copydocsetto.png
    :alt: Copy document set from one library to another in SharePoint Online
 
 Move DocumentSet
@@ -342,7 +342,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CopyDocSetTo.png
+.. image:: ../_static/img/copydocsetto.png
    :alt: Copy document set from one library to another in SharePoint Online
 
 
@@ -403,7 +403,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CreateFolder.png
+.. image:: ../_static/img/createfolder.png
    :alt: Create folder in document library SharePoint Online
 
 Create Folder in list
@@ -452,7 +452,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CreateFolder.png
+.. image:: ../_static/img/createfolder.png
    :alt: Create folder in document library SharePoint Online
 
 Remove Folder by Url
@@ -498,7 +498,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/RemoveFolderByUrl.png 
+.. image:: ../_static/img/removefolderbyurl.png 
    :alt: Remove specific folder SharePoint Online
 
 Copy Folder from Library
@@ -568,7 +568,7 @@ Input Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CopyFolderFromLib.png 
+.. image:: ../_static/img/copyfolderfromlib.png 
    :alt: Copy folder from one library to another SharePoint Online
 
 Move Folder from Library
@@ -638,7 +638,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/MoveFolderFromUrl.png 
+.. image:: ../_static/img/movefolderfromurl.png 
    :alt: Move folder to another document library SharePoint Online
 
 Check In Document
@@ -704,7 +704,7 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CheckInDocument.png
+.. image:: ../_static/img/checkindocument.png
    :alt: Check In Document
 
 Check Out Document
@@ -766,5 +766,5 @@ Input Parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CheckOutDocument.png
+.. image:: ../_static/img/checkoutdocument.png
    :alt: Check Out Document

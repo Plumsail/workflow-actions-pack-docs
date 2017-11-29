@@ -8,44 +8,44 @@ Please, download `the WSP package </workflow-actions-pack/download>`_.
 
 Go to your SharePoint Online site. At the site collection, click Site Actions, choose **Site Settings**.
 
-.. image:: ../_static/img/WFPack_1.SiteSettings.png
+.. image:: ../_static/img/wfpack_1.sitesettings.png
    :alt: SharePoint Site Settings
 
 On the Site Settings page, click **Solutions** under Web Designer Galleries section.
 
 
-.. image:: ../_static/img/WFPack_2.Solutions.png
+.. image:: ../_static/img/wfpack_2.solutions.png
    :alt: SharePoint Solution Gallery
 
 **Upload** WSP package to your Solution gallery
 
-.. image:: ../_static/img/WFPack_3.Upload.png
+.. image:: ../_static/img/wfpack_3.upload.png
    :alt: SharePoint Upload Solution
 
 Click **Activate** button in the ribbon.
 
-.. image:: ../_static/img/WFPack_5.Activate.png
+.. image:: ../_static/img/wfpack_5.activate.png
    :alt: SharePoint Activate Solution
 
 Next, you have to activate feature on your site. Go to site settings page and select **Manage site features**
 
-.. image:: ../_static/img/WFPack_6.-ManageSiteFeatures.png
+.. image:: ../_static/img/wfpack_6.-managesitefeatures.png
    :alt: SharePoint Manage Site features
 
 Find feature called **Plumsail Workflow Actions Pack** and click **Activate**
 
-.. image:: ../_static/img/WFPack_7.ActivateFeature.png
+.. image:: ../_static/img/wfpack_7.activatefeature.png
    :alt: SharePoint Activate Feature
 
 Now, you can find the following actions in SharePoint Designer under Plumsail section
 
-.. image:: ../_static/img/WFPack_8.CheckInSPD.png
+.. image:: ../_static/img/wfpack_8.checkinspd.png
    :alt: SharePoint Designer's actions 
 
 
 One more step is required to configure default account, which will be used to start workflows. Please open *Site Settings* and click on the link *Plumsail Workflow Actions Pack* at *Site Administration Section*. On the settings page you can configure the workflows’ credentials to know more about it please visit `the following link </blog/2014/12/store-credentials-at-site/>`_
 
-.. image:: ../_static/img/UpgradeArticle1214_3.png
+.. image:: ../_static/img/upgradearticle1214_3.png
    :alt: SharePoint Upgrade Page 
 
 Install license
@@ -59,7 +59,7 @@ Uninstall
 
 Go to **Site Settings → Solutions**, select solution and click **Deactivate** from its context menu
 
-.. image:: ../_static/img/WFPack_10.Deactivate.png
+.. image:: ../_static/img/wfpack_10.deactivate.png
    :alt: SharePoint Deactivate Solution
 
 
@@ -70,32 +70,32 @@ Firstly, you have to deactivate **Plumsail Workflow Actions Pack** feature at t
 
 Then, upload a new WSP package to your Solution gallery:
 
-.. image:: ../_static/img/WFPack_3.Upload.png
+.. image:: ../_static/img/wfpack_3.upload.png
    :alt: SharePoint Upload Solution
 
 Click **Activate** button in the ribbon.
 
-.. image:: ../_static/img/WFPack_5.Activate.png
+.. image:: ../_static/img/wfpack_5.activate.png
    :alt: SharePoint Activate Solution
 
 Then, you have to activate the **Plumsail Workflow Actions Pack** feature on your site. Go to site settings page and select **Manage site features**
 
-.. image:: ../_static/img/WFPack_6.-ManageSiteFeatures.png
+.. image:: ../_static/img/wfpack_6.-managesitefeatures.png
    :alt: SharePoint Manage Site features
 
 Find the feature called **Plumsail Actions Pack for SharePoint Designer** and click **Activate**
 
-.. image:: ../_static/img/WFPack_7.ActivateFeature.png
+.. image:: ../_static/img/wfpack_7.activatefeature.png
    :alt: SharePoint Activate Feature
 
 Now when the new solution is uploaded and activated we need to upgrade workflows which use Workflow Actions Pack. Navigate to **Site settings** of the SharePoint site and click **Workflow Actions Pack** in the **Site Administration** category.
 
-.. image:: ../_static/img/wf_Upgrade1.png
+.. image:: ../_static/img/wf_upgrade1.png
    :alt: Workflow Actions Pack settings
 
 In the window fill credentials for your Office 365 account and click **Sign in**
 
-.. image:: ../_static/img/wf_Upgrade2.png
+.. image:: ../_static/img/wf_upgrade2.png
    :alt: Log in into office 365
 
 If any of workflows are required to upgrade, you should see the upgrade notification, otherwise all alright.

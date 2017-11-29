@@ -55,7 +55,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/PublishToWordpress.png
+.. image:: ../_static/img/publishtowordpress.png
    :alt: 
 
 Post to MicroFeed
@@ -97,7 +97,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/PublishFeed.png
+.. image:: ../_static/img/publishfeed.png
    :alt: 
 
 Post to Twitter
@@ -131,6 +131,6 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/PublishToTwitter.png
+.. image:: ../_static/img/publishtotwitter.png
    :alt: 
 

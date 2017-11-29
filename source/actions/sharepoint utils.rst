@@ -47,7 +47,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/StartListWorkflow.png
+.. image:: ../_static/img/startlistworkflow.png
    :alt: Start a List Workflow (2013)
 
 
@@ -91,7 +91,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/StartSiteWorkflow.png
+.. image:: ../_static/img/startsiteworkflow.png
    :alt: Start a Site Workflow (2013)
 
 Call SharePoint REST Service
@@ -172,7 +172,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/CallSharePointRestQuery.png
+.. image:: ../_static/img/callsharepointrestquery.png
    :alt: Call SharePoint REST Query from workflow 
 
 Get User Properties
@@ -225,7 +225,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/GetUserProperties.png
+.. image:: ../_static/img/getuserproperties.png
    :alt: Get user profile properties
 
 Get User Property by Name
@@ -318,7 +318,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/GetStringProperty.png
+.. image:: ../_static/img/getstringproperty.png
    :alt: Get Site Option Value as String
 
 Get Site Option Value as Dictionary
@@ -355,7 +355,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/GetDictionaryProperty.png
+.. image:: ../_static/img/getdictionaryproperty.png
    :alt: Get Site Option Value as Dictionary
 
 Evaluate expression
@@ -410,7 +410,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/EvaluateExpression.png
+.. image:: ../_static/img/evaluateexpression.png
    :alt: Evaluate expression
 
 Parse XML to Dictionary
@@ -477,7 +477,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/ParseXMLWorkflowAction.png
+.. image:: ../_static/img/parsexmlworkflowaction.png
    :alt: Parse XML to Dictionary
 
 
@@ -533,7 +533,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/HTMLEncode.png
+.. image:: ../_static/img/htmlencode.png
    :alt: HTML Encode
 
 
@@ -599,7 +599,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/ParseJson.png
+.. image:: ../_static/img/parsejson.png
    :alt: Build Dictionary from JSON string
 
 Increment
@@ -621,7 +621,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/IncrementValue.png
+.. image:: ../_static/img/incrementvalue.png
    :alt: Increment a Variable
 
 Decrement
@@ -643,5 +643,5 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/DecrementValue.png
+.. image:: ../_static/img/decrementvalue.png
    :alt: Decrement a Variable

@@ -7,7 +7,7 @@ You may have encountered *Incorrect function. (Exception from HRESULT: 0x8007000
 
 When you create or update an item in a different site, please, note that you need to specify SiteUrl and List Url parameters as shown in the screenshot below:
 
-.. image:: ../_static/img/Create-List-Item-at-Any-Site.png
+.. image:: ../_static/img/create-list-item-at-any-site.png
    :alt:
 
 

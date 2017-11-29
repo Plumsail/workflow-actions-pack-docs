@@ -1,4 +1,4 @@
-﻿E-mail Processing
+E-mail Processing
 ==================================================
 Workflow actions to work with email, it allows you send and receive the emails.
 
@@ -69,7 +69,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/SyncExchangeEmails.png
+.. image:: ../_static/img/syncexchangeemails.png
    :alt: Sync Exchange Emails to SharePoint
 
 Sync Mailbox with List (IMAP)
@@ -147,7 +147,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/SyncIMAPEmails.png
+.. image:: ../_static/img/syncimapemails.png
    :alt: Sync Mailbox to SharePoint via IMAP
 
 Sync Mailbox with List (Shared Mailbox)
@@ -214,7 +214,7 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/ExchangeRestToSP.png
+.. image:: ../_static/img/exchangeresttosp.png
    :alt: Sync SharedMailbox to SharePoint
 
 Send E-Mail with Attachments
@@ -304,6 +304,6 @@ Input parameters
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../_static/img/SendEmail.png
+.. image:: ../_static/img/sendemail.png
    :alt: Send email with attachments
 

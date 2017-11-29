@@ -27,7 +27,6 @@ Create SharePoint list
 At this stage it was created the new SharePoint list *‘Projects’*  with following structure:
 
 
-
 * Title – Text field. The title of a project.
 * Site partial URL – Text field. The partial URL for a new project site (for example *‘project1′* can be used to create subsite with URL like this: *http://yourdomain/projects/ *project1*)
 * Contributors – Person or Group field. User accounts to be included in the project contributors group
@@ -46,7 +45,7 @@ For demo purposes it was customized SharePoint team site to use it as a project 
 .. image:: ../_static/img/create-site-custom-2.png
    :alt: Create site   
  
- Then it was saved it as template. To save a site as template navigate to *‘Site Settings’*  and click at *‘Save site as template’* . You can read official `Microsoft documentation <http://msdn.microsoft.com/en-us/library/office/jj938033%28v=office.15%29.aspx#bkmk_SaveTemplate>`_ for more information.
+Then it was saved it as template. To save a site as template navigate to *‘Site Settings’*  and click at *‘Save site as template’* . You can read official `Microsoft documentation <http://msdn.microsoft.com/en-us/library/office/jj938033%28v=office.15%29.aspx#bkmk_SaveTemplate>`_ for more information.
 
 The template is called *‘ProjectSite’* . I will use this template in the workflow, you will see it below in the description of the workflow.
 

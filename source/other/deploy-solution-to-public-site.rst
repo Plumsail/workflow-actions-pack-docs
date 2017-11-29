@@ -3,6 +3,7 @@ How to install sandbox solution to an Office 365 public site
 
 You need to use direct link to upload sandbox solution to solutions gallery on your Office 365 public site, because public sites are very limited and there are not link in site settings.
 To get access to solution gallery just add */_catalogs/solutions* to your public site URL. The full link look like this::
+		
 	https://yousite-public.sharepoint.com/_catalogs/solutions
 
 hen you need to activate the feature of Workflow Actions Pack on current site. Unfortunately feature management page doesn’t exist on public sites, but you can use JavaScript to do this. Just press F12 in your browser, navigate to console tab and paste the following code::

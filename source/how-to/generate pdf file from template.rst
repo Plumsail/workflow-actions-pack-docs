@@ -10,13 +10,13 @@ Below you can see the screenshot of generated PDF invoice:
 .. image:: ../_static/img/generate-pdf-1.png
    :alt: GeneratedPDF
  
-It was used workflow actions from `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ to generate a document. Especially `Render Text Template <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#render-text-template>`_ workflow action to convert template to HTML and `Convert HTML to PDF <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#convert-html-to-pdf>`_ to generate a PDF file from HTML.
+It was used workflow actions from `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ to generate a document. Especially `Render Text Template <../actions/string%20processing%20advanced.html#render-text-template>`_ workflow action to convert template to HTML and `Convert HTML to PDF <http://plumsail.com/docs/workflow-actions-pack/actions/String%20Processing%20Advanced.html#convert-html-to-pdf>`_ to generate a PDF file from HTML.
 
 At the end of this article I will describe how to embed images to PDF. For example you can embed image of a signature. You can even extend this case by using a form customized by `Forms Designer <http://spform.com/>`_ and it’s hand-written signature control. This control allows to create a hand-written note created with a tablet, a cell phone, or a mouse. For example you can sign your invoices right in your tablet and then convert it to PDF. You can find more information about hand-written notes in `this article <http://formsdesigner.blogspot.com/2014/12/capture-signature-or-hand-written-notes.html>`_ .
 
 How does templating work?
 -------------------------
-‘Render Text Template’ workflow action uses Mustache templating engine to render text templates. It supports tokens for single values as well as iterators to render collections of elements. You can play around with sample template on `github <http://mustache.github.io/#demo>`_ . Mustache is quite flexible templating engine, you can use it to generate complex HTML which then can be used to convert to PDF file. In my `previous article <How%20to%20use%20dynamic%20text%20and%20HTML%20templates.html>`_ I described how to use it to generate email messages based on SharePoint list items. It is the same for PDF file generation, you just need to create HTML template and it will be converted to HTML.
+`Render Text Template`_ workflow action uses Mustache templating engine to render text templates. It supports tokens for single values as well as iterators to render collections of elements. You can play around with sample template on `github <http://mustache.github.io/#demo>`_ . Mustache is quite flexible templating engine, you can use it to generate complex HTML which then can be used to convert to PDF file. In my `previous article <How%20to%20use%20dynamic%20text%20and%20HTML%20templates.html>`_ I described how to use it to generate email messages based on SharePoint list items. It is the same for PDF file generation, you just need to create HTML template and it will be converted to HTML.
 
 Below you can see a part of my template which generates table with invoice positions:
 
@@ -60,14 +60,13 @@ HTML generation and PDF conversion workflow actions of my workflow look like thi
 .. image:: ../_static/img/generate-pdf-2.png
    :alt: DocumentGeneration
    
-.. text::
 You can find complete workflow at the end of this article.
 
 Where does the data come from?
 ------------------------------
 Now, when you understand how templating works I want to describe how to put some data to templating engine.
 
-‘Render Text Template’ workflow actions receives data within dictionary variable. SharePoint 2013 workflows allow to use ‘Dictionary’ variable type. It allows to store complex nested objects and collections of objects. But how to initialize it? There are various ways to do this. I described most of them in the separate article `How to work with dictionaries <http://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_ . For example you can:
+`Render Text Template`_ workflow actions receives data within dictionary variable. SharePoint 2013 workflows allow to use ‘Dictionary’ variable type. It allows to store complex nested objects and collections of objects. But how to initialize it? There are various ways to do this. I described most of them in the separate article `How to work with dictionaries <http://plumsail.com/blog/2014/08/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow/>`_ . For example you can:
 
 
 
@@ -143,7 +142,7 @@ The first workflow action is `Get Items by Query <http://plumsail.com/docs/workf
     </Query>
   </View>
 
-The second workflow action is out of the box ‘Build a Dictionary’. I used it to combine list results of CAML query and field values from current item (Client Name, Client Company, etc) into single dictionary. This dictionary is used in HTML template, see ‘Render Text Template’ workflow action which I mentioned above. This is how I configured the workflow action:
+The second workflow action is out of the box ‘Build a Dictionary’. I used it to combine list results of CAML query and field values from current item (Client Name, Client Company, etc) into single dictionary. This dictionary is used in HTML template, see `Render Text Template`_ workflow action which I mentioned above. This is how I configured the workflow action:
 
 
 .. image:: ../_static/img/generate-pdf-5.png
@@ -167,7 +166,6 @@ As described at the beginning of this article you can even extend this case by u
 Complete workflow
 -----------------
 Now there's all data required for generation of invoice. Complete workflow looks like this:
-
 
 .. image:: ../_static/img/generate-pdf-6.png
    :alt: CompleteWorkflow
