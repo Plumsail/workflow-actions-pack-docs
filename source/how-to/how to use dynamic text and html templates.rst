@@ -44,7 +44,7 @@ It was prepared HTML template for our email message. You can see it below:
   <ul>
   {{#each Documents}}
   <li> <a href = "{{ApprovalProcess.CurrentItemUrl}}/{{FieldValues.FileLeafRef}}"> {{FieldValues.Title}}</a></li>
-  {{each}}
+  {{/each}}
   </ul>
   Best regards
   Document Management Team
