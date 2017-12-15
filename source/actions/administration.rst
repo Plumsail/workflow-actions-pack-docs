@@ -371,7 +371,7 @@ Example
 Invite External Users
 --------------------------------------------------
 Invite external users with specified permission on the site
-More information about external users you can find from the link Manage sharing with external users in Office 365 Small Business
+More information about external users you can find from the link `Manage sharing with external users in Office 365 Small Business <https://support.office.com/en-us/article/Manage-sharing-with-external-users-in-Office-365-Small-Business-2951a85f-c970-4375-aa4f-6b0d7035fe35>`_
 
 Input parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
