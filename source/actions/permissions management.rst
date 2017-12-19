@@ -30,7 +30,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -72,7 +72,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -128,7 +128,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -192,7 +192,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -234,7 +234,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -274,7 +274,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  User or group
        -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  Workflow Context:Initiator
@@ -323,7 +323,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  User or group
        -  Login, Email or Name of the User or Group. Also you can specify multiple items using semicolon ';' delimited
        -  Company administrator
@@ -384,7 +384,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -436,7 +436,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -491,7 +491,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -546,7 +546,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -576,7 +576,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  :code:`admin@contoso.com`
@@ -621,7 +621,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -663,7 +663,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -693,7 +693,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  AdminLogin
        -  E-mail of the SharePoint administrator (for Office 365 only).
        -  :code:`admin@contoso.com`
@@ -738,7 +738,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
@@ -780,7 +780,7 @@ Input parameters
     *  -  SiteUrl
        -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
        -  :code:`https://contoso/SiteUrl`
-          [%Workflow Context:Current Site URL%]/subSite
+          [%Workflow Context:Current Site URL%]subSite
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
        -  Yes
