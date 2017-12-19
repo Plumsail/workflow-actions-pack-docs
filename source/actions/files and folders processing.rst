@@ -37,7 +37,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/DocumentName.docx
             /SiteUrl/LibraryName/FolderName/FileName.docx 
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocumentName.docx 
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocumentName.docx 
             [%Workflow Context:Current Item URL%]
 
     *  -  DestinationUrl
@@ -46,7 +46,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/DocumentName.docx
             /SiteUrl/LibraryName/FolderName/FileName.docx
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocumentName.docx
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocumentName.docx
             [%Workflow Context:Current Item URL%]
 
     *  -  Keep Source Link
@@ -63,7 +63,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -113,7 +113,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/DocumentName.docx
             /SiteUrl/LibraryName/FolderName/FileName.docx 
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocumentName.docx 
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocumentName.docx 
             [%Workflow Context:Current Item URL%]
 
     *  -  DestinationUrl
@@ -122,7 +122,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/DocumentName.docx
             /SiteUrl/LibraryName/FolderName/FileName.docx
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocumentName.docx
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocumentName.docx
             [%Workflow Context:Current Item URL%]
 
     *  -  AdminLogin
@@ -136,7 +136,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -170,7 +170,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/DocumentName.docx
             /SiteUrl/LibraryName/FolderName/FileName.docx 
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocumentName.docx 
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocumentName.docx 
             [%Workflow Context:Current Item URL%]
 
     *  -  AdminLogin
@@ -184,7 +184,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -235,7 +235,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/DocSetName
             /SiteUrl/LibraryName/FolderName/DocSetName
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocumentSetName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocumentSetName
             [%Workflow Context:Current Item URL%]
 
     *  -  DestinationUrl
@@ -245,7 +245,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/
             /SiteUrl/LibraryName/FolderName/
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocSetName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocSetName
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -258,7 +258,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -308,7 +308,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/DocSetName
             /SiteUrl/LibraryName/FolderName/DocSetName
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocumentSetName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocumentSetName
             [%Workflow Context:Current Item URL%]
 
     *  -  DestinationUrl
@@ -318,7 +318,7 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/
             /SiteUrl/LibraryName/FolderName/
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/DocSetName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/DocSetName
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -331,7 +331,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -378,7 +378,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl/LibraryName/SiteUrl/LibraryName1/SubLib2
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -391,7 +391,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -424,7 +424,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl/LibraryName/SiteUrl/LibraryName
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName
 
     *  -  New Folder Path
        -  The path where the folder will be created. The workflow action will create all folders included into the path.
@@ -440,7 +440,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -473,7 +473,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl/LibraryName/SiteUrl/LibraryName
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -486,7 +486,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -536,14 +536,14 @@ Input Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/
             /SiteUrl/LibraryName/FolderName
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName
 
     *  -  Destination folder url
        -  The URL of the library where the source folder will be copied. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
        -  ::
 
             https://contoso/SiteUrl/LibraryName/SiteUrl/LibraryName/Folder1
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -556,7 +556,7 @@ Input Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -606,14 +606,14 @@ Input Parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/
             /SiteUrl/LibraryName/FolderName
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName
 
     *  -  Destination folder Url
        -  The URL of the library where the source folder will be copied. You can use full URL as well as domain relative URL. We would recommend to use constants from the workflow context.
        -  ::
 
             https://contoso/SiteUrl/LibraryName/SiteUrl/LibraryName
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -626,7 +626,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -675,7 +675,7 @@ Input Parameters
        -  ::
 
             https://contoso.sharepoint.com/SiteUrl/Shared Documents/Example.txt
-            [%Workflow Context:Current Site URL%]SiteUrl/Shared Documents/Example.txt
+            [%Workflow Context:Current Site URL%]/SiteUrl/Shared Documents/Example.txt
 
     *  -  Comment
        -  Comment to accompany file check in
@@ -692,7 +692,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -741,7 +741,7 @@ Input Parameters
        -  ::
 
             https://contoso.sharepoint.com/SiteUrl/Shared Documents/Example.txt
-            [%Workflow Context:Current Site URL%]SiteUrl/Shared Documents/Example.txt
+            [%Workflow Context:Current Site URL%]/SiteUrl/Shared Documents/Example.txt
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -754,7 +754,7 @@ Input Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.

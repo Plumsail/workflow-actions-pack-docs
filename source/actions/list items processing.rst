@@ -96,7 +96,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -147,7 +147,7 @@ Input parameters
 
             Employees
             /SiteUrl/Employees
-            [%Workflow Context:Current Site URL%]SiteUrl/Employees
+            [%Workflow Context:Current Site URL%]/SiteUrl/Employees
     *  -  View Name
        -  The name of the view from which items will be get
        -  ``All Items``
@@ -162,7 +162,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -242,7 +242,7 @@ Input parameters
        -  ::
 
   					https://contoso/SiteUrl
-  					[%Workflow Context:Current Site URL%]subSite
+  					[%Workflow Context:Current Site URL%]/subSite
 				
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -337,7 +337,7 @@ Input parameters
        -  ::
 
   					https://contoso/SiteUrl
-  					[%Workflow Context:Current Site URL%]subSite
+  					[%Workflow Context:Current Site URL%]/subSite
 				
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -385,7 +385,7 @@ Input parameters
 
             IssuesList 
             /SiteUrl/ListName 
-            [%Workflow Context:Current Site URL%]SiteUrl/ListName
+            [%Workflow Context:Current Site URL%]/SiteUrl/ListName
 				
     *  -  Properties
        -  Dictionary contains data for setting in created item. Keys - field names Values - updated values
@@ -410,7 +410,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -451,7 +451,7 @@ Parameters
 
             IssuesList 
             /SiteUrl/ListName 
-            [%Workflow Context:Current Site URL%]SiteUrl/ListName
+            [%Workflow Context:Current Site URL%]/SiteUrl/ListName
 							
     *  -  Properties
        -  Dictionary contains data for update. Keys - field names Values - updated values
@@ -473,7 +473,7 @@ Parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -527,13 +527,13 @@ Input parameters
 
             Employees
             /SiteUrl/Employees
-            [%Workflow Context:Current Site URL%]SiteUrl/Employees
+            [%Workflow Context:Current Site URL%]/SiteUrl/Employees
     *  -  Destination List Url
        -  The URL of the destination list. This list must contain same fields like in the source list  
        -  ::
 
 	     https://siteaddress.sharepoint.com/sites/Collection/Lists/Employees2
-             [%Workflow Context:Current Site URL%]Lists/Employees2
+             [%Workflow Context:Current Site URL%]/Lists/Employees2
     *  -  Copy Attachments
        -  Copy the item with attached files or not
        -  No
@@ -548,7 +548,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -601,13 +601,13 @@ Input parameters
 
             Employees
             /SiteUrl/Employees
-            [%Workflow Context:Current Site URL%]SiteUrl/Employees
+            [%Workflow Context:Current Site URL%]/SiteUrl/Employees
     *  -  Destination List Url
        -  The URL of the destination list. This list must contain same fields like in the source list  
        -  ::
 
 	     https://siteaddress.sharepoint.com/sites/Collection/Lists/Employees2
-             [%Workflow Context:Current Site URL%]Lists/Employees2
+             [%Workflow Context:Current Site URL%]/Lists/Employees2
     *  -  Move Attachments
        -  Move the item with attached files or not
        -  Yes
@@ -622,7 +622,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -668,7 +668,7 @@ Input parameters
        -  ::
 
 	     https://siteaddress.sharepoint.com/sites/Collection/Lists/Employees2
-             [%Workflow Context:Current Site URL%]Lists/Employees2
+             [%Workflow Context:Current Site URL%]/Lists/Employees2
     *  -  Copy Attachments
        -  Copy the item with attached files or not
        -  No
@@ -683,7 +683,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -729,7 +729,7 @@ Input parameters
        -  ::
 
 	     https://siteaddress.sharepoint.com/sites/Collection/Lists/Employees2
-             [%Workflow Context:Current Site URL%]Lists/Employees2
+             [%Workflow Context:Current Site URL%]/Lists/Employees2
     *  -  Move Attachments
        -  Move the item with attached files or not
        -  No
@@ -744,7 +744,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -795,7 +795,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl/Lists/Issues
-            [%Workflow Context:Current Site URL%]SiteUrl/Lists/Issues
+            [%Workflow Context:Current Site URL%]/SiteUrl/Lists/Issues
 
     *  -  Item ID
        -  The ID of the source item.
@@ -810,7 +810,7 @@ Input parameters
 
             https://contoso/SiteUrl/LibraryName/FolderName/
             /SiteUrl/LibraryName/FolderName/
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/
 
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -823,7 +823,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
 
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -875,7 +875,7 @@ Input parameters
        -  ::
             
             https://contoso/SiteUrl/Lists/Issues
-            [%Workflow Context:Current Site URL%]SiteUrl/Lists/Issues
+            [%Workflow Context:Current Site URL%]/SiteUrl/Lists/Issues
         
     *  -  Item ID
        -  The ID of the source item.
@@ -890,7 +890,7 @@ Input parameters
             
             https://contoso/SiteUrl/LibraryName/FolderName/
             /SiteUrl/LibraryName/FolderName/
-            [%Workflow Context:Current Site URL%]SiteUrl/LibraryName/
+            [%Workflow Context:Current Site URL%]/SiteUrl/LibraryName/
         
     *  -  AdminLogin
        -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
@@ -903,7 +903,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -950,7 +950,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl/Lists/Issues
-            [%Workflow Context:Current Site URL%]SiteUrl/Lists/Issues
+            [%Workflow Context:Current Site URL%]/SiteUrl/Lists/Issues
         
     *  -  Item ID
        -  The ID of the source item.
@@ -970,7 +970,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
@@ -1055,7 +1055,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.

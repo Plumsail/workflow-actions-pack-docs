@@ -85,7 +85,7 @@ Input parameters
        -  ::
 
             https://contoso/SiteUrl
-            [%Workflow Context:Current Site URL%]subSite
+            [%Workflow Context:Current Site URL%]/subSite
         
     *  -  ThrowError
        -  Detects whether workflow should be interrupted in case of error or not.
