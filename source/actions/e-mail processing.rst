@@ -257,7 +257,7 @@ Input parameters
        -  :code:`no-reply@plumsail.com`
     *  -  AttachmentUrls
        -  Urls of attachments delimited by ';'
-       -  /somefolder/sometxt.txt;:code:`http://somesite.com/images/someimage.img`
+       -  /somefolder/sometxt.txt;http://somesite.com/images/someimage.img
     *  -  Add Item Attachments
        -  If the option is checked, a workflow will send attachments from the current list item or a document set.
        -  True
