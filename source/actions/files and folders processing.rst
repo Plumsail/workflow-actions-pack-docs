@@ -4,7 +4,7 @@ Documents and folders processing
 
 Copy Document from Library
 --------------------------------------------------
-Copies the document from the document library to the specified URL. You can copy the document to another document library cross-site or to another folder.
+Copies the document from the document library to the specified URL. You can copy the document to another document library cross-site, to another site collection or to another folder.
 
 Output Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -80,7 +80,7 @@ Example
 
 Move Document from Library
 --------------------------------------------------
-Moves the document from the document library to the specified URL. You can move the document to another document library cross-site or to another folder.
+Moves the document from the document library to the specified URL. You can move the document to another document library cross-site, to another site collection or to another folder.
 
 Output Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -201,7 +201,7 @@ Example
 
 Copy DocumentSet
 --------------------------------------------------
-It copies the document set from the document library to the specified URL. You can copy the document sets to another document library cross-site or to another folder.
+It copies the document set from the document library to the specified URL. You can copy the document sets to another document library cross-site, to another site collection or to another folder.
 
 Output Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -274,7 +274,7 @@ Example
 
 Move DocumentSet
 --------------------------------------------------
-It moves the document set from the document library to the specified URL. You can move the document sets to another document library cross-site or to another folder.
+It moves the document set from the document library to the specified URL. You can move the document sets to another document library cross-site, to another site collection or to another folder.
 
 Output Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -503,7 +503,7 @@ Example
 
 Copy Folder from Library
 --------------------------------------------------
-Copies the folder from the document library to the specified URL. You can copy the folder to another document library cross-site or to another folder.
+Copies the folder from the document library to the specified URL. You can copy the folder to another document library cross-site, to another site collection or to another folder.
 
 Output Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -573,7 +573,7 @@ Example
 
 Move Folder from Library
 --------------------------------------------------
-Moves the folder from the document library to the specified URL. You can move the folder to another document library cross-site or to another folder.
+Moves the folder from the document library to the specified URL. You can move the folder to another document library cross-site, to another site collection or to another folder.
 
 Output Parameters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
