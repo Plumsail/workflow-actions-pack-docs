@@ -50,6 +50,142 @@ Example
 .. image:: ../_static/img/startlistworkflow.png
    :alt: Start a List Workflow (2013)
 
+Stop a List Item Workflow (2013)
+--------------------------------------------------
+Stops a workflow on the specified list item.
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Workflow name
+       -  Name of the workflow which will be started
+       -  Send notifications
+    *  -  Item ID
+       -  Item ID
+       -  44 or [Variable:ItemId]
+    *  -  List name
+       -  Title, Url or guid of list
+       -  Clients
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  :code:`admin@contoso.com`
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite      
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: ../_static/img/stoplistworkflow.png
+   :alt: Stop a List Workflow (2013) 
+
+Get List Item Workflows  
+--------------------------------------------------
+Gets workflows that were run on the specific list item.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example         
+    *  -  Result
+       -  Dictionary with information about the specified workflow
+       -  [Variable:ResultDictionary]
+
+The result dictionary contains next fields:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Name
+       -  Type
+       -  Description         
+    *  -  Id
+       -  Guid
+       -  Guid of the workflow instance
+       
+    *  -  Started
+       -  DateTime
+       -  Date when the workflow was started 
+       
+    *  -  Updated
+       -  DateTime
+       -  Date when the workflow was updated  
+       
+    *  -  InternalStatus
+       -  String
+       -  ::
+       
+            Started
+            Running
+            Terminated
+            Suspended 
+       
+    *  -  UserStatus
+       -  String
+       -  Name of the current stage in the workflow 
+       
+    *  -  Name
+       -  String
+       -  Name of the workflow
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Item ID
+       -  Item ID
+       -  44 or [Variable:ItemId]
+    *  -  List name
+       -  Title, Url or guid of list
+       -  Clients
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  :code:`admin@contoso.com`
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite      
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: ../_static/img/getlistitemworkflows.png
+   :alt: Get List Item Workflows  
 
 Start a Site Workflow (2013)
 --------------------------------------------------
@@ -93,6 +229,132 @@ Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image:: ../_static/img/startsiteworkflow.png
    :alt: Start a Site Workflow (2013)
+
+Stop a Site Workflow (2013)
+--------------------------------------------------
+Stops a site level workflow.
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  Workflow name
+       -  Name of the workflow which will be started
+       -  Send notifications
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  :code:`admin@contoso.com`
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite
+                
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: ../_static/img/stopsiteworkflow.png
+   :alt: Stop a Site Workflow (2013) 
+
+Get Site Workflows  
+--------------------------------------------------
+Get workflows that were run on the site.
+
+Output parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example         
+    *  -  Result
+       -  Dictionary with information about the specified workflow
+       -  [Variable:ResultDictionary]
+
+The result dictionary contains next fields:
+
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Name
+       -  Type
+       -  Description         
+    *  -  Id
+       -  Guid
+       -  Guid of the workflow instance
+       
+    *  -  Started
+       -  DateTime
+       -  Date when the workflow was started 
+       
+    *  -  Updated
+       -  DateTime
+       -  Date when the workflow was updated  
+       
+    *  -  InternalStatus
+       -  String
+       -  ::
+       
+            Started
+            Running
+            Terminated
+            Suspended 
+       
+    *  -  UserStatus
+       -  String
+       -  Name of the current stage in the workflow 
+       
+    *  -  Name
+       -  String
+       -  Name of the workflow
+
+Input parameters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table::
+    :header-rows: 1
+    :widths: 10 30 20
+
+    *  -  Parameter
+       -  Description
+       -  Example
+    *  -  AdminLogin
+       -  The login of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  :code:`admin@contoso.com`
+    *  -  AdminPassword
+       -  The password of the user who has appropriate permissions to perform operation. This parameter doesn't exist in the version for SharePoint 2013 on-premise.
+       -  admin’sP@ssw0rd$
+    *  -  SiteUrl
+       -  The URL of the current SharePoint site. This property defines context of the workflow action. All actions performed by workflow action will be executed on specified SharePoint site. If this property is blank it will use current SharePoint site by default.
+       -  :code:`https://contoso/SiteUrl`
+          [%Workflow Context:Current Site URL%]subSite      
+    *  -  ThrowError
+       -  Detects whether workflow should be interrupted in case of error or not.
+       -  Yes
+    *  -  RunAsPublisher
+       -  Run under user account who published workflow (for OnPremise only)
+       -  Yes
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image:: ../_static/img/getsiteworkflows.png
+   :alt: Get Site Workflows     
 
 Call SharePoint REST Service
 --------------------------------------------------
