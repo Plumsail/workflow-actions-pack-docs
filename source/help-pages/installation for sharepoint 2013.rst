@@ -34,7 +34,7 @@ Install license
 ---------------
 
 * Buy **Workflow Action Pack for SharePoint 2013** license for each web front-end server.
-* Download Hardware ID Generator. You can find download link in the e-mail message with order number from our online store. Run it on all WFE-servers of your farm. Copy generated keys and send them to `sales@plumsail.com <sales@plumsail.com>`_ with your order number in the subject.
+* Download Server ID Generator. You can find download link in the e-mail message with order number from our online store. Run it on WFE server of your farm. Copy generated keys and send them to `sales@plumsail.com <sales@plumsail.com>`_ with your order number in the subject.
 * We will generate licenses for you and will send them to your e-mail within one day.
 * Place received .license files in the root folder of all SharePoint web-applications on WFE-servers according to generated keys. 
 	If you use port 80 it is usually here: ``c:\inetpub\wwwroot\wss\VirtualDirectories\80\``
@@ -52,7 +52,7 @@ Run setup file and choose **Remove**, then finish the installation wizard.
 
 To properly remove the application, you need to deactivate **Plumsail Action Pack Auth Service** feature first on your web application. In the case, when you do not deactivated the feature, you may get the following error: **Server Error in ‘/’ Application.**. If you received this message on load your site, you may use one of two ways to solving this problem:
 
-1. Open web.config file (by default this file locate in **C:\inetpub\wwwroot\wss\VirtualDirectories\[Web_App]\web.config**) and remove all references to **Plumsail.WFServices**.
+1. Open web.config file (by default this file locate in ``C:\inetpub\wwwroot\wss\VirtualDirectories\[Web_App]\web.config``) and remove all references to **Plumsail.WFServices**.
 2. Run setup file and install Workflow Action Pack again. Then, deactivate web application feature and try to remove the solution again.
 
 
