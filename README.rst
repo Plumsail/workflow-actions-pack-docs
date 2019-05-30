@@ -7,7 +7,7 @@ It provides more than a hundred workflow actions for creating custom workflows v
 
 - Cross-site workflow actions
 - No code solution for SharePoint sites' management
-- SharePoint Online in Office 365 and SharePoint 2013 / 2016 are supported
+- SharePoint Online in Office 365 and SharePoint 2013 / 2016 / 2019 are supported
 
 This is what you can do with Workflow Actions Pack:
 

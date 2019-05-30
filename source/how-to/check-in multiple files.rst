@@ -1,7 +1,7 @@
 How to check-in multiple files
 ##############################
 
-This article explains how to check-in multiple documents. This approach works in SharePoint 2013 / 2016 as well as for SharePoint Online in Office 365.
+This article explains how to check-in multiple documents. This approach works in SharePoint 2013 / 2016 / 2019 as well as for SharePoint Online in Office 365.
 
 Let’s imagine a situation where during a day people work with documents in SharePoint Document library. To work with some document user takes it to work and mark it as check out, but at the end of the day, every document should be checked-in back.
 

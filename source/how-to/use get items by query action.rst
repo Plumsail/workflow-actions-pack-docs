@@ -1,7 +1,7 @@
 Use Get Items by Query action (REST)
 ####################################
 
-This article will show you how to use `Get Items by Query <https://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-query>`_ workflow action. This action is much easier to use than its ancestor "Get Items by CAML query". It allows you to use simplified REST queries to get items. This approach works fo SharePoint 2013 / 2016 as well as for SharePoint Online in Office 365.
+This article will show you how to use `Get Items by Query <https://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#get-items-by-query>`_ workflow action. This action is much easier to use than its ancestor "Get Items by CAML query". It allows you to use simplified REST queries to get items. This approach works fo SharePoint 2013 / 2016 / 2019 as well as for SharePoint Online in Office 365.
 
 .. image:: ../_static/img/get-items-by-query-1.png
    :alt: SharePoint Workflow Designer Get Items by Query
