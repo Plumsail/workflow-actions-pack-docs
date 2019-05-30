@@ -1,7 +1,7 @@
 Send emails with attachments to external users
 ##############################################
 
-This article will describe the advanced features of our `Send e-mail with attachments <https://plumsail.com/docs/workflow-actions-pack/actions/E-mail%20processing.html#send-e-mail-with-attachments>`_ workflow actions. This approach works for SharePoint 2013 / 2016 as well as for SharePoint Online in Office 365.
+This article will describe the advanced features of our `Send e-mail with attachments <https://plumsail.com/docs/workflow-actions-pack/actions/E-mail%20processing.html#send-e-mail-with-attachments>`_ workflow actions. This approach works for SharePoint 2013 / 2016 / 2019 as well as for SharePoint Online in Office 365.
 
 Table of Contents
 *****************

@@ -1,7 +1,7 @@
 How to move list item attachments to document set
 #################################################
 
-This article explains how to move list item with attachments to SharePoint document set. This approach works in workflows for SharePoint 2013 / 2016 as well as for SharePoint Online in Office 365.
+This article explains how to move list item with attachments to SharePoint document set. This approach works in workflows for SharePoint 2013 / 2016 / 2019 as well as for SharePoint Online in Office 365.
 
 It will divide the workflow in three stages:
 

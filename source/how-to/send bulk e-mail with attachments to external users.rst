@@ -1,7 +1,7 @@
 Send bulk e-mail with attachments to external users
 ###################################################
 
-This article will show how to configure SharePoint 2013 workflow to send bulk email with attachments to external users. This approach works for SharePoint 2013 / 2016 as well as for SharePoint Online in Office 365. For many business tasks it is required to send mass messages to customers or employees. Sometimes such messages has to contain attachments.There are multiple use cases, look at just a few of them:
+This article will show how to configure SharePoint 2013 workflow to send bulk email with attachments to external users. This approach works for SharePoint 2013 / 2016 / 2019 as well as for SharePoint Online in Office 365. For many business tasks it is required to send mass messages to customers or employees. Sometimes such messages has to contain attachments.There are multiple use cases, look at just a few of them:
 
 * To send information about new releases to customers.
 * To notify customers about upcoming downtime.

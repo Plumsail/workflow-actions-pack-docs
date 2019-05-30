@@ -1,7 +1,7 @@
 Use different Get items actions to query lists
 ##############################################
 
-This article will explain how get items workflow actions work and how to use them to query list items from SharePoint 2013 / 2016 list. Those actions can be used to query list items cross-site as well as in current site. This approach works in SharePoint 2013 / 2016 as well as for SharePoint Online in Office 365.
+This article will explain how get items workflow actions work and how to use them to query list items from SharePoint 2013 / 2016 list. Those actions can be used to query list items cross-site as well as in current site. This approach works in SharePoint 2013 / 2016 / 2019 as well as for SharePoint Online in Office 365.
 
 We have the following actions that you can use to get items from a list:
 

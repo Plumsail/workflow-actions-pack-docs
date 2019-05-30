@@ -61,7 +61,7 @@ All documentation articles
    	:caption: Community forums
 
    	Workflow actions Pack for Office 365 <https://community.plumsail.com/c/workflow-actions-pack/office-365>
-   	Workflow actions Pack for SharePoint 2013 <https://community.plumsail.com/c/workflow-scheduler/sharepoint-2013-2016>
+   	Workflow actions Pack for SharePoint 2013/2016/2019 <https://community.plumsail.com/c/workflow-scheduler/sharepoint-2013-2016>
 
    .. toctree:: 
       :caption: How-to
@@ -69,7 +69,7 @@ All documentation articles
 
       Manage workflow credentials with the help of Credentials Manager <https://github.com/RFlipper/WFPackCredsManager>   	
       Work with dictionaries, collections and loops <https://medium.com/plumsail/how-to-work-with-dictionaries-in-sharepoint-2013-and-office-365-workflow-6956bd6bed9f>
-      Create HelpDesk on SharePoint 2013\Online <https://medium.com/plumsail/how-to-create-helpdesk-on-sharepoint-2013-or-office-365-3d62c43c4de5>
+      Create HelpDesk on SharePoint 2013\2016\2019\Online <https://medium.com/plumsail/how-to-create-helpdesk-on-sharepoint-2013-or-office-365-3d62c43c4de5>
       Use free string processing workflow actions <https://medium.com/plumsail/string-processing-workflow-actions-for-sharepoint-2013-and-sharepoint-online-bd7433fc3578>
       Start SharePoint 2013 Workflows on Selected Items <https://medium.com/plumsail/how-to-start-sharepoint-2013-workflows-on-selected-items-265ef3d837e0>
       Deal with SharePoint 2013 Designer and Workflow Tips, Tricks & Traps <https://medium.com/plumsail/sharepoint-2013-designer-and-workflow-tips-tricks-traps-700c73836e1f>
@@ -109,4 +109,4 @@ All documentation articles
       SharePoint Designer workflows are not going to be deprecated <https://medium.com/plumsail/sharepoint-designer-workflows-are-not-deprecated-and-will-work-in-feasible-future-6e2d083bc474>
       other/recommended-sharepoint-designer-updates
       Getting started with SharePoint Server 2013 workflow <http://technet.microsoft.com/en-Us/library/jj227177%28v=office.15%29.aspx>
-      Configure Workflow Manager for SharePoint 2013 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>   
+      Configure Workflow Manager for SharePoint 2013/2016/2019 <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>

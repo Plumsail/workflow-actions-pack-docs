@@ -1,7 +1,7 @@
 How to copy list item with attachments across site collections
 ##############################################################
 
-This short post will describe `Copy List Item <https://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#copy-list-item-to-list>`_ workflow action. This action allows you to copy list item with attachments. This is much easier than creation of list items and attaching files separately. This approach works in SharePoint 2013 / 2016 as well as for SharePoint Online in Office 365.
+This short post will describe `Copy List Item <https://plumsail.com/docs/workflow-actions-pack/actions/List%20items%20processing.html#copy-list-item-to-list>`_ workflow action. This action allows you to copy list item with attachments. This is much easier than creation of list items and attaching files separately. This approach works in SharePoint 2013 / 2016 / 2019 as well as for SharePoint Online in Office 365.
 
 This is an example of configured workflow action:
 

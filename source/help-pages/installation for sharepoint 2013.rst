@@ -1,5 +1,5 @@
-Installation for SharePoint 2013 / 2016
-=======================================
+Installation for SharePoint 2013 / 2016 / 2019
+==============================================
 
 Install
 -------
@@ -7,7 +7,7 @@ Install
 Before installing Workflow Actions Pack ensure that Workflow Manager is configured for your farm. Workflow Manager allows to create and execute SharePoint 2013 workflows. See `Workflow Manager configuration guide <http://technet.microsoft.com/en-us/library/jj658588(v=office.15).aspx>`_.
 
 
-`Download setup file </workflow-actions-pack/download/>`_ and run it on one of the servers in your SharePoint 2013 farm as Farm Administrator. Follow the wizard steps.
+`Download setup file </workflow-actions-pack/download/>`_ and run it on one of the servers in your SharePoint 2013 / 2016 / 2019 farm as Farm Administrator. Follow the wizard steps.
 
 
 After that you have to activate Web Application level feature **Plumsail Auth Service** for this please open your central administration site and navigate to **Application Management** section, click on the link **Manage web application**, choose your using web application, click to the **Features** button on the ribbon and activate the **Plumsail Auth Service** feature.
@@ -33,7 +33,7 @@ Now, you can find the following actions in SharePoint Designer under Plumsail se
 Install license
 ---------------
 
-* Buy **Workflow Action Pack for SharePoint 2013** license for each web front-end server.
+* Buy **Workflow Action Pack for SharePoint 2013 / 2016 / 2019** license for each web front-end server.
 * Download Server ID Generator. You can find download link in the e-mail message with order number from our online store. Run it on WFE server of your farm. Copy generated keys and send them to `sales@plumsail.com <sales@plumsail.com>`_ with your order number in the subject.
 * We will generate licenses for you and will send them to your e-mail within one day.
 * Place received .license files in the root folder of all SharePoint web-applications on WFE-servers according to generated keys. 
@@ -60,7 +60,7 @@ Upgrade
 -------
 
 Firstly, you have to deactivate **Plumsail Workflow Actions Pack** feature at the site level.
-`Download setup file </workflow-actions-pack/download/>`_ and run it on one of the servers in your Sharepoint 2013 farm as Farm Administrator. Choose **Upgrade** and follow the wizard steps.
+`Download setup file </workflow-actions-pack/download/>`_ and run it on one of the servers in your Sharepoint 2013 / 2016 / 2019 farm as Farm Administrator. Choose **Upgrade** and follow the wizard steps.
 
 .. image:: ../_static/img/upgradewfactivitypack.png
    :alt: Upgrade workflow actions pack
