@@ -1,5 +1,5 @@
-Licensing details 123
-==================================================
+Licensing details
+=================
 
 
 Licensing for SharePoint Online in Office 365
