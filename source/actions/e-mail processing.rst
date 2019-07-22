@@ -268,7 +268,7 @@ Input parameters
        -  Search for embedded images in the message body
        -  False
     *  -  From
-       -  Sender email
+       -  Sender email. FROM header works with custom SMTP only.
        -  :code:`support@contoso.com`
     *  -  EXEmail
        -  E-mail that is used to connect to the SMTP server
