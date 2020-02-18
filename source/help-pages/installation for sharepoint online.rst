@@ -1,8 +1,8 @@
 Installation for SharePoint Online
-==================================================
+==================================
 
 Install
---------------------------------------------------
+-------
 
 Please, download `the WSP package </workflow-actions-pack/download>`_.
 
@@ -49,13 +49,13 @@ One more step is required to configure default account, which will be used to st
    :alt: SharePoint Upgrade Page 
 
 Install license
---------------------------------------------------
+---------------
 
 * Buy license for each domain where you are going to use **Workflow Actions Pack**. Specify them in the order details.
 * After the payment your installations will be activated automatically within one day.
 
 Uninstall
---------------------------------------------------
+---------
 
 Go to **Site Settings → Solutions**, select solution and click **Deactivate** from its context menu
 
@@ -64,7 +64,9 @@ Go to **Site Settings → Solutions**, select solution and click **Deactivate** 
 
 
 Upgrade
---------------------------------------------------
+-------
+
+If you have any workflows in state "in progress" that uses the product, please stop **Workflow Manager Backend** Service on WFE. It will help to avoid workflow interruption.  
 
 Firstly, you have to deactivate **Plumsail Workflow Actions Pack** feature at the site level and deactivate **Plumsail.ActionsPack.wsp** solution in the solution gallery.
 
@@ -105,17 +107,17 @@ Please pay attention on `Version history <../other/Version%20History.html>`_ pag
 	
 
 Issues
---------------------------------------------------
+------
 
 
 Issue with installation to public site
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Installation of Workflow Actions Pack requires some additional steps. Please read this instruction:
 `How to install sandbox solution to an Office 365 public site <../other/deploy-solution-to-public-site.html>`_
 
 SharePoint Designer issues
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SharePoint Designer stores cached workflow actions, that is why after solution upgrade you may need to perform few actions.
 You need to clear SharePoint Designer 2013 cache, otherwise it can show you the error message because it uses old cached version of workflow actions. To clear cache you need to execute following command from the command line as administrator on your PC and reopen SharePoint Designer:
