@@ -87,8 +87,9 @@ Manual Upgrade
 5. Activate **Plumsail Workflow Actions Pack** feature at the site level
 6. Run **Workflow Manager Backend** Service on WFE
 
+
 Upgrade workflows
-~~~~~~~~~~~~~~~~~
+-----------------
 
 Sometimes after upgrade WSP package, you also need to upgrade your workflows. 
 To upgrade workflows you need to navigate to Site Settings -> Plumsail Workflow Actions and click ‘Upgrade’ button for workflows where you see it. After upgrading of workflows you need to clear Sharepoint Designer cache and open it again. You may need to reopen SharePoint Designer second time, it is specific of SharePoint Designer.
@@ -101,7 +102,7 @@ Known Issues
 ------------
 
 SharePoint Designer issues
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 SharePoint Designer stores cached workflow actions, that is why after solution upgrade you may need to perform few actions.
 You need to clear SharePoint Designer 2013 cache, otherwise it can show you the error message because it uses old cached version of workflow actions. To clear cache you need to execute following command from the command line as administrator on your PC and reopen SharePoint Designer:
