@@ -66,8 +66,6 @@ Go to **Site Settings → Solutions**, select solution and click **Deactivate** 
 Upgrade
 -------
 
-If you have any workflows in state "in progress" that uses the product, please stop **Workflow Manager Backend** Service on WFE. It will help to avoid workflow interruption.  
-
 Firstly, you have to deactivate **Plumsail Workflow Actions Pack** feature at the site level and deactivate **Plumsail.ActionsPack.wsp** solution in the solution gallery.
 
 Then, upload a new WSP package to your Solution gallery:

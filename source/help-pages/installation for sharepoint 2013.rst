@@ -59,6 +59,8 @@ To properly remove the application, you need to deactivate **Plumsail Action Pac
 Upgrade
 -------
 
+If you have any workflows in state "in progress" that uses the product, please stop **Workflow Manager Backend** Service on WFE. It will help to avoid workflow interruption.  
+
 Firstly, you have to deactivate **Plumsail Workflow Actions Pack** feature at the site level.
 `Download setup file </workflow-actions-pack/download/>`_ and run it on one of the servers in your Sharepoint 2013 / 2016 / 2019 farm as Farm Administrator. Choose **Upgrade** and follow the wizard steps.
 
@@ -71,6 +73,19 @@ Find the feature called **Plumsail Workflow Actions** Pack and click **Activate
    :alt: SharePoint Activate Feature
 
 
+Manual Upgrade
+--------------
+1. If you have any workflows in state "in progress" that uses the product, please stop **Workflow Manager Backend** Service on WFE. It will help to avoid workflow interruption
+2. `Download WSP file </workflow-actions-pack/download/>`_ and save it to **C:\\temp\\** folder on WFE
+3. Please deactivate **Plumsail Workflow Actions Pack** feature at the site level
+4. Run the following command via SharePoint Management Shell on WFE server:
+
+::
+
+   Update-SPSolution -LiteralPath C:\temp\Plumsail.ActionsPack.OnPremises.wsp -Identity Plumsail.ActionsPack.OnPremises.wsp -GACDeployment -Verbose
+
+5. Activate **Plumsail Workflow Actions Pack** feature at the site level
+6. Run **Workflow Manager Backend** Service on WFE
 
 Upgrade workflows
 ~~~~~~~~~~~~~~~~~

@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 All documentation articles
-=================================================
+==========================
 
 .. toctree::
    :hidden:
