@@ -130,4 +130,4 @@ Also you can disable the feature using the command
 
 .. note::
    
-   You can find more information about the PowerShell commnds in the `Microsoft documentation <https://docs.microsoft.com/en-gb/powershell/module/sharepoint-server/enable-spfeature?view=sharepoint-ps>`_.
+   You can find more information about the PowerShell commands in the `Microsoft documentation <https://docs.microsoft.com/en-gb/powershell/module/sharepoint-server/enable-spfeature?view=sharepoint-ps>`_.
