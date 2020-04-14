@@ -106,3 +106,28 @@ If you use SharePoint Designer on the same server where has installed Workflow M
 
 We also recommend to install `recent updates for SharePoint Designer 2013 <../other/recommended-sharepoint-designer-updates.html>`_. This will help to avoid annoying error when configuring workflows.
 
+Workflow Actions Pack feature activation issues
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If for some reason activation/deactivation of Workflow Actions Pack feature is failed via SharePoint user interface you can try to activate/deactivate it via PowerShell.
+
+Firstly find the feature ID with this command
+
+::
+
+   Get-SPSite https://somesite
+
+Then use the found ID in the next command
+
+::
+
+   Enable-SPFeature -identity "ID" -URL https://somesite -f
+
+Also you can disable the feature using the command
+
+::
+
+   Disable-SPFeature -identity "ID" -URL https://somesite -f
+
+.. note::
+   
+   You can find more information about the PowerShell commnds in the `Microsoft documentation <https://docs.microsoft.com/en-gb/powershell/module/sharepoint-server/enable-spfeature?view=sharepoint-ps>`_.
