@@ -110,23 +110,19 @@ Workflow Actions Pack feature activation issues
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If for some reason activation/deactivation of Workflow Actions Pack feature is failed via SharePoint user interface you can try to activate/deactivate it via PowerShell.
 
-Firstly find the feature ID with this command
+Workflow Actions Pack feature ID is 22bb2cee-2403-4b7c-818e-9078b11a218b
+
+Use this ID in the next command with Force flag
 
 ::
 
-   Get-SPSite https://somesite
-
-Then use the found ID in the next command
-
-::
-
-   Enable-SPFeature -identity "ID" -URL https://somesite -f
+   Enable-SPFeature -identity 22bb2cee-2403-4b7c-818e-9078b11a218b -URL https://somesite -f
 
 Also you can disable the feature using the command
 
 ::
 
-   Disable-SPFeature -identity "ID" -URL https://somesite -f
+   Disable-SPFeature -identity 22bb2cee-2403-4b7c-818e-9078b11a218b -URL https://somesite -f
 
 .. note::
    
