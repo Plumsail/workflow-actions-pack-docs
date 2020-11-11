@@ -11,7 +11,7 @@ Go to your SharePoint Online site. At the site collection, click Site Actions, c
 .. image:: ../_static/img/wfpack_1.sitesettings.png
    :alt: SharePoint Site Settings
 
-On the Site Settings page, click **Solutions** under Web Designer Galleries section.
+On the Site Settings page, click **Solutions** (`_catalogs/solutions/Forms/AllItems.aspx`) under Web Designer Galleries section.
 
 
 .. image:: ../_static/img/wfpack_2.solutions.png
