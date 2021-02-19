@@ -22,7 +22,7 @@ All documentation articles
       other/licensing
       License agreement <https://plumsail.com/license-agreement/>
       Support plans <https://plumsail.com/support-plans/>
-      Refund policy <https://plumsail.com/store/refund-policy/>
+      Refund policy <https://plumsail.com/refund-policy/>
 
    .. toctree::
       :caption: List of SharePoint workflow actions
