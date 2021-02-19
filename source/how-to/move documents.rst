@@ -25,7 +25,7 @@ The document library has plain structure without folders, it was use metadata na
 
 To implement archival workflow with such functionality, it has to be able to create new document libraries by custom template, because I have two metadata column in the library. I also need to query documents using CAML query, because I have to archive documents created in the last month only. To create document library I need to generate appropriate name using template *‘Archive – {YEAR} {MONTH}’* . Then I have to move documents which I received from CAML query into created document library. In this example I work within the same SharePoint site, but I want to have possibility to move documents cross-site. Finally I need to schedule the archival workflow to run periodically.
 
-Out of the box workflow actions don’t allow to implement even half of such functionality. In this example it will show how to use some workflow actions from `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ to implement the workflow and how to schedule the workflow using `Workflow Scheduler <http://plumsail.com/workflow-scheduler/>`_ .
+Out of the box workflow actions don’t allow to implement even half of such functionality. In this example it will show how to use some workflow actions from `Workflow Actions Pack <http://plumsail.com/workflow-actions-pack/>`_ to implement the workflow and how to schedule the workflow using `Workflow Scheduler <https://plumsail.com/sharepoint-workflow-scheduler/>`_ .
 
 Archival workflow configuration
 -------------------------------
