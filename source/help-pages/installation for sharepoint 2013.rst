@@ -113,7 +113,7 @@ You need to clear SharePoint Designer 2013 cache, otherwise it can show you the 
    rmdir "%LOCALAPPDATA%\Microsoft\WebsiteCache\" /s /q
    rmdir "%APPDATA%\Microsoft\SharePoint Designer\ProxyAssemblyCache\" /s /q
 
-Or you can `download and execute the bat file </wp-content/uploads/Files/WFActionsPack/ClearSPDesignerCache.bat>`_.
+Or you can `download and execute the bat file </downloads/WFActionsPack/ClearSPDesignerCache.bat>`_.
 
 After clearing the cache and running SharePoint Designer you may need to close and open SharePoint Designer one more time, then the error should disappear.
 We also recommend to install recent updates for SharePoint Designer 2013. This will help to avoid annoying error when configuring workflows.
